@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<board_part board_name="zybo" board_revision="b" board_part="part0" schema_version="1.0" vendor="digilentinc.com" version="1.0">
+
+  <part_info part_name="xc7z010clg400-1" jtag_position="1" silicon_version="1.0" />
+
+  <board_info description="Zybo" display_name="Zybo" url="http://www.digilentinc.com"/>
+
+  <interfaces>
+    <interface mode="master" name="btns_4bits" type="xilinx.com:interface:gpio_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="TRI_I" physical_port="btns_4bits_tri_i"/>
+      </port_maps>
+    </interface>
+    <interface mode="master" name="leds_4bits" type="xilinx.com:interface:gpio_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="TRI_O" physical_port="leds_4bits_tri_o"/>
+      </port_maps>
+    </interface>
+    <interface mode="master" name="ps7_fixedio" type="xilinx.com:display_processing_system7:fixedio_rtl:1.0">
+      <preset_file name="ps7.tcl"/>
+    </interface>
+    <interface mode="master" name="sws_4bits" type="xilinx.com:interface:gpio_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="TRI_I" physical_port="sws_4bits_tri_i"/>
+      </port_maps>
+    </interface>
+    <interface mode="slave" name="sys_clock" type="xilinx.com:interface:clock_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="CLK" physical_port="sys_clk"/>
+      </port_maps>
+      <parameters>
+        <parameter name="frequency" value="125000000"/>
+      </parameters>
+    </interface>
+  </interfaces>
+
+  <ports>
+    <port dir="in" left="3" name="btns_4bits_tri_i" right="0">
+      <pins>
+        <pin index="0" iostandard="LVCMOS33" loc="R18"/>
+        <pin index="1" iostandard="LVCMOS33" loc="P16"/>
+        <pin index="2" iostandard="LVCMOS33" loc="V16"/>
+        <pin index="3" iostandard="LVCMOS33" loc="Y16"/>
+      </pins>
+    </port>
+    <port dir="out" left="3" name="leds_4bits_tri_o" right="0">
+      <pins>
+        <pin index="0" iostandard="LVCMOS33" loc="M14"/>
+        <pin index="1" iostandard="LVCMOS33" loc="M15"/>
+        <pin index="2" iostandard="LVCMOS33" loc="G14"/>
+        <pin index="3" iostandard="LVCMOS33" loc="D18"/>
+      </pins>
+    </port>
+    <port dir="in" left="3" name="sws_4bits_tri_i" right="0">
+      <pins>
+        <pin index="0" iostandard="LVCMOS33" loc="G15"/>
+        <pin index="1" iostandard="LVCMOS33" loc="P15"/>
+        <pin index="2" iostandard="LVCMOS33" loc="W13"/>
+        <pin index="3" iostandard="LVCMOS33" loc="T16"/>
+      </pins>
+    </port>
+    <port dir="in" name="sys_clk">
+      <pins>
+        <pin iostandard="LVCMOS33" loc="L16"/>
+      </pins>
+    </port>
+  </ports>
+
+</board_part>

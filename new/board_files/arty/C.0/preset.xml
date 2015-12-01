@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?> 
+<ip_presets schema="1.0">
+  <ip_preset preset_proc_name="ddr3_sdram_preset">
+    <ip vendor="xilinx.com" library="ip" name="mig_7series">
+      <user_parameters>
+        <user_parameter name="CONFIG.XML_INPUT_FILE" value="mig.prj" value_type="file"/> 
+      </user_parameters>
+    </ip>
+  </ip_preset>
+  <ip_preset preset_proc_name="shield_dp0_dp19_preset">
+    <ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO" version="2.0">
+        <user_parameters>
+          <user_parameter name="CONFIG.C_GPIO_WIDTH" value="20"/> 
+		  <user_parameter name="CONFIG.C_INTERRUPT_PRESENT" value="1"/>
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO2" version="2.0">
+        <user_parameters>		  
+          <user_parameter name="CONFIG.C_IS_DUAL" value="1"/> 
+          <user_parameter name="CONFIG.C_GPIO2_WIDTH" value="20"/>
+		  <user_parameter name="CONFIG.C_INTERRUPT_PRESENT" value="1"/> 
+        </user_parameters>
+    </ip>
+  </ip_preset>
+  </ip_preset>
+  <ip_preset preset_proc_name="shield_dp26_dp41_preset">
+    <ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO" version="2.0">
+        <user_parameters>
+          <user_parameter name="CONFIG.C_GPIO_WIDTH" value="16"/> 
+		  <user_parameter name="CONFIG.C_INTERRUPT_PRESENT" value="1"/> 
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO2" version="2.0">
+        <user_parameters>		  
+          <user_parameter name="CONFIG.C_IS_DUAL" value="1"/> 
+          <user_parameter name="CONFIG.C_GPIO2_WIDTH" value="16"/> 
+		  <user_parameter name="CONFIG.C_INTERRUPT_PRESENT" value="1"/> 
+        </user_parameters>
+    </ip>
+  </ip_preset>
+</ip_presets>

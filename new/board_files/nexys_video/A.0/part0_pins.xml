@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> 
+<part_info part_name="xc7a200tsbg484-1">
+<pins>
+  <pin index="0" name ="clk" iostandard="LVCMOS33" loc="R4"/>
+  <pin index="1" name ="dip_switches_8bits_tri_i_0" iostandard="LVCMOS33" loc="E22"/>
+  <pin index="2" name ="dip_switches_8bits_tri_i_1" iostandard="LVCMOS33" loc="F21"/>
+  <pin index="3" name ="dip_switches_8bits_tri_i_2" iostandard="LVCMOS33" loc="G21"/>
+  <pin index="4" name ="dip_switches_8bits_tri_i_3" iostandard="LVCMOS33" loc="G22"/>
+  <pin index="5" name ="dip_switches_8bits_tri_i_4" iostandard="LVCMOS33" loc="H17"/>
+  <pin index="6" name ="dip_switches_8bits_tri_i_5" iostandard="LVCMOS33" loc="J16"/>
+  <pin index="7" name ="dip_switches_8bits_tri_i_6" iostandard="LVCMOS33" loc="K13"/>
+  <pin index="8" name ="dip_switches_8bits_tri_i_7" iostandard="LVCMOS33" loc="M17"/>
+  <pin index="9" name ="eth_mdc" iostandard="LVCMOS25" loc="AA16"/>
+  <pin index="10" name ="eth_mdio_i" iostandard="LVCMOS25" loc="Y16"/>
+  <pin index="11" name ="eth_rst" iostandard="LVCMOS33" loc="U7"/>
+  <pin index="12" name ="eth_rxd_0" iostandard="LVCMOS25" loc="AB16"/>
+  <pin index="13" name ="eth_rxd_1" iostandard="LVCMOS25" loc="AA15"/>
+  <pin index="14" name ="eth_rxd_2" iostandard="LVCMOS25" loc="AB15"/>
+  <pin index="15" name ="eth_rxd_3" iostandard="LVCMOS25" loc="AB11"/>
+  <pin index="16" name ="eth_rx_clk" iostandard="LVCMOS25" loc="V13"/>
+  <pin index="17" name ="eth_rx_ctl" iostandard="LVCMOS25" loc="W10"/>
+  <pin index="18" name ="eth_txd_0" iostandard="LVCMOS25" loc="Y12"/>
+  <pin index="19" name ="eth_txd_1" iostandard="LVCMOS25" loc="W12"/>
+  <pin index="20" name ="eth_txd_2" iostandard="LVCMOS25" loc="W11"/>
+  <pin index="21" name ="eth_txd_3" iostandard="LVCMOS25" loc="Y11"/>
+  <pin index="22" name ="eth_tx_clk" iostandard="LVCMOS25" loc="AA14"/>
+  <pin index="23" name ="eth_tx_ctl" iostandard="LVCMOS25" loc="V10"/>
+  <pin index="24" name ="led_8bits_tri_o_0" iostandard="LVCMOS33" loc="T14"/>
+  <pin index="25" name ="led_8bits_tri_o_1" iostandard="LVCMOS33" loc="T15"/>
+  <pin index="26" name ="led_8bits_tri_o_2" iostandard="LVCMOS33" loc="T16"/>
+  <pin index="27" name ="led_8bits_tri_o_3" iostandard="LVCMOS33" loc="U16"/>
+  <pin index="28" name ="led_8bits_tri_o_4" iostandard="LVCMOS33" loc="V15"/>
+  <pin index="29" name ="led_8bits_tri_o_5" iostandard="LVCMOS33" loc="W16"/>
+  <pin index="30" name ="led_8bits_tri_o_6" iostandard="LVCMOS33" loc="W15"/>
+  <pin index="31" name ="led_8bits_tri_o_7" iostandard="LVCMOS33" loc="Y13"/>
+  <pin index="32" name ="oled_sclk_i" iostandard="LVCMOS33" loc="W21"/>
+  <pin index="33" name ="oled_sdin_i" iostandard="LVCMOS33" loc="Y22"/>
+  <pin index="34" name ="push_buttons_5bits_tri_i_0" iostandard="LVCMOS33" loc="B22"/>
+  <pin index="35" name ="push_buttons_5bits_tri_i_1" iostandard="LVCMOS33" loc="F15"/>
+  <pin index="36" name ="push_buttons_5bits_tri_i_2" iostandard="LVCMOS33" loc="C22"/>
+  <pin index="37" name ="push_buttons_5bits_tri_i_3" iostandard="LVCMOS33" loc="D14"/>
+  <pin index="38" name ="push_buttons_5bits_tri_i_4" iostandard="LVCMOS33" loc="D22"/>
+  <pin index="39" name ="qspi_csn_i" iostandard="LVCMOS33" loc="T19"/>
+  <pin index="40" name ="qspi_db0_i" iostandard="LVCMOS33" loc="P22"/>
+  <pin index="41" name ="qspi_db1_i" iostandard="LVCMOS33" loc="R22"/>
+  <pin index="42" name ="qspi_db2_i" iostandard="LVCMOS33" loc="P21"/>
+  <pin index="43" name ="qspi_db3_i" iostandard="LVCMOS33" loc="R21"/>
+  <pin index="44" name ="reset" iostandard="LVCMOS15" loc="G4"/>
+  <pin index="45" name ="usb_uart_rxd" iostandard="LVCMOS33" loc="V18"/>
+  <pin index="46" name ="usb_uart_txd" iostandard="LVCMOS33" loc="AA19"/>
+</pins>
+</part_info>

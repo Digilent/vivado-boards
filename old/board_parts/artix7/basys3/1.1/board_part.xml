@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+
+<board_part board_name="Basys3" board_revision="1.1" board_part="part0" schema_version="1.1" vendor="digilentinc.com" version="1.1">
+
+  <part_info part_name="xc7a35tcpg236-1" device="xc7a35t" family="artix7" jtag_position="1" package="cpg236" silicon_version="1.0" speed_grade="1"/>
+
+  <board_info description="Basys3 Artix-7 FPGA Board" display_name="Basys3 Artix-7 FPGA Board" url="www.digilentinc.com/basys3"/>
+
+  
+  <interfaces>
+   
+	
+    <interface mode="master" name="DIP_Switches_16Bits" type="xilinx.com:interface:gpio_rtl:1.0">
+      
+	  <port_maps>
+        <port_map logical_port="TRI_I" physical_port="DIP_Switches_16Bits_TRI_I"/>
+      </port_maps>
+	  
+    </interface>
+	
+    <interface mode="master" name="LED_16Bits" type="xilinx.com:interface:gpio_rtl:1.0">
+      
+	  <port_maps>
+        <port_map logical_port="TRI_O" physical_port="LED_16Bits_TRI_O"/>
+      </port_maps>
+	  
+    </interface>
+	
+    <interface mode="master" name="Push_Buttons_5Bits" type="xilinx.com:interface:gpio_rtl:1.0">
+      
+	  <port_maps>
+        <port_map logical_port="TRI_I" physical_port="Push_Buttons_5Bits_TRI_I"/>
+      </port_maps>
+	  
+    </interface>
+	
+	<interface mode="master" name="SEVEN_SEG_LED_DISP" type="xilinx.com:interface:gpio_rtl:1.0">
+      
+	  <port_maps>
+        <port_map logical_port="TRI_O" physical_port="SEVEN_SEG_LED_DISP_TRI_O"/>
+      </port_maps>
+	  
+    </interface>
+	
+	<interface mode="master" name="SEVEN_SEG_LED_AN" type="xilinx.com:interface:gpio_rtl:1.0">
+      
+	  <port_maps>
+        <port_map logical_port="TRI_O" physical_port="SEVEN_SEG_LED_AN_TRI_O"/>
+      </port_maps>
+	  
+    </interface>
+	
+    <interface mode="master" name="USB_Uart" type="xilinx.com:interface:uart_rtl:1.0">
+      
+	  <port_maps>
+        <port_map logical_port="TxD" physical_port="USB_Uart_TxD"/>
+        <port_map logical_port="RxD" physical_port="USB_Uart_RxD"/>
+      </port_maps>
+	  
+    </interface>
+	
+    <interface mode="master" name="Qspi_flash" type="xilinx.com:interface:spi_rtl:1.0">
+     
+	 <port_maps>
+        <port_map logical_port="IO0_I" physical_port="Qspi_DB0_i"/>
+        <port_map logical_port="IO0_O" physical_port="Qspi_DB0_o"/>
+        <port_map logical_port="IO0_T" physical_port="Qspi_DB0_t"/>
+		
+        <port_map logical_port="IO1_I" physical_port="Qspi_DB1_i"/>
+        <port_map logical_port="IO1_O" physical_port="Qspi_DB1_o"/>
+        <port_map logical_port="IO1_T" physical_port="Qspi_DB1_t"/>
+		
+		
+		<port_map logical_port="IO2_I" physical_port="Qspi_DB2_i"/>
+        <port_map logical_port="IO2_O" physical_port="Qspi_DB2_o"/>
+        <port_map logical_port="IO2_T" physical_port="Qspi_DB2_t"/>
+		
+		<port_map logical_port="IO3_I" physical_port="Qspi_DB3_i"/>
+        <port_map logical_port="IO3_O" physical_port="Qspi_DB3_o"/>
+        <port_map logical_port="IO3_T" physical_port="Qspi_DB3_t"/>
+		
+		<port_map logical_port="SS_I" physical_port="Qspi_CSn_i"/>
+        <port_map logical_port="SS_O" physical_port="Qspi_CSn_o"/>
+        <port_map logical_port="SS_T" physical_port="Qspi_CSn_t"/>
+		
+      </port_maps>
+	  
+    </interface>
+	
+    <interface mode="slave" name="sys_clock" type="xilinx.com:interface:clock_rtl:1.0">
+     
+	 <port_maps>
+        <port_map logical_port="CLK" physical_port="clk"/>
+      </port_maps>
+	  
+      <parameters>
+        <parameter name="frequency" value="100000000"/>
+      </parameters>
+	  
+	</interface>
+  
+    <interface mode="slave" name="Reset" type="xilinx.com:signal:reset_rtl:1.0">
+      <port_maps>
+        <port_map logical_port="RST" physical_port="RESET"/>
+      </port_maps>
+      <parameters>
+        <parameter name="RST_POLARITY" value="1"/>
+      </parameters>
+    </interface>
+	
+  </interfaces>
+
+  
+  <ports>
+    
+	<port name="DIP_Switches_16Bits_TRI_I" dir="in" left="15"  right="0">
+      <pins>
+        <pin index="0" iostandard="LVCMOS33" loc="V17"/>
+        <pin index="1" iostandard="LVCMOS33" loc="V16"/>
+        <pin index="2" iostandard="LVCMOS33" loc="W16"/>
+        <pin index="3" iostandard="LVCMOS33" loc="W17"/>
+		<pin index="4" iostandard="LVCMOS33" loc="W15"/>
+        <pin index="5" iostandard="LVCMOS33" loc="V15"/>
+        <pin index="6" iostandard="LVCMOS33" loc="W14"/>
+        <pin index="7" iostandard="LVCMOS33" loc="W13"/>
+		<pin index="8" iostandard="LVCMOS33" loc="V2"/>
+        <pin index="9" iostandard="LVCMOS33" loc="T3"/>
+        <pin index="10" iostandard="LVCMOS33" loc="T2"/>
+        <pin index="11" iostandard="LVCMOS33" loc="R3"/>
+		<pin index="12" iostandard="LVCMOS33" loc="W2"/>
+        <pin index="13" iostandard="LVCMOS33" loc="U1"/>
+        <pin index="14" iostandard="LVCMOS33" loc="T1"/>
+        <pin index="15" iostandard="LVCMOS33" loc="R2"/>
+      </pins>
+    </port>
+		
+    <port name="LED_16Bits_TRI_O" dir="out" left="15"  right="0">
+      <pins>
+        <pin index="0" iostandard="LVCMOS33" loc="U16"/>
+        <pin index="1" iostandard="LVCMOS33" loc="E19"/>
+        <pin index="2" iostandard="LVCMOS33" loc="U19"/>
+        <pin index="3" iostandard="LVCMOS33" loc="V19"/>
+		<pin index="4" iostandard="LVCMOS33" loc="W18"/>
+        <pin index="5" iostandard="LVCMOS33" loc="U15"/>
+        <pin index="6" iostandard="LVCMOS33" loc="U14"/>
+        <pin index="7" iostandard="LVCMOS33" loc="V14"/>
+		<pin index="8" iostandard="LVCMOS33" loc="V13"/>
+        <pin index="9" iostandard="LVCMOS33" loc="V3"/>
+        <pin index="10" iostandard="LVCMOS33" loc="W3"/>
+        <pin index="11" iostandard="LVCMOS33" loc="U3"/>
+		<pin index="12" iostandard="LVCMOS33" loc="P3"/>
+        <pin index="13" iostandard="LVCMOS33" loc="N3"/>
+        <pin index="14" iostandard="LVCMOS33" loc="P1"/>
+        <pin index="15" iostandard="LVCMOS33" loc="L1"/>
+      </pins>
+    </port>
+	    
+    <port name="Push_Buttons_5Bits_TRI_I" dir="in" left="3"  right="0">
+      <pins>
+        <pin index="0" iostandard="LVCMOS33" loc="T18"/>
+        <pin index="1" iostandard="LVCMOS33" loc="W19"/>
+        <pin index="2" iostandard="LVCMOS33" loc="T17"/>
+        <pin index="3" iostandard="LVCMOS33" loc="U17"/>
+      </pins>
+    </port>
+
+	<port name="RESET" dir="in" >
+      <pins>
+        <pin iostandard="LVCMOS33" loc="U18"/>
+      </pins>
+    </port>
+	
+
+   <port name="SEVEN_SEG_LED_DISP_TRI_O" dir="out" left="7"  right="0">
+      <pins>
+        <pin index="0" iostandard="LVCMOS33" loc="W7"/>
+        <pin index="1" iostandard="LVCMOS33" loc="W6"/>
+        <pin index="2" iostandard="LVCMOS33" loc="U8"/>
+        <pin index="3" iostandard="LVCMOS33" loc="V8"/>
+		<pin index="4" iostandard="LVCMOS33" loc="U5"/>
+        <pin index="5" iostandard="LVCMOS33" loc="V5"/>
+        <pin index="6" iostandard="LVCMOS33" loc="U7"/>
+		<pin index="7" iostandard="LVCMOS33" loc="V7"/>
+      </pins>
+    </port>		
+	
+   <port name="SEVEN_SEG_LED_AN_TRI_O" dir="out" left="3"  right="0">
+      <pins>
+        <pin index="0" iostandard="LVCMOS33" loc="U2"/>
+        <pin index="1" iostandard="LVCMOS33" loc="U4"/>
+        <pin index="2" iostandard="LVCMOS33" loc="V4"/>
+        <pin index="3" iostandard="LVCMOS33" loc="W4"/>
+      </pins>
+    </port>	
+
+    <port dir="in" name="USB_Uart_RxD">
+      <pins>
+        <pin iostandard="LVCMOS33" loc="B18"/>
+      </pins>
+    </port>
+    <port dir="out" name="USB_Uart_TxD">
+      <pins>
+        <pin iostandard="LVCMOS33" loc="A18"/>
+      </pins>
+    </port>
+    
+    <port dir="in" name="Qspi_DB0_i">
+      <pins>
+        <pin iostandard="LVCMOS33" loc="D18"/>
+      </pins>
+    </port>
+    <port dir="out" name="Qspi_DB0_o">
+      <pins>
+        <pin iostandard="LVCMOS33" loc="D18"/>
+      </pins>
+    </port>
+    <port dir="out" name="Qspi_DB0_t">
+      <pins>
+        <pin iostandard="LVCMOS33" loc="D18"/>
+      </pins>
+    </port>
+	
+	<port dir="in" name="Qspi_DB1_i">
+      <pins>
+        <pin iostandard="LVCMOS33" loc="D19"/>
+      </pins>
+    </port>
+    <port dir="out" name="Qspi_DB1_o">
+      <pins>
+        <pin iostandard="LVCMOS33" loc="D19"/>
+      </pins>
+    </port>
+    <port dir="out" name="Qspi_DB1_t">
+      <pins>
+        <pin iostandard="LVCMOS33" loc="D19"/>
+      </pins>
+    </port>
+	
+	<port dir="in" name="Qspi_DB2_i">
+      <pins>
+        <pin iostandard="LVCMOS33" loc="G18"/>
+      </pins>
+    </port>
+    <port dir="out" name="Qspi_DB2_o">
+      <pins>
+        <pin iostandard="LVCMOS33" loc="G18"/>
+      </pins>
+    </port>
+    <port dir="out" name="Qspi_DB2_t">
+      <pins>
+        <pin iostandard="LVCMOS33" loc="G18"/>
+      </pins>
+    </port>
+	
+	<port dir="in" name="Qspi_DB3_i">
+      <pins>
+        <pin iostandard="LVCMOS33" loc="F18"/>
+      </pins>
+    </port>
+    <port dir="out" name="Qspi_DB3_o">
+      <pins>
+        <pin iostandard="LVCMOS33" loc="F18"/>
+      </pins>
+    </port>
+    <port dir="out" name="Qspi_DB3_t">
+      <pins>
+        <pin iostandard="LVCMOS33" loc="F18"/>
+      </pins>
+    </port>
+	
+	<port dir="in" name="Qspi_CSn_i">
+      <pins>
+        <pin iostandard="LVCMOS33" loc="K19"/>
+      </pins>
+    </port>
+    <port dir="out" name="Qspi_CSn_o">
+      <pins>
+        <pin iostandard="LVCMOS33" loc="K19"/>
+      </pins>
+    </port>
+    <port dir="out" name="Qspi_CSn_t">
+      <pins>
+        <pin iostandard="LVCMOS33" loc="K19"/>
+      </pins>
+    </port>
+	
+    <port dir="in" name="clk">
+      <pins>
+        <pin iostandard="LVCMOS33" loc="W5"/>
+      </pins>
+    </port>
+	
+	</ports>
+
+</board_part>

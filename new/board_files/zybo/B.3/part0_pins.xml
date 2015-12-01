@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> 
+<part_info part_name="xc7z010clg400-1">
+<pins>
+  <pin index="0" name ="btns_4bits_tri_i_0" iostandard="LVCMOS33" loc="R18"/>
+  <pin index="1" name ="btns_4bits_tri_i_1" iostandard="LVCMOS33" loc="P16"/>
+  <pin index="2" name ="btns_4bits_tri_i_2" iostandard="LVCMOS33" loc="V16"/>
+  <pin index="3" name ="btns_4bits_tri_i_3" iostandard="LVCMOS33" loc="Y16"/>
+  <pin index="4" name ="leds_4bits_tri_o_0" iostandard="LVCMOS33" loc="M14"/>
+  <pin index="5" name ="leds_4bits_tri_o_1" iostandard="LVCMOS33" loc="M15"/>
+  <pin index="6" name ="leds_4bits_tri_o_2" iostandard="LVCMOS33" loc="G14"/>
+  <pin index="7" name ="leds_4bits_tri_o_3" iostandard="LVCMOS33" loc="D18"/>
+  <pin index="8" name ="sws_4bits_tri_i_0" iostandard="LVCMOS33" loc="G15"/>
+  <pin index="9" name ="sws_4bits_tri_i_1" iostandard="LVCMOS33" loc="P15"/>
+  <pin index="10" name ="sws_4bits_tri_i_2" iostandard="LVCMOS33" loc="W13"/>
+  <pin index="11" name ="sws_4bits_tri_i_3" iostandard="LVCMOS33" loc="T16"/>
+  <pin index="12" name ="sys_clk" iostandard="LVCMOS33" loc="L16"/>
+</pins>
+</part_info>

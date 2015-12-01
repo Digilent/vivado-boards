@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> 
+<board schema_version="2.0" vendor="digilentinc.com" name="zybo" display_name="Zybo" url="http://www.digilentinc.com" preset_file="preset.xml" >
+<compatible_board_revisions>
+  <revision id="0">B.3</revision>
+</compatible_board_revisions>
+<file_version>1.0</file_version>
+<description>Zybo</description>
+<components>
+  <component name="part0" display_name="Zybo" type="fpga" part_name="xc7z010clg400-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="http://www.digilentinc.com">
+    <interfaces>
+      <interface mode="master" name="btns_4bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="btns_4bits">
+        <port_maps>
+          <port_map logical_port="TRI_I" physical_port="btns_4bits_tri_i" dir="in" left="3" right="0"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="btns_4bits_tri_i_0"/> 
+              <pin_map port_index="1" component_pin="btns_4bits_tri_i_1"/> 
+              <pin_map port_index="2" component_pin="btns_4bits_tri_i_2"/> 
+              <pin_map port_index="3" component_pin="btns_4bits_tri_i_3"/> 
+            </pin_maps>
+          </port_map>
+        </port_maps>
+      </interface>
+      <interface mode="master" name="leds_4bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="leds_4bits">
+        <port_maps>
+          <port_map logical_port="TRI_O" physical_port="leds_4bits_tri_o" dir="out" left="3" right="0"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="leds_4bits_tri_o_0"/> 
+              <pin_map port_index="1" component_pin="leds_4bits_tri_o_1"/> 
+              <pin_map port_index="2" component_pin="leds_4bits_tri_o_2"/> 
+              <pin_map port_index="3" component_pin="leds_4bits_tri_o_3"/> 
+            </pin_maps>
+          </port_map>
+        </port_maps>
+      </interface>
+      <interface mode="master" name="ps7_fixedio" type="xilinx.com:display_processing_system7:fixedio_rtl:1.0" of_component="ps7_fixedio" preset_proc="ps7_preset"> 
+      </interface>
+      <interface mode="master" name="sws_4bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="sws_4bits">
+        <port_maps>
+          <port_map logical_port="TRI_I" physical_port="sws_4bits_tri_i" dir="in" left="3" right="0"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="sws_4bits_tri_i_0"/> 
+              <pin_map port_index="1" component_pin="sws_4bits_tri_i_1"/> 
+              <pin_map port_index="2" component_pin="sws_4bits_tri_i_2"/> 
+              <pin_map port_index="3" component_pin="sws_4bits_tri_i_3"/> 
+            </pin_maps>
+          </port_map>
+        </port_maps>
+      </interface>
+      <interface mode="slave" name="sys_clock" type="xilinx.com:interface:clock_rtl:1.0" of_component="sys_clock">
+        <port_maps>
+          <port_map logical_port="CLK" physical_port="sys_clk" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="sys_clk"/> 
+            </pin_maps>
+          </port_map>
+        </port_maps>
+        <parameters>
+          <parameter name="frequency" value="125000000" />
+       </parameters>
+      </interface>
+    </interfaces>
+  </component>
+  <component name="btns_4bits" display_name="btns_4bits" type="chip" sub_type="push_button" major_group="gpio"/>
+  <component name="leds_4bits" display_name="leds_4bits" type="chip" sub_type="led" major_group="gpio"/>
+  <component name="ps7_fixedio" display_name="ps7_fixedio" type="chip" sub_type="fixed_io" major_group=""/>
+  <component name="sws_4bits" display_name="sws_4bits" type="chip" sub_type="switch" major_group="gpio"/>
+  <component name="sys_clock" display_name="sys_clock" type="chip" sub_type="system_clock" major_group="clock"/>
+</components>
+<jtag_chains>
+  <jtag_chain name="chain1">
+    <position name="0" component="part0"/>
+  </jtag_chain>
+</jtag_chains>
+<connections>
+  <connection name="part0_btns_4bits" component1="part0" component2="btns_4bits">
+    <connection_map name="part0_btns_4bits_1" c1_st_index="0" c1_end_index="3" c2_st_index="0" c2_end_index="3"/>
+  </connection>
+  <connection name="part0_leds_4bits" component1="part0" component2="leds_4bits">
+    <connection_map name="part0_leds_4bits_1" c1_st_index="4" c1_end_index="7" c2_st_index="0" c2_end_index="3"/>
+  </connection>
+  <connection name="part0_sws_4bits" component1="part0" component2="sws_4bits">
+    <connection_map name="part0_sws_4bits_1" c1_st_index="8" c1_end_index="11" c2_st_index="0" c2_end_index="3"/>
+  </connection>
+  <connection name="part0_sys_clock" component1="part0" component2="sys_clock">
+    <connection_map name="part0_sys_clock_1" c1_st_index="12" c1_end_index="12" c2_st_index="0" c2_end_index="0"/>
+  </connection>
+</connections>
+</board>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> 
+<board schema_version="2.0" vendor="digilentinc.com" name="nexys_video" display_name="Nexys Video" url="www.digilentinc.com/nexysvideo" preset_file="preset.xml" >
+<compatible_board_revisions>
+  <revision id="0">A.0</revision>
+</compatible_board_revisions>
+<file_version>1.1</file_version>
+<description>Nexys Video</description>
+<components>
+  <component name="part0" display_name="Nexys Video" type="fpga" part_name="xc7a200tsbg484-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="www.digilentinc.com/nexysvideo">
+    <interfaces>
+      <interface mode="master" name="ddr3_sdram" type="xilinx.com:interface:ddrx_rtl:1.0" of_component="ddr3_sdram" preset_proc="ddr3_sdram_preset"> 
+      </interface>
+      <interface mode="master" name="dip_switches_8bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="dip_switches_8bits">
+        <port_maps>
+          <port_map logical_port="TRI_I" physical_port="dip_switches_8bits_tri_i" dir="in" left="7" right="0"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="dip_switches_8bits_tri_i_0"/> 
+              <pin_map port_index="1" component_pin="dip_switches_8bits_tri_i_1"/> 
+              <pin_map port_index="2" component_pin="dip_switches_8bits_tri_i_2"/> 
+              <pin_map port_index="3" component_pin="dip_switches_8bits_tri_i_3"/> 
+              <pin_map port_index="4" component_pin="dip_switches_8bits_tri_i_4"/> 
+              <pin_map port_index="5" component_pin="dip_switches_8bits_tri_i_5"/> 
+              <pin_map port_index="6" component_pin="dip_switches_8bits_tri_i_6"/> 
+              <pin_map port_index="7" component_pin="dip_switches_8bits_tri_i_7"/> 
+            </pin_maps>
+          </port_map>
+        </port_maps>
+      </interface>
+      <interface mode="master" name="eth_mdio_mdc" type="xilinx.com:interface:mdio_rtl:1.0" of_component="eth_mdio_mdc">
+        <port_maps>
+          <port_map logical_port="MDIO_I" physical_port="eth_mdio_i" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="eth_mdio_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="MDIO_O" physical_port="eth_mdio_o" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="eth_mdio_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="MDIO_T" physical_port="eth_mdio_t" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="eth_mdio_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="MDC" physical_port="eth_mdc" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="eth_mdc"/> 
+            </pin_maps>
+          </port_map>
+        </port_maps>
+      </interface>
+      <interface mode="master" name="eth_rgmii" type="xilinx.com:interface:rgmii_rtl:1.0" of_component="eth_rgmii">
+        <port_maps>
+          <port_map logical_port="TD" physical_port="eth_txd" dir="out" left="3" right="0"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="eth_txd_0"/> 
+              <pin_map port_index="1" component_pin="eth_txd_1"/> 
+              <pin_map port_index="2" component_pin="eth_txd_2"/> 
+              <pin_map port_index="3" component_pin="eth_txd_3"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="TX_CTL" physical_port="eth_tx_ctl" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="eth_tx_ctl"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="TXC" physical_port="eth_tx_clk" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="eth_tx_clk"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="RD" physical_port="eth_rxd" dir="in" left="3" right="0"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="eth_rxd_0"/> 
+              <pin_map port_index="1" component_pin="eth_rxd_1"/> 
+              <pin_map port_index="2" component_pin="eth_rxd_2"/> 
+              <pin_map port_index="3" component_pin="eth_rxd_3"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="RX_CTL" physical_port="eth_rx_ctl" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="eth_rx_ctl"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="RXC" physical_port="eth_rx_clk" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="eth_rx_clk"/> 
+            </pin_maps>
+          </port_map>
+        </port_maps>
+      </interface>
+      <interface mode="master" name="led_8bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="led_8bits">
+        <port_maps>
+          <port_map logical_port="TRI_O" physical_port="led_8bits_tri_o" dir="out" left="7" right="0"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="led_8bits_tri_o_0"/> 
+              <pin_map port_index="1" component_pin="led_8bits_tri_o_1"/> 
+              <pin_map port_index="2" component_pin="led_8bits_tri_o_2"/> 
+              <pin_map port_index="3" component_pin="led_8bits_tri_o_3"/> 
+              <pin_map port_index="4" component_pin="led_8bits_tri_o_4"/> 
+              <pin_map port_index="5" component_pin="led_8bits_tri_o_5"/> 
+              <pin_map port_index="6" component_pin="led_8bits_tri_o_6"/> 
+              <pin_map port_index="7" component_pin="led_8bits_tri_o_7"/> 
+            </pin_maps>
+          </port_map>
+        </port_maps>
+      </interface>
+      <interface mode="master" name="oled_display" type="xilinx.com:interface:spi_rtl:1.0" of_component="oled_display">
+        <port_maps>
+          <port_map logical_port="SCK_I" physical_port="oled_sclk_i" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="oled_sclk_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="SCK_O" physical_port="oled_sclk_o" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="oled_sclk_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="SCK_T" physical_port="oled_sclk_t" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="oled_sclk_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO0_I" physical_port="oled_sdin_i" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="oled_sdin_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO0_O" physical_port="oled_sdin_o" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="oled_sdin_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO0_T" physical_port="oled_sdin_t" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="oled_sdin_i"/> 
+            </pin_maps>
+          </port_map>
+        </port_maps>
+      </interface>
+      <interface mode="master" name="phy_reset_out" type="xilinx.com:signal:reset_rtl:1.0" of_component="phy_reset_out">
+        <port_maps>
+          <port_map logical_port="RESET" physical_port="eth_rst" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="eth_rst"/> 
+            </pin_maps>
+          </port_map>
+        </port_maps>
+      </interface>
+      <interface mode="master" name="push_buttons_5bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="push_buttons_5bits">
+        <port_maps>
+          <port_map logical_port="TRI_I" physical_port="push_buttons_5bits_tri_i" dir="in" left="4" right="0"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="push_buttons_5bits_tri_i_0"/> 
+              <pin_map port_index="1" component_pin="push_buttons_5bits_tri_i_1"/> 
+              <pin_map port_index="2" component_pin="push_buttons_5bits_tri_i_2"/> 
+              <pin_map port_index="3" component_pin="push_buttons_5bits_tri_i_3"/> 
+              <pin_map port_index="4" component_pin="push_buttons_5bits_tri_i_4"/> 
+            </pin_maps>
+          </port_map>
+        </port_maps>
+      </interface>
+      <interface mode="master" name="qspi_flash" type="xilinx.com:interface:spi_rtl:1.0" of_component="qspi_flash">
+        <port_maps>
+          <port_map logical_port="IO0_I" physical_port="qspi_db0_i" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_db0_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO0_O" physical_port="qspi_db0_o" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_db0_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO0_T" physical_port="qspi_db0_t" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_db0_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO1_I" physical_port="qspi_db1_i" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_db1_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO1_O" physical_port="qspi_db1_o" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_db1_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO1_T" physical_port="qspi_db1_t" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_db1_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO2_I" physical_port="qspi_db2_i" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_db2_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO2_O" physical_port="qspi_db2_o" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_db2_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO2_T" physical_port="qspi_db2_t" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_db2_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO3_I" physical_port="qspi_db3_i" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_db3_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO3_O" physical_port="qspi_db3_o" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_db3_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO3_T" physical_port="qspi_db3_t" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_db3_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="SS_I" physical_port="qspi_csn_i" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_csn_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="SS_O" physical_port="qspi_csn_o" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_csn_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="SS_T" physical_port="qspi_csn_t" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_csn_i"/> 
+            </pin_maps>
+          </port_map>
+        </port_maps>
+      </interface>
+      <interface mode="slave" name="reset" type="xilinx.com:signal:reset_rtl:1.0" of_component="reset">
+        <port_maps>
+          <port_map logical_port="RESET" physical_port="reset" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="reset"/> 
+            </pin_maps>
+          </port_map>
+        </port_maps>
+        <parameters>
+          <parameter name="rst_polarity" value="0" />
+       </parameters>
+      </interface>
+      <interface mode="slave" name="sys_clock" type="xilinx.com:signal:clock_rtl:1.0" of_component="sys_clock">
+        <port_maps>
+          <port_map logical_port="clk" physical_port="clk" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="clk"/> 
+            </pin_maps>
+          </port_map>
+        </port_maps>
+        <parameters>
+          <parameter name="frequency" value="100000000" />
+       </parameters>
+      </interface>
+      <interface mode="master" name="usb_uart" type="xilinx.com:interface:uart_rtl:1.0" of_component="usb_uart">
+        <port_maps>
+          <port_map logical_port="TxD" physical_port="usb_uart_txd" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="usb_uart_txd"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="RxD" physical_port="usb_uart_rxd" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="usb_uart_rxd"/> 
+            </pin_maps>
+          </port_map>
+        </port_maps>
+      </interface>
+    </interfaces>
+  </component>
+  <component name="ddr3_sdram" display_name="ddr3_sdram" type="chip" sub_type="ddr" major_group="memories"/>
+  <component name="dip_switches_8bits" display_name="dip_switches_8bits" type="chip" sub_type="switch" major_group="gpio"/>
+  <component name="eth_mdio_mdc" display_name="eth_mdio_mdc" type="chip" sub_type="ethernet" major_group="ethernet"/>
+  <component name="eth_rgmii" display_name="eth_rgmii" type="chip" sub_type="ethernet" major_group="ethernet"/>
+  <component name="led_8bits" display_name="led_8bits" type="chip" sub_type="led" major_group="gpio"/>
+  <component name="oled_display" display_name="oled_display" type="chip" sub_type="memory_flash_qspi" major_group="memories"/>
+  <component name="phy_reset_out" display_name="phy_reset_out" type="chip" sub_type="reset" major_group="ethernet"/>
+  <component name="push_buttons_5bits" display_name="push_buttons_5bits" type="chip" sub_type="push_button" major_group="gpio"/>
+  <component name="qspi_flash" display_name="qspi_flash" type="chip" sub_type="memory_flash_qspi" major_group="memories"/>
+  <component name="reset" display_name="reset" type="chip" sub_type="reset" major_group="reset"/>
+  <component name="sys_clock" display_name="sys_clock" type="chip" sub_type="system_clock" major_group="clock"/>
+  <component name="usb_uart" display_name="usb_uart" type="chip" sub_type="uart" major_group="miscellaneous"/>
+</components>
+<jtag_chains>
+  <jtag_chain name="chain1">
+    <position name="0" component="part0"/>
+  </jtag_chain>
+</jtag_chains>
+<connections>
+  <connection name="part0_dip_switches_8bits" component1="part0" component2="dip_switches_8bits">
+    <connection_map name="part0_dip_switches_8bits_1" c1_st_index="1" c1_end_index="8" c2_st_index="0" c2_end_index="7"/>
+  </connection>
+  <connection name="part0_eth_mdio_mdc" component1="part0" component2="eth_mdio_mdc">
+    <connection_map name="part0_eth_mdio_mdc_1" c1_st_index="9" c1_end_index="10" c2_st_index="0" c2_end_index="1"/>
+  </connection>
+  <connection name="part0_eth_rgmii" component1="part0" component2="eth_rgmii">
+    <connection_map name="part0_eth_rgmii_1" c1_st_index="12" c1_end_index="23" c2_st_index="0" c2_end_index="11"/>
+  </connection>
+  <connection name="part0_led_8bits" component1="part0" component2="led_8bits">
+    <connection_map name="part0_led_8bits_1" c1_st_index="24" c1_end_index="31" c2_st_index="0" c2_end_index="7"/>
+  </connection>
+  <connection name="part0_oled_display" component1="part0" component2="oled_display">
+    <connection_map name="part0_oled_display_1" c1_st_index="32" c1_end_index="33" c2_st_index="0" c2_end_index="1"/>
+  </connection>
+  <connection name="part0_phy_reset_out" component1="part0" component2="phy_reset_out">
+    <connection_map name="part0_phy_reset_out_1" c1_st_index="11" c1_end_index="11" c2_st_index="0" c2_end_index="0"/>
+  </connection>
+  <connection name="part0_push_buttons_5bits" component1="part0" component2="push_buttons_5bits">
+    <connection_map name="part0_push_buttons_5bits_1" c1_st_index="34" c1_end_index="38" c2_st_index="0" c2_end_index="4"/>
+  </connection>
+  <connection name="part0_qspi_flash" component1="part0" component2="qspi_flash">
+    <connection_map name="part0_qspi_flash_1" c1_st_index="39" c1_end_index="43" c2_st_index="0" c2_end_index="4"/>
+  </connection>
+  <connection name="part0_reset" component1="part0" component2="reset">
+    <connection_map name="part0_reset_1" c1_st_index="44" c1_end_index="44" c2_st_index="0" c2_end_index="0"/>
+  </connection>
+  <connection name="part0_sys_clock" component1="part0" component2="sys_clock">
+    <connection_map name="part0_sys_clock_1" c1_st_index="0" c1_end_index="0" c2_st_index="0" c2_end_index="0"/>
+  </connection>
+  <connection name="part0_usb_uart" component1="part0" component2="usb_uart">
+    <connection_map name="part0_usb_uart_1" c1_st_index="45" c1_end_index="46" c2_st_index="0" c2_end_index="1"/>
+  </connection>
+</connections>
+</board>
