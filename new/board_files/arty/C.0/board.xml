@@ -285,7 +285,7 @@
           </port_map>
         </port_maps>
       </interface>
-      <interface mode="slave" name="resetn" type="xilinx.com:signal:reset_rtl:1.0" of_component="resetn">
+      <interface mode="slave" name="reset" type="xilinx.com:signal:reset_rtl:1.0" of_component="reset">
         <parameters>
             <parameter name="rst_polarity" value="0"/>
           </parameters>
@@ -293,9 +293,9 @@
             <preferred_ip vendor="xilinx.com" library="ip" name="proc_sys_reset" order="0"/>
           </preferred_ips>
 		<port_maps>
-          <port_map logical_port="RESET" physical_port="resetn" dir="in">
+          <port_map logical_port="RESET" physical_port="reset" dir="in">
             <pin_maps>
-              <pin_map port_index="0" component_pin="resetn"/> 
+              <pin_map port_index="0" component_pin="reset"/> 
             </pin_maps>
           </port_map>
         </port_maps>
@@ -610,7 +610,7 @@
   <component name="qspi_flash" display_name="Quad SPI Flash" type="chip" sub_type="memory_flash_qspi" major_group="External Memory" part_name="N25Q128A13ESF40" vendor="Micron" spec_url="www.micron.com/memory">
   	<description>16 MB of nonvolatile storage that can be used for configuration or data storage</description>
   </component>
-  <component name="resetn" display_name="System Reset" type="chip" sub_type="system_reset" major_group="Reset">
+  <component name="reset" display_name="System Reset" type="chip" sub_type="system_reset" major_group="Reset">
   	<description>CPU Reset Push Button, active low</description>
   </component>
   <component name="rgb_led" display_name="4 RGB LEDS" type="chip" sub_type="led" major_group="GPIO">
