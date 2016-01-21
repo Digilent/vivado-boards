@@ -42,7 +42,7 @@
   <pin index="38" name ="qspi_db2_i" iostandard="LVCMOS33" loc="L14"/>
   <pin index="39" name ="qspi_db3_i" iostandard="LVCMOS33" loc="M14"/>
   <pin index="40" name ="qspi_sclk_i" iostandard="LVCMOS33" loc="L16"/>
-  <pin index="41" name ="reset" iostandard="LVCMOS33" loc="C2"/>
+  <pin index="41" name ="resetn" iostandard="LVCMOS33" loc="C2"/>
   <pin index="42" name ="rgb_led_tri_o_0" iostandard="LVCMOS33" loc="E1"/>
   <pin index="43" name ="rgb_led_tri_o_1" iostandard="LVCMOS33" loc="F6"/>
   <pin index="44" name ="rgb_led_tri_o_2" iostandard="LVCMOS33" loc="G6"/>

@@ -187,8 +187,12 @@
           </port_map>
         </port_maps>
       </interface>
-      <interface mode="master" name="qspi_flash" type="xilinx.com:interface:spi_rtl:1.0" of_component="qspi_flash">
-        <port_maps>
+      <interface mode="master" name="qspi_flash" type="xilinx.com:interface:spi_rtl:1.0" of_component="qspi_flash" preset_proc="qspi_preset">
+        <description>Quad SPI Flash</description>
+		<preferred_ips>
+			<preferred_ip vendor="xilinx.com" library="ip" name="axi_quad_spi" order="0"/>
+		</preferred_ips>
+		<port_maps>
           <port_map logical_port="IO0_I" physical_port="qspi_db0_i" dir="in">
             <pin_maps>
               <pin_map port_index="0" component_pin="qspi_db0_i"/> 
@@ -281,7 +285,7 @@
           </port_map>
         </port_maps>
       </interface>
-      <interface mode="slave" name="reset" type="xilinx.com:signal:reset_rtl:1.0" of_component="reset">
+      <interface mode="slave" name="resetn" type="xilinx.com:signal:reset_rtl:1.0" of_component="resetn">
         <parameters>
             <parameter name="rst_polarity" value="0"/>
           </parameters>
@@ -289,9 +293,9 @@
             <preferred_ip vendor="xilinx.com" library="ip" name="proc_sys_reset" order="0"/>
           </preferred_ips>
 		<port_maps>
-          <port_map logical_port="RESET" physical_port="reset" dir="in">
+          <port_map logical_port="RESET" physical_port="resetn" dir="in">
             <pin_maps>
-              <pin_map port_index="0" component_pin="reset"/> 
+              <pin_map port_index="0" component_pin="resetn"/> 
             </pin_maps>
           </port_map>
         </port_maps>
@@ -462,7 +466,7 @@
           </port_map>
         </port_maps>
       </interface>
-      <interface mode="master" name="spi" type="xilinx.com:interface:spi_rtl:1.0" of_component="spi">
+      <interface mode="master" name="spi" type="xilinx.com:interface:spi_rtl:1.0" of_component="spi" preset_proc="spi_preset">
         <port_maps>
           <port_map logical_port="IO0_I" physical_port="spi_miso_i" dir="in">
             <pin_maps>
@@ -564,7 +568,7 @@
     </interfaces>
   </component>
   
-  <component name="ddr3_sdram" display_name="ddr3_sdram" type="chip" sub_type="ddr" major_group="memories">
+  <component name="ddr3_sdram" display_name="DDR3 SDRAM" type="chip" sub_type="ddr" major_group="External Memory">
 	<description>256 MB DDR3L memory SODIMM </description>
 	<parameters>
         <parameter name="ddr_type" value="ddr3"/>
@@ -572,11 +576,11 @@
 	</parameters>
   </component>
   
-  <component name="dip_switches_4bits" display_name="dip_switches_4bits" type="chip" sub_type="switch" major_group="gpio">
+  <component name="dip_switches_4bits" display_name="4 Switches" type="chip" sub_type="switch" major_group="GPIO">
 	<description>DIP Switches 3 to 0</description>
   </component>
   
-  <component name="phy_onboard" display_name="eth_mii" type="chip" sub_type="ethernet" major_group="ethernet">
+  <component name="phy_onboard" display_name="Ethernet MII" type="chip" sub_type="ethernet" major_group="Ethernet">
 	<description>PHY Ethernet on the board</description>
 	 <component_modes>
         <component_mode name="mii" display_name="MII mode">
@@ -588,43 +592,43 @@
 	 </component_modes>
   </component>
   
-  <component name="i2c" display_name="i2c" type="chip" sub_type="mux" major_group="miscellaneous">
+  <component name="i2c" display_name="I2C on J3" type="chip" sub_type="mux" major_group="I2C">
   <description>chipKIT i2c</description>
   </component>
-  <component name="i2c_pullups" display_name="i2c_pullups" type="chip" sub_type="led" major_group="gpio">
-  <description>chipKIT i2c pullups</description>
+  <component name="i2c_pullups" display_name="I2C Pullups" type="chip" sub_type="led" major_group="I2C">
+  <description>chipKIT i2c pullups, must pull high if using the shield I2C on J3</description>
   </component>
- <!-- <component name="i2c_pullups" display_name="i2c_pullups" type="chip" sub_type="led" major_group="gpio">
+ <!-- <component name="i2c_pullups" display_name="i2c_pullups" type="chip" sub_type="led" major_group="GPIO">
 	<description>i2c pullups, must be enabled to use i2c</description>
   </component>-->
-  <component name="led_4bits" display_name="led_4bits" type="chip" sub_type="led" major_group="gpio">
+  <component name="led_4bits" display_name="4 LEDs" type="chip" sub_type="led" major_group="GPIO">
 	<description>LEDs 3 to 0</description>
   </component>
-  <component name="push_buttons_4bits" display_name="push_buttons_4bits" type="chip" sub_type="push_button" major_group="gpio">
+  <component name="push_buttons_4bits" display_name="4 Push Buttons" type="chip" sub_type="push_button" major_group="GPIO">
   	<description>Push buttons 3 to 0</description>
   </component>
-  <component name="qspi_flash" display_name="qspi_flash" type="chip" sub_type="memory_flash_qspi" major_group="memories">
+  <component name="qspi_flash" display_name="Quad SPI Flash" type="chip" sub_type="memory_flash_qspi" major_group="External Memory" part_name="N25Q128A13ESF40" vendor="Micron" spec_url="www.micron.com/memory">
   	<description>16 MB of nonvolatile storage that can be used for configuration or data storage</description>
   </component>
-  <component name="reset" display_name="reset" type="chip" sub_type="reset" major_group="reset">
+  <component name="resetn" display_name="System Reset" type="chip" sub_type="system_reset" major_group="Reset">
   	<description>CPU Reset Push Button, active low</description>
   </component>
-  <component name="rgb_led" display_name="rgb_led" type="chip" sub_type="led" major_group="gpio">
-  	<description>RGB leds 12 to 0</description>
+  <component name="rgb_led" display_name="4 RGB LEDS" type="chip" sub_type="led" major_group="GPIO">
+  	<description>RGB leds 12 to 0 (3 per LED)</description>
   </component>
-  <component name="shield_dp0_dp19" display_name="shield_dp0_dp19" type="chip" sub_type="led" major_group="gpio">
+  <component name="shield_dp0_dp19" display_name="Shield Pins 0 through 19" type="chip" sub_type="led" major_group="GPIO">
   	<description>Shield pins 0 through 19</description>
   </component>
-  <component name="shield_dp26_dp41" display_name="shield_dp26_dp41" type="chip" sub_type="led" major_group="gpio">
+  <component name="shield_dp26_dp41" display_name="Shield Pins 26 to 41" type="chip" sub_type="led" major_group="GPIO">
   	<description>Shield pins 26 through 41</description>
   </component>
-  <component name="spi" display_name="spi" type="chip" sub_type="mux" major_group="Miscellaneous">
+  <component name="spi" display_name="SPI connector J6" type="chip" sub_type="mux" major_group="SPI">
   	<description>chipKIT SPI</description>
   </component>
-  <component name="sys_clock" display_name="sys_clock" type="chip" sub_type="system_clock" major_group="clock">
+  <component name="sys_clock" display_name="System Clock" type="chip" sub_type="system_clock" major_group="Clocks">
   	<description>3.3V Single-Ended 100MHz oscillator used as system clock on the board</description>
   </component>
-  <component name="usb_uart" display_name="usb_uart" type="chip" sub_type="uart" major_group="miscellaneous">
+  <component name="usb_uart" display_name="USB UART" type="chip" sub_type="uart" major_group="UART">
   	<description>USB-to-UART Bridge, which allows a connection to a host computer with a USB port</description>
   </component>
 </components>
