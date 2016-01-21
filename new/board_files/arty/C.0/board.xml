@@ -9,9 +9,17 @@
   <component name="part0" display_name="Arty" type="fpga" part_name="xc7a35ticsg324-1L" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="www.digilentinc.com/Arty">
     <interfaces>
       <interface mode="master" name="ddr3_sdram" type="xilinx.com:interface:ddrx_rtl:1.0" of_component="ddr3_sdram" preset_proc="ddr3_sdram_preset"> 
-      </interface>
-      <interface mode="master" name="dip_switches_4bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="dip_switches_4bits">
-        <port_maps>
+		<description>DDR3 board interface, it can use MIG IP for connection.</description>
+		<preferred_ips>
+			<preferred_ip vendor="xilinx.com" library="ip" name="mig_7series" order="0"/>
+	  </preferred_ips>
+	  </interface>
+      <interface mode="master" name="dip_switches_4bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="dip_switches_4bits" preset_proc="dip_switches_4bits_preset">
+        <description>4-position user DIP Switches</description>
+		<preferred_ips>
+			<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+		</preferred_ips>
+		<port_maps>
           <port_map logical_port="TRI_I" physical_port="dip_switches_4bits_tri_i" dir="in" left="3" right="0"> 
             <pin_maps>
               <pin_map port_index="0" component_pin="dip_switches_4bits_tri_i_0"/> 
@@ -22,7 +30,7 @@
           </port_map>
         </port_maps>
       </interface>
-      <interface mode="master" name="eth_mdio_mdc" type="xilinx.com:interface:mdio_rtl:1.0" of_component="eth_mdio_mdc">
+      <interface mode="master" name="eth_mdio_mdc" type="xilinx.com:interface:mdio_rtl:1.0" of_component="phy_onboard">
         <port_maps>
           <port_map logical_port="MDIO_I" physical_port="eth_mdio_i" dir="in">
             <pin_maps>
@@ -46,8 +54,12 @@
           </port_map>
         </port_maps>
       </interface>
-      <interface mode="master" name="eth_mii" type="xilinx.com:interface:mii_rtl:1.0" of_component="eth_mii">
-        <port_maps>
+      <interface mode="master" name="eth_mii" type="xilinx.com:interface:mii_rtl:1.0" of_component="phy_onboard" preset_proc="mii_preset">
+        <description>Primary interface to communicate with ethernet phy in MII mode. </description>
+          <preferred_ips>
+            <preferred_ip vendor="xilinx.com" library="ip" name="axi_ethernetlite" order="0"/>
+          </preferred_ips>
+		<port_maps>
           <port_map logical_port="TXD" physical_port="eth_txd" dir="out" left="3" right="0"> 
             <pin_maps>
               <pin_map port_index="0" component_pin="eth_txd_0"/> 
@@ -107,7 +119,8 @@
         </port_maps>
       </interface>
       <interface mode="master" name="i2c" type="xilinx.com:interface:iic_rtl:1.0" of_component="i2c">
-        <port_maps>
+        
+		<port_maps>
           <port_map logical_port="SDA_I" physical_port="i2c_sda_i" dir="in">
             <pin_maps>
               <pin_map port_index="0" component_pin="i2c_sda_i"/> 
@@ -140,7 +153,7 @@
           </port_map>
         </port_maps>
       </interface>
-      <interface mode="master" name="i2c_pullups" type="xilinx.com:interface:gpio_rtl:1.0" of_component="i2c_pullups">
+      <interface mode="master" name="i2c_pullups" type="xilinx.com:interface:gpio_rtl:1.0" of_component="i2c_pullups" preset_proc="output_2bits_preset">
         <port_maps>
           <port_map logical_port="TRI_O" physical_port="i2c_pullup" dir="out" left="1" right="0"> 
             <pin_maps>
@@ -150,7 +163,7 @@
           </port_map>
         </port_maps>
       </interface>
-      <interface mode="master" name="led_4bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="led_4bits">
+      <interface mode="master" name="led_4bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="led_4bits" preset_proc="led_4bits_preset">
         <port_maps>
           <port_map logical_port="TRI_O" physical_port="led_4bits_tri_o" dir="out" left="3" right="0"> 
             <pin_maps>
@@ -162,7 +175,7 @@
           </port_map>
         </port_maps>
       </interface>
-      <interface mode="master" name="push_buttons_4bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="push_buttons_4bits">
+      <interface mode="master" name="push_buttons_4bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="push_buttons_4bits" preset_proc="push_buttons_4bits_preset">
         <port_maps>
           <port_map logical_port="TRI_I" physical_port="push_buttons_4bits_tri_i" dir="in" left="3" right="0"> 
             <pin_maps>
@@ -269,18 +282,21 @@
         </port_maps>
       </interface>
       <interface mode="slave" name="reset" type="xilinx.com:signal:reset_rtl:1.0" of_component="reset">
-        <port_maps>
+        <parameters>
+            <parameter name="rst_polarity" value="0"/>
+          </parameters>
+          <preferred_ips>
+            <preferred_ip vendor="xilinx.com" library="ip" name="proc_sys_reset" order="0"/>
+          </preferred_ips>
+		<port_maps>
           <port_map logical_port="RESET" physical_port="reset" dir="in">
             <pin_maps>
               <pin_map port_index="0" component_pin="reset"/> 
             </pin_maps>
           </port_map>
         </port_maps>
-        <parameters>
-          <parameter name="rst_polarity" value="0" />
-       </parameters>
       </interface>
-      <interface mode="master" name="rgb_led" type="xilinx.com:interface:gpio_rtl:1.0" of_component="rgb_led">
+      <interface mode="master" name="rgb_led" type="xilinx.com:interface:gpio_rtl:1.0" of_component="rgb_led" preset_proc="output_12bits_preset">
         <port_maps>
           <port_map logical_port="TRI_O" physical_port="rgb_led_tri_o" dir="out" left="11" right="0"> 
             <pin_maps>
@@ -510,8 +526,14 @@
           </port_map>
         </port_maps>
       </interface>
-      <interface mode="slave" name="sys_clock" type="xilinx.com:signal:clock_rtl:1.0" of_component="sys_clock">
-        <port_maps>
+      <interface mode="slave" name="sys_clock" type="xilinx.com:signal:clock_rtl:1.0" of_component="sys_clock" preset_proc="sys_clock_preset">
+        <parameters>
+          <parameter name="frequency" value="100000000"/>
+        </parameters>
+        <preferred_ips>
+          <preferred_ip vendor="xilinx.com" library="ip" name="clk_wiz" order="0"/>
+        </preferred_ips>
+		<port_maps>
           <port_map logical_port="clk" physical_port="clk" dir="in">
             <pin_maps>
               <pin_map port_index="0" component_pin="clk"/> 
@@ -522,8 +544,11 @@
           <parameter name="frequency" value="100000000" />
        </parameters>
       </interface>
-      <interface mode="master" name="usb_uart" type="xilinx.com:interface:uart_rtl:1.0" of_component="usb_uart">
-        <port_maps>
+      <interface mode="master" name="usb_uart" type="xilinx.com:interface:uart_rtl:1.0" of_component="usb_uart" preset_proc="uart_preset">
+        <preferred_ips>
+          <preferred_ip vendor="xilinx.com" library="ip" name="axi_uartlite" order="0"/>
+        </preferred_ips>
+		<port_maps>
           <port_map logical_port="TxD" physical_port="usb_uart_txd" dir="out">
             <pin_maps>
               <pin_map port_index="0" component_pin="usb_uart_txd"/> 
@@ -538,22 +563,70 @@
       </interface>
     </interfaces>
   </component>
-  <component name="ddr3_sdram" display_name="ddr3_sdram" type="chip" sub_type="ddr" major_group="memories"/>
-  <component name="dip_switches_4bits" display_name="dip_switches_4bits" type="chip" sub_type="switch" major_group="gpio"/>
-  <component name="eth_mdio_mdc" display_name="eth_mdio_mdc" type="chip" sub_type="ethernet" major_group="ethernet"/>
-  <component name="eth_mii" display_name="eth_mii" type="chip" sub_type="ethernet" major_group="ethernet"/>
-  <component name="i2c" display_name="i2c" type="chip" sub_type="mux" major_group="miscellaneous"/>
-  <component name="i2c_pullups" display_name="i2c_pullups" type="chip" sub_type="led" major_group="gpio"/>
-  <component name="led_4bits" display_name="led_4bits" type="chip" sub_type="led" major_group="gpio"/>
-  <component name="push_buttons_4bits" display_name="push_buttons_4bits" type="chip" sub_type="push_button" major_group="gpio"/>
-  <component name="qspi_flash" display_name="qspi_flash" type="chip" sub_type="memory_flash_qspi" major_group="memories"/>
-  <component name="reset" display_name="reset" type="chip" sub_type="reset" major_group="reset"/>
-  <component name="rgb_led" display_name="rgb_led" type="chip" sub_type="led" major_group="gpio"/>
-  <component name="shield_dp0_dp19" display_name="shield_dp0_dp19" type="chip" sub_type="led" major_group="gpio"/>
-  <component name="shield_dp26_dp41" display_name="shield_dp26_dp41" type="chip" sub_type="led" major_group="gpio"/>
-  <component name="spi" display_name="spi" type="chip" sub_type="memory_flash_qspi" major_group="memories"/>
-  <component name="sys_clock" display_name="sys_clock" type="chip" sub_type="system_clock" major_group="clock"/>
-  <component name="usb_uart" display_name="usb_uart" type="chip" sub_type="uart" major_group="miscellaneous"/>
+  
+  <component name="ddr3_sdram" display_name="ddr3_sdram" type="chip" sub_type="ddr" major_group="memories">
+	<description>256 MB DDR3L memory SODIMM </description>
+	<parameters>
+        <parameter name="ddr_type" value="ddr3"/>
+        <parameter name="size" value="256MB"/>
+	</parameters>
+  </component>
+  
+  <component name="dip_switches_4bits" display_name="dip_switches_4bits" type="chip" sub_type="switch" major_group="gpio">
+	<description>DIP Switches 3 to 0</description>
+  </component>
+  
+  <component name="phy_onboard" display_name="eth_mii" type="chip" sub_type="ethernet" major_group="ethernet">
+	<description>PHY Ethernet on the board</description>
+	 <component_modes>
+        <component_mode name="mii" display_name="MII mode">
+		  <interfaces>
+            <interface name="eth_mii" order="0"/>
+            <interface name="eth_mdio_mdc" order="1" optional="true"/>
+          </interfaces>
+		</component_mode>
+	 </component_modes>
+  </component>
+  
+  <component name="i2c" display_name="i2c" type="chip" sub_type="mux" major_group="miscellaneous">
+  <description>chipKIT i2c</description>
+  </component>
+  <component name="i2c_pullups" display_name="i2c_pullups" type="chip" sub_type="led" major_group="gpio">
+  <description>chipKIT i2c pullups</description>
+  </component>
+ <!-- <component name="i2c_pullups" display_name="i2c_pullups" type="chip" sub_type="led" major_group="gpio">
+	<description>i2c pullups, must be enabled to use i2c</description>
+  </component>-->
+  <component name="led_4bits" display_name="led_4bits" type="chip" sub_type="led" major_group="gpio">
+	<description>LEDs 3 to 0</description>
+  </component>
+  <component name="push_buttons_4bits" display_name="push_buttons_4bits" type="chip" sub_type="push_button" major_group="gpio">
+  	<description>Push buttons 3 to 0</description>
+  </component>
+  <component name="qspi_flash" display_name="qspi_flash" type="chip" sub_type="memory_flash_qspi" major_group="memories">
+  	<description>16 MB of nonvolatile storage that can be used for configuration or data storage</description>
+  </component>
+  <component name="reset" display_name="reset" type="chip" sub_type="reset" major_group="reset">
+  	<description>CPU Reset Push Button, active low</description>
+  </component>
+  <component name="rgb_led" display_name="rgb_led" type="chip" sub_type="led" major_group="gpio">
+  	<description>RGB leds 12 to 0</description>
+  </component>
+  <component name="shield_dp0_dp19" display_name="shield_dp0_dp19" type="chip" sub_type="led" major_group="gpio">
+  	<description>Shield pins 0 through 19</description>
+  </component>
+  <component name="shield_dp26_dp41" display_name="shield_dp26_dp41" type="chip" sub_type="led" major_group="gpio">
+  	<description>Shield pins 26 through 41</description>
+  </component>
+  <component name="spi" display_name="spi" type="chip" sub_type="mux" major_group="Miscellaneous">
+  	<description>chipKIT SPI</description>
+  </component>
+  <component name="sys_clock" display_name="sys_clock" type="chip" sub_type="system_clock" major_group="clock">
+  	<description>3.3V Single-Ended 100MHz oscillator used as system clock on the board</description>
+  </component>
+  <component name="usb_uart" display_name="usb_uart" type="chip" sub_type="uart" major_group="miscellaneous">
+  	<description>USB-to-UART Bridge, which allows a connection to a host computer with a USB port</description>
+  </component>
 </components>
 <jtag_chains>
   <jtag_chain name="chain1">
@@ -564,17 +637,15 @@
   <connection name="part0_dip_switches_4bits" component1="part0" component2="dip_switches_4bits">
     <connection_map name="part0_dip_switches_4bits_1" c1_st_index="1" c1_end_index="4" c2_st_index="0" c2_end_index="3"/>
   </connection>
-  <connection name="part0_eth_mdio_mdc" component1="part0" component2="eth_mdio_mdc">
-    <connection_map name="part0_eth_mdio_mdc_1" c1_st_index="7" c1_end_index="8" c2_st_index="0" c2_end_index="1"/>
-  </connection>
-  <connection name="part0_eth_mii" component1="part0" component2="eth_mii">
-    <connection_map name="part0_eth_mii_1" c1_st_index="5" c1_end_index="22" c2_st_index="0" c2_end_index="17"/>
+  <connection name="part0_phy_onboard" component1="part0" component2="phy_onboard">
+    <connection_map name="part0_phy_onboard_1" c1_st_index="5" c1_end_index="22" c2_st_index="0" c2_end_index="17"/>
+	<connection_map name="part0_phy_onboard_2" c1_st_index="7" c1_end_index="8" c2_st_index="0" c2_end_index="1"/>
   </connection>
   <connection name="part0_i2c" component1="part0" component2="i2c">
     <connection_map name="part0_i2c_1" c1_st_index="25" c1_end_index="26" c2_st_index="0" c2_end_index="1"/>
-  </connection>
-  <connection name="part0_i2c_pullups" component1="part0" component2="i2c_pullups">
-    <connection_map name="part0_i2c_pullups_1" c1_st_index="23" c1_end_index="24" c2_st_index="0" c2_end_index="1"/>
+	</connection>
+  <connection name="part0_i2cpullups" component1="part0" component2="i2c_pullups">
+    <connection_map name="part0_i2c_pullups" c1_st_index="23" c1_end_index="24" c2_st_index="0" c2_end_index="1"/>
   </connection>
   <connection name="part0_led_4bits" component1="part0" component2="led_4bits">
     <connection_map name="part0_led_4bits_1" c1_st_index="27" c1_end_index="30" c2_st_index="0" c2_end_index="3"/>
