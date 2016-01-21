@@ -353,7 +353,7 @@
         </user_parameters>
     </ip>
   </ip_preset>
-   <ip_preset preset_proc_name="rs232_uart_preset">
+   <ip_preset preset_proc_name="uart_preset">
     <ip vendor="xilinx.com" library="ip" name="iomodule" ip_interface="UART">
         <user_parameters>
           <user_parameter name="CONFIG.C_USE_UART_RX" value="1"/> 
