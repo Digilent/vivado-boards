@@ -8,7 +8,7 @@
 <components>
   <component name="part0" display_name="Zybo" type="fpga" part_name="xc7z010clg400-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="http://www.digilentinc.com">
     <interfaces>
-      <interface mode="master" name="btns_4bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="btns_4bits">
+      <interface mode="master" name="btns_4bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="btns_4bits" preset_proc="push_buttons_4bits_preset">
         <port_maps>
           <port_map logical_port="TRI_I" physical_port="btns_4bits_tri_i" dir="in" left="3" right="0"> 
             <pin_maps>
@@ -20,7 +20,7 @@
           </port_map>
         </port_maps>
       </interface>
-      <interface mode="master" name="leds_4bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="leds_4bits">
+      <interface mode="master" name="leds_4bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="leds_4bits" preset_proc="led_4bits_preset">
         <port_maps>
           <port_map logical_port="TRI_O" physical_port="leds_4bits_tri_o" dir="out" left="3" right="0"> 
             <pin_maps>
@@ -34,8 +34,8 @@
       </interface>
       <interface mode="master" name="ps7_fixedio" type="xilinx.com:display_processing_system7:fixedio_rtl:1.0" of_component="ps7_fixedio" preset_proc="ps7_preset"> 
       </interface>
-      <interface mode="master" name="sws_4bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="sws_4bits">
-        <port_maps>
+      <interface mode="master" name="sws_4bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="sws_4bits" preset_proc="dip_switches_4bits_preset">
+		<port_maps>
           <port_map logical_port="TRI_I" physical_port="sws_4bits_tri_i" dir="in" left="3" right="0"> 
             <pin_maps>
               <pin_map port_index="0" component_pin="sws_4bits_tri_i_0"/> 
@@ -46,7 +46,7 @@
           </port_map>
         </port_maps>
       </interface>
-      <interface mode="slave" name="sys_clock" type="xilinx.com:interface:clock_rtl:1.0" of_component="sys_clock">
+      <interface mode="slave" name="sys_clock" type="xilinx.com:signal:clock_rtl:1.0" of_component="sys_clock" preset_proc="sys_clock_preset">
         <port_maps>
           <port_map logical_port="CLK" physical_port="sys_clk" dir="in">
             <pin_maps>
