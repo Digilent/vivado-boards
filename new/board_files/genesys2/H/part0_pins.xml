@@ -60,11 +60,11 @@
   <pin index="56" name ="otg_next_m" iostandard="LVCMOS18" loc="AA16"/>
   <pin index="57" name ="otg_rst_m" iostandard="LVCMOS18" loc="AB14"/>
   <pin index="58" name ="otg_stop_m" iostandard="LVCMOS18" loc="AA17"/>
-  <pin index="59" name ="push_buttons_5bits_tri_i_0" iostandard="LVCMOS12" loc="E18"/>
-  <pin index="60" name ="push_buttons_5bits_tri_i_1" iostandard="LVCMOS12" loc="B19"/>
-  <pin index="61" name ="push_buttons_5bits_tri_i_2" iostandard="LVCMOS12" loc="M20"/>
-  <pin index="62" name ="push_buttons_5bits_tri_i_3" iostandard="LVCMOS12" loc="C19"/>
-  <pin index="63" name ="push_buttons_5bits_tri_i_4" iostandard="LVCMOS12" loc="M19"/>
+  <pin index="59" name ="push_buttons_5bits_tri_i_0" iostandard="LVCMOS12" loc="E18"/>c
+  <pin index="60" name ="push_buttons_5bits_tri_i_1" iostandard="LVCMOS12" loc="B19"/>u
+  <pin index="61" name ="push_buttons_5bits_tri_i_2" iostandard="LVCMOS12" loc="M20"/>l
+  <pin index="62" name ="push_buttons_5bits_tri_i_3" iostandard="LVCMOS12" loc="C19"/>r
+  <pin index="63" name ="push_buttons_5bits_tri_i_4" iostandard="LVCMOS12" loc="M19"/>d
   <pin index="64" name ="qspi_csn_i" iostandard="LVCMOS33" loc="U19"/>
   <pin index="65" name ="qspi_db0_i" iostandard="LVCMOS33" loc="P24"/>
   <pin index="66" name ="qspi_db1_i" iostandard="LVCMOS33" loc="R25"/>
@@ -81,5 +81,6 @@
   <pin index="77" name ="ss_i" iostandard="LVCMOS33" loc="W29"/>
   <pin index="78" name ="usb_uart_rxd" iostandard="LVCMOS33" loc="Y20"/>
   <pin index="79" name ="usb_uart_txd" iostandard="LVCMOS33" loc="Y23"/>
+  <pin index="80" name ="phy_reset_n" iostandard="LVCMOS33" loc="AH24"/>
 </pins>
 </part_info>

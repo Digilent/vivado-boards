@@ -44,7 +44,7 @@
       </interface>
       <interface mode="master" name="ddr3_sdram" type="xilinx.com:interface:ddrx_rtl:1.0" of_component="ddr3_sdram" preset_proc="ddr3_sdram_preset"> 
       </interface>
-      <interface mode="master" name="dip_switches_8bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="dip_switches_8bits">
+      <interface mode="master" name="dip_switches_8bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="dip_switches_8bits" preset_proc="dip_switches_8bits_preset">
         <port_maps>
           <port_map logical_port="TRI_I" physical_port="dip_switches_8bits_tri_i" dir="in" left="7" right="0"> 
             <pin_maps>
@@ -84,7 +84,7 @@
           </port_map>
         </port_maps>
       </interface>
-      <interface mode="master" name="displayport_in_hpd_led" type="xilinx.com:interface:gpio_rtl:1.0" of_component="displayport_in_hpd_led">
+      <interface mode="master" name="displayport_in_hpd_led" type="xilinx.com:interface:gpio_rtl:1.0" of_component="displayport_in_hpd_led" preset_proc="output_1bit_preset">
         <port_maps>
           <port_map logical_port="TRI_O" physical_port="dp_rx_hpd" dir="out">
             <pin_maps>
@@ -117,7 +117,7 @@
           </port_map>
         </port_maps>
       </interface>
-      <interface mode="master" name="displayport_out_hpd_led" type="xilinx.com:interface:gpio_rtl:1.0" of_component="displayport_out_hpd_led">
+      <interface mode="master" name="displayport_out_hpd_led" type="xilinx.com:interface:gpio_rtl:1.0" of_component="displayport_out_hpd_led" preset_proc="output_1bit_preset">
         <port_maps>
           <port_map logical_port="TRI_O" physical_port="dp_tx_hpd" dir="out">
             <pin_maps>
@@ -126,7 +126,7 @@
           </port_map>
         </port_maps>
       </interface>
-      <interface mode="master" name="dspi" type="xilinx.com:interface:spi_rtl:1.0" of_component="dspi">
+      <interface mode="master" name="dspi" type="xilinx.com:interface:spi_rtl:1.0" of_component="dspi" preset_proc="dspi_preset">
         <port_maps>
           <port_map logical_port="IO0_I" physical_port="miso_i" dir="in">
             <pin_maps>
@@ -190,7 +190,7 @@
           </port_map>
         </port_maps>
       </interface>
-      <interface mode="master" name="eth_mdio_mdc" type="xilinx.com:interface:mdio_rtl:1.0" of_component="eth_mdio_mdc">
+      <interface mode="master" name="eth_mdio_mdc" type="xilinx.com:interface:mdio_rtl:1.0" of_component="phy_onboard">
         <port_maps>
           <port_map logical_port="MDIO_I" physical_port="eth_mdio_i" dir="in">
             <pin_maps>
@@ -214,7 +214,7 @@
           </port_map>
         </port_maps>
       </interface>
-      <interface mode="master" name="eth_rgmii" type="xilinx.com:interface:rgmii_rtl:1.0" of_component="eth_rgmii">
+      <interface mode="master" name="eth_rgmii" type="xilinx.com:interface:rgmii_rtl:1.0" of_component="phy_onboard">
         <port_maps>
           <port_map logical_port="TD" physical_port="eth_rgmii_td" dir="out" left="3" right="0"> 
             <pin_maps>
@@ -254,6 +254,18 @@
           </port_map>
         </port_maps>
       </interface>
+	  <interface mode="master" name="phy_reset_out" type="xilinx.com:signal:reset_rtl:1.0" of_component="phy_onboard">
+          <preferred_ips>
+            <preferred_ip vendor="xilinx.com" library="ip" name="axi_ethernet" order="0"/>
+          </preferred_ips>
+          <port_maps>
+            <port_map logical_port="RESET" physical_port="phy_rst_n" dir="out">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="PHY_RESET"/>
+              </pin_maps>
+            </port_map>
+          </port_maps>
+        </interface>
       <interface mode="master" name="iic_bus" type="xilinx.com:interface:iic_rtl:1.0" of_component="iic_bus">
         <port_maps>
           <port_map logical_port="SDA_I" physical_port="sda_i" dir="in">
@@ -288,7 +300,7 @@
           </port_map>
         </port_maps>
       </interface>
-      <interface mode="master" name="led_8bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="led_8bits">
+      <interface mode="master" name="led_8bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="led_8bits" preset_proc="led_8bits_preset">
         <port_maps>
           <port_map logical_port="TRI_O" physical_port="led_8bits_tri_o" dir="out" left="7" right="0"> 
             <pin_maps>
@@ -304,7 +316,7 @@
           </port_map>
         </port_maps>
       </interface>
-      <interface mode="master" name="push_buttons_5bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="push_buttons_5bits">
+      <interface mode="master" name="push_buttons_5bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="push_buttons_5bits" preset_proc="push_buttons_5bits_preset">
         <port_maps>
           <port_map logical_port="TRI_I" physical_port="push_buttons_5bits_tri_i" dir="in" left="4" right="0"> 
             <pin_maps>
@@ -317,7 +329,7 @@
           </port_map>
         </port_maps>
       </interface>
-      <interface mode="master" name="qspi_flash" type="xilinx.com:interface:spi_rtl:1.0" of_component="qspi_flash">
+      <interface mode="master" name="qspi_flash" type="xilinx.com:interface:spi_rtl:1.0" of_component="qspi_flash" preset_proc="qspi_preset">
         <port_maps>
           <port_map logical_port="IO0_I" physical_port="qspi_db0_i" dir="in">
             <pin_maps>
@@ -408,7 +420,7 @@
           <parameter name="rst_polarity" value="0" />
        </parameters>
       </interface>
-      <interface mode="master" name="sd_spi_mode" type="xilinx.com:interface:spi_rtl:1.0" of_component="sd_spi_mode">
+      <interface mode="master" name="sd_spi_mode" type="xilinx.com:interface:spi_rtl:1.0" of_component="sd_spi_mode" preset_proc="spi_preset">
         <port_maps>
           <port_map logical_port="IO0_I" physical_port="sd_miso_i" dir="in">
             <pin_maps>
@@ -530,7 +542,7 @@
           </port_map>
         </port_maps>
       </interface>
-      <interface mode="master" name="usb_uart" type="xilinx.com:interface:uart_rtl:1.0" of_component="usb_uart">
+      <interface mode="master" name="usb_uart" type="xilinx.com:interface:uart_rtl:1.0" of_component="usb_uart" preset_proc="uart_preset">
         <port_maps>
           <port_map logical_port="TxD" physical_port="usb_uart_txd" dir="out">
             <pin_maps>
@@ -546,24 +558,70 @@
       </interface>
     </interfaces>
   </component>
-  <component name="audio_codec_iic" display_name="audio_codec_iic" type="chip" sub_type="mux" major_group="miscellaneous"/>
-  <component name="ddr3_sdram" display_name="ddr3_sdram" type="chip" sub_type="ddr" major_group="memories"/>
-  <component name="dip_switches_8bits" display_name="dip_switches_8bits" type="chip" sub_type="switch" major_group="gpio"/>
-  <component name="displayport_in" display_name="displayport_in" type="chip" sub_type="chip" major_group="miscellaneous"/>
-  <component name="displayport_in_hpd_led" display_name="displayport_in_hpd_led" type="chip" sub_type="led" major_group="gpio"/>
-  <component name="displayport_out" display_name="displayport_out" type="chip" sub_type="chip" major_group="miscellaneous"/>
-  <component name="displayport_out_hpd_led" display_name="displayport_out_hpd_led" type="chip" sub_type="led" major_group="gpio"/>
-  <component name="dspi" display_name="dspi" type="chip" sub_type="memory_flash_qspi" major_group="memories"/>
-  <component name="eth_mdio_mdc" display_name="eth_mdio_mdc" type="chip" sub_type="ethernet" major_group="ethernet"/>
-  <component name="eth_rgmii" display_name="eth_rgmii" type="chip" sub_type="ethernet" major_group="ethernet"/>
-  <component name="iic_bus" display_name="iic_bus" type="chip" sub_type="mux" major_group="miscellaneous"/>
-  <component name="led_8bits" display_name="led_8bits" type="chip" sub_type="led" major_group="gpio"/>
-  <component name="push_buttons_5bits" display_name="push_buttons_5bits" type="chip" sub_type="push_button" major_group="gpio"/>
-  <component name="qspi_flash" display_name="qspi_flash" type="chip" sub_type="memory_flash_qspi" major_group="memories"/>
-  <component name="reset" display_name="reset" type="chip" sub_type="reset" major_group="reset"/>
-  <component name="sd_spi_mode" display_name="sd_spi_mode" type="chip" sub_type="memory_flash_qspi" major_group="memories"/>
-  <component name="usb_otg_master" display_name="usb_otg_master" type="chip" sub_type="chip" major_group="miscellaneous"/>
-  <component name="usb_uart" display_name="usb_uart" type="chip" sub_type="uart" major_group="miscellaneous"/>
+  <component name="audio_codec_iic" display_name="Audio Codec I2C" type="chip" sub_type="mux" major_group="Audio">
+	<description>I2C bus to communicate with the Audio Codec</description>
+  </component>
+  <component name="ddr3_sdram" display_name="ddr3_sdram" type="chip" sub_type="ddr" major_group="External Memory">
+	<description>1 GB 1800Mt/s on-board DDR3 </description>
+	<parameters>
+        <parameter name="ddr_type" value="ddr3"/>
+        <parameter name="size" value="1GB"/>
+	</parameters>
+  </component>
+  <component name="dip_switches_8bits" display_name="8 Switches" type="chip" sub_type="switch" major_group="GPIO">
+	<description>DIP Switches 7 to 0</description>
+  </component>
+  <component name="displayport_in" display_name="Displayport In" type="chip" sub_type="chip" major_group="Displayport">
+	<description>Displayport In</description>
+  </component>
+  <component name="displayport_in_hpd_led" display_name="Displayport In HPD" type="chip" sub_type="led" major_group="Displayport">
+	<description>Displayport in HPD (Connected to LD8)</description>
+  </component>
+  <component name="displayport_out" display_name="Displayport out" type="chip" sub_type="chip" major_group="Displayport">
+	<description>Displayport Out</description>
+  </component>
+  <component name="displayport_out_hpd_led" display_name="Displayport out HPD" type="chip" sub_type="led" major_group="Displayport">
+	<description>Displayport out HPD</description>
+  </component>
+  <component name="dspi" display_name="DSPI" type="chip" sub_type="memory_flash_qspi" major_group="External Memory">
+	<description>Dual SPI</description>
+  </component>
+  <component name="phy_onboard" display_name="Ethernet PHY" type="chip" sub_type="ethernet" major_group="Ethernet">
+	<description>PHY Ethernet on the board</description>
+	 <component_modes>
+        <component_mode name="rgmii" display_name="RGMII mode">
+		  <interfaces>
+            <interface name="eth_rgmii" order="0"/>
+            <interface name="eth_mdio_mdc" order="1"/>
+			<interface name="phy_reset_out" order="2" optional="true"/>
+          </interfaces>
+		</component_mode>
+	 </component_modes>
+  </component>
+  <component name="iic_bus" display_name="I2C" type="chip" sub_type="mux" major_group="I2C">
+	<description>I2C bus</description>
+  </component>
+  <component name="led_8bits" display_name="8 LEDs" type="chip" sub_type="led" major_group="GPIO">
+	<description>LEDs 7 to 0</description>
+  </component>
+  <component name="push_buttons_5bits" display_name="5 Push Buttons" type="chip" sub_type="push_button" major_group="GPIO">
+	<description>Push Buttons 5 to 0 {Down Right Left Up Center} </description>
+  </component>
+  <component name="qspi_flash" display_name="QSPI Flash" type="chip" sub_type="memory_flash_qspi" major_group="External Memory">
+	<description>QSPI Flash</description>
+  </component>
+  <component name="reset" display_name="Reset" type="chip" sub_type="reset" major_group="Reset">
+	<description>System Reset Button</description>
+  </component>
+  <component name="sd_spi_mode" display_name="SD Card (SPI)" type="chip" sub_type="memory_flash_qspi" major_group="External Memory">
+	<description>SD Card in SPI Mode</description>
+  </component>
+  <component name="usb_otg_master" display_name="USB OTG" type="chip" sub_type="chip" major_group="UART">
+	<description>USB OTG (Needs work)</description>
+  </component>
+  <component name="usb_uart" display_name="USB UART" type="chip" sub_type="uart" major_group="UART">
+	<description>USB-to-UART Bridge, which allows a connection to a host computer with a USB port</description>
+  </component>
 </components>
 <jtag_chains>
   <jtag_chain name="chain1">
@@ -592,12 +650,14 @@
   <connection name="part0_dspi" component1="part0" component2="dspi">
     <connection_map name="part0_dspi_1" c1_st_index="44" c1_end_index="77" c2_st_index="0" c2_end_index="33"/>
   </connection>
-  <connection name="part0_eth_mdio_mdc" component1="part0" component2="eth_mdio_mdc">
+  <connection name="part0_phy_onboard" component1="part0" component2="phy_onboard">
+	<connection_map name="part0_eth_rgmii_1" c1_st_index="24" c1_end_index="35" c2_st_index="0" c2_end_index="11"/>
     <connection_map name="part0_eth_mdio_mdc_1" c1_st_index="22" c1_end_index="23" c2_st_index="0" c2_end_index="1"/>
+	<connection_map name="part0_eth_phy_reset_n" c1_st_index="80" c1_end_index="80" c2_st_index="0" c2_end_index="0"/>
   </connection>
-  <connection name="part0_eth_rgmii" component1="part0" component2="eth_rgmii">
+  <!--<connection name="part0_eth_rgmii" component1="part0" component2="eth_rgmii">
     <connection_map name="part0_eth_rgmii_1" c1_st_index="24" c1_end_index="35" c2_st_index="0" c2_end_index="11"/>
-  </connection>
+  </connection>-->
   <connection name="part0_iic_bus" component1="part0" component2="iic_bus">
     <connection_map name="part0_iic_bus_1" c1_st_index="71" c1_end_index="72" c2_st_index="0" c2_end_index="1"/>
   </connection>
