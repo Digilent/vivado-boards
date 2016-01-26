@@ -618,7 +618,7 @@
   <component name="audio_codec_iic" display_name="Audio Codec I2C" type="chip" sub_type="mux" major_group="Audio">
 	<description>I2C bus to communicate with the Audio Codec</description>
   </component>
-  <component name="ddr3_sdram" display_name="ddr3_sdram" type="chip" sub_type="ddr" major_group="External Memory">
+  <component name="ddr3_sdram" display_name="DDR3 SDRAM" type="chip" sub_type="ddr" major_group="External Memory">
 	<description>1 GB 1800Mt/s on-board DDR3 </description>
 	<parameters>
         <parameter name="ddr_type" value="ddr3"/>
