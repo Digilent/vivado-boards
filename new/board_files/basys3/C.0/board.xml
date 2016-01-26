@@ -160,7 +160,7 @@
           </port_map>
         </port_maps>
         <parameters>
-          <parameter name="rst_polarity" value="1" />
+          <parameter name="rst_polarity" value="0" />
        </parameters>
       </interface>
       <interface mode="master" name="seven_seg_led_an" type="xilinx.com:interface:gpio_rtl:1.0" of_component="seven_seg_led_an" preset_proc="seven_seg_led_an_preset">
