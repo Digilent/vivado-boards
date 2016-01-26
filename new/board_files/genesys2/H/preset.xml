@@ -283,22 +283,18 @@
     </ip>
   </ip_preset>
   
-   <ip_preset preset_proc_name="sys_clock_preset">
-    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="clk_in1">
+   <ip_preset preset_proc_name="sys_diff_clock_preset">
+    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN1_D">
         <user_parameters>
-          <user_parameter name="CONFIG.PRIM_IN_FREQ" value="100"/> 
-          <user_parameter name="CONFIG.PRIM_SOURCE" value="Single_ended_clock_capable_pin"/> 
-		  <user_parameter name="CONFIG.RESET_TYPE" value="ACTIVE_LOW"/>
-		  <user_parameter name="CONFIG.RESET_PORT" value="resetn"/> 		  
+          <user_parameter name="CONFIG.PRIM_IN_FREQ" value="200"/> 
+          <user_parameter name="CONFIG.PRIM_SOURCE" value="Differential_clock_capable_pin"/> 
         </user_parameters>
     </ip>
-    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="clk_in2">
+    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN2_D">
         <user_parameters>
-		<user_parameter name="CONFIG.USE_INCLK_SWITCHOVER" value="true"/>
-        <user_parameter name="CONFIG.SECONDARY_IN_FREQ" value="100"/>
-        <user_parameter name="CONFIG.SECONDARY_SOURCE" value="Single_ended_clock_capable_pin"/> 
-		<user_parameter name="CONFIG.RESET_TYPE" value="ACTIVE_LOW"/> 
-		<user_parameter name="CONFIG.RESET_PORT" value="resetn"/> 
+	<user_parameter name="CONFIG.USE_INCLK_SWITCHOVER" value="true"/>
+        <user_parameter name="CONFIG.SECONDARY_IN_FREQ" value="200"/>
+        <user_parameter name="CONFIG.SECONDARY_SOURCE" value="Differential_clock_capable_pin"/> 
         </user_parameters>
     </ip>
   </ip_preset>
