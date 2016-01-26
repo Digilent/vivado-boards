@@ -48,5 +48,6 @@
   <pin index="44" name ="reset" iostandard="LVCMOS15" loc="G4"/>
   <pin index="45" name ="usb_uart_rxd" iostandard="LVCMOS33" loc="V18"/>
   <pin index="46" name ="usb_uart_txd" iostandard="LVCMOS33" loc="AA19"/>
+  <pin index="47" name ="phy_reset_n" iostandard="LVCMOS33" loc="U7"/>
 </pins>
 </part_info>
