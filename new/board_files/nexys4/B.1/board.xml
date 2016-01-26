@@ -77,7 +77,7 @@
         </port_maps>
       </interface>
       <interface mode="master" name="cellular_ram" type="xilinx.com:interface:emc_rtl:1.0" of_component="cellular_ram">
-        <description>4.8Kb of Fast Block RAM</description>
+        <description>16MB of Cell RAM</description>
 		<port_maps>
           <port_map logical_port="ADDR" physical_port="cellular_ram_addr" dir="inout" left="22" right="0"> 
             <pin_maps>
@@ -556,7 +556,7 @@
 	<description>Accelerometer controlled through SPI</description>
   </component>
   <component name="cellular_ram" display_name="Block RAM" type="chip" sub_type="memory_flash_bpi" major_group="External Memory">
-	<description>4.8Kb Block RAM</description>
+	<description>16MB Cell RAM</description>
   </component>
   <component name="dip_switches_16bits" display_name="16 Switches" type="chip" sub_type="switch" major_group="GPIO">
 	<description>16 Switches</description>
