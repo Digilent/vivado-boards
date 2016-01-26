@@ -31,6 +31,7 @@
         </port_maps>
       </interface>
       <interface mode="master" name="eth_mdio_mdc" type="xilinx.com:interface:mdio_rtl:1.0" of_component="phy_onboard">
+	  <description>Secondary interface to communicate with ethernet phy. </description>
         <port_maps>
           <port_map logical_port="MDIO_I" physical_port="eth_mdio_i" dir="in">
             <pin_maps>
@@ -119,7 +120,10 @@
         </port_maps>
       </interface>
       <interface mode="master" name="i2c" type="xilinx.com:interface:iic_rtl:1.0" of_component="i2c">
-        
+        <description>Shield I2C</description>
+		<preferred_ips>
+            <preferred_ip vendor="xilinx.com" library="ip" name="axi_iic" order="0"/>
+        </preferred_ips>
 		<port_maps>
           <port_map logical_port="SDA_I" physical_port="i2c_sda_i" dir="in">
             <pin_maps>
@@ -154,7 +158,11 @@
         </port_maps>
       </interface>
       <interface mode="master" name="i2c_pullups" type="xilinx.com:interface:gpio_rtl:1.0" of_component="i2c_pullups" preset_proc="output_2bits_preset">
-        <port_maps>
+        <description>I2C Pullups to enable shield I2C</description>
+		<preferred_ips>
+			<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+		</preferred_ips>
+		<port_maps>
           <port_map logical_port="TRI_O" physical_port="i2c_pullup" dir="out" left="1" right="0"> 
             <pin_maps>
               <pin_map port_index="0" component_pin="i2c_pullup_0"/> 
@@ -164,7 +172,11 @@
         </port_maps>
       </interface>
       <interface mode="master" name="led_4bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="led_4bits" preset_proc="led_4bits_preset">
-        <port_maps>
+        <description>4 LEDs</description>
+		<preferred_ips>
+			<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+		</preferred_ips>
+		<port_maps>
           <port_map logical_port="TRI_O" physical_port="led_4bits_tri_o" dir="out" left="3" right="0"> 
             <pin_maps>
               <pin_map port_index="0" component_pin="led_4bits_tri_o_0"/> 
@@ -176,7 +188,11 @@
         </port_maps>
       </interface>
       <interface mode="master" name="push_buttons_4bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="push_buttons_4bits" preset_proc="push_buttons_4bits_preset">
-        <port_maps>
+        <description>4 Push Buttons</description>
+		<preferred_ips>
+			<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+		</preferred_ips>
+		<port_maps>
           <port_map logical_port="TRI_I" physical_port="push_buttons_4bits_tri_i" dir="in" left="3" right="0"> 
             <pin_maps>
               <pin_map port_index="0" component_pin="push_buttons_4bits_tri_i_0"/> 
@@ -286,7 +302,8 @@
         </port_maps>
       </interface>
       <interface mode="slave" name="reset" type="xilinx.com:signal:reset_rtl:1.0" of_component="reset">
-        <parameters>
+        <description>Onboard Reset Button</description>
+		<parameters>
             <parameter name="rst_polarity" value="0"/>
           </parameters>
           <preferred_ips>
@@ -301,7 +318,11 @@
         </port_maps>
       </interface>
       <interface mode="master" name="rgb_led" type="xilinx.com:interface:gpio_rtl:1.0" of_component="rgb_led" preset_proc="output_12bits_preset">
-        <port_maps>
+        <description>4 RGB LEDs</description>
+		<preferred_ips>
+			<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+		</preferred_ips>
+		<port_maps>
           <port_map logical_port="TRI_O" physical_port="rgb_led_tri_o" dir="out" left="11" right="0"> 
             <pin_maps>
               <pin_map port_index="0" component_pin="rgb_led_tri_o_0"/> 
@@ -467,7 +488,10 @@
         </port_maps>
       </interface>
       <interface mode="master" name="spi" type="xilinx.com:interface:spi_rtl:1.0" of_component="spi" preset_proc="spi_preset">
-        <port_maps>
+        <preferred_ips>
+			<preferred_ip vendor="xilinx.com" library="ip" name="axi_quad_spi" order="0"/>
+		</preferred_ips>
+		<port_maps>
           <port_map logical_port="IO0_I" physical_port="spi_miso_i" dir="in">
             <pin_maps>
               <pin_map port_index="0" component_pin="spi_miso_i"/> 
@@ -575,11 +599,9 @@
         <parameter name="size" value="256MB"/>
 	</parameters>
   </component>
-  
   <component name="dip_switches_4bits" display_name="4 Switches" type="chip" sub_type="switch" major_group="GPIO">
 	<description>DIP Switches 3 to 0</description>
   </component>
-  
   <component name="phy_onboard" display_name="Ethernet MII" type="chip" sub_type="ethernet" major_group="Ethernet">
 	<description>PHY Ethernet on the board</description>
 	 <component_modes>
@@ -591,16 +613,12 @@
 		</component_mode>
 	 </component_modes>
   </component>
-  
   <component name="i2c" display_name="I2C on J3" type="chip" sub_type="mux" major_group="I2C">
-  <description>chipKIT i2c</description>
+  <description>Shield i2c</description>
   </component>
   <component name="i2c_pullups" display_name="I2C Pullups" type="chip" sub_type="led" major_group="I2C">
-  <description>chipKIT i2c pullups, must pull high if using the shield I2C on J3</description>
+  <description>Shield i2c pullups, must pull high if using the shield I2C on J3</description>
   </component>
- <!-- <component name="i2c_pullups" display_name="i2c_pullups" type="chip" sub_type="led" major_group="GPIO">
-	<description>i2c pullups, must be enabled to use i2c</description>
-  </component>-->
   <component name="led_4bits" display_name="4 LEDs" type="chip" sub_type="led" major_group="GPIO">
 	<description>LEDs 3 to 0</description>
   </component>
@@ -623,7 +641,7 @@
   	<description>Shield pins 26 through 41</description>
   </component>
   <component name="spi" display_name="SPI connector J6" type="chip" sub_type="mux" major_group="SPI">
-  	<description>chipKIT SPI</description>
+  	<description>Shield SPI</description>
   </component>
   <component name="sys_clock" display_name="System Clock" type="chip" sub_type="system_clock" major_group="Clocks">
   	<description>3.3V Single-Ended 100MHz oscillator used as system clock on the board</description>
@@ -632,6 +650,7 @@
   	<description>USB-to-UART Bridge, which allows a connection to a host computer with a USB port</description>
   </component>
 </components>
+
 <jtag_chains>
   <jtag_chain name="chain1">
     <position name="0" component="part0"/>
