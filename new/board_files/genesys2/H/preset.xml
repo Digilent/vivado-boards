@@ -22,6 +22,7 @@
 	<ip vendor="xilinx.com" library="ip" name="axi_quad_spi">
 		<user_parameters>
 			<user_parameter name="CONFIG.C_SPI_MODE" value="1"/>
+			<user_parameter name="CONFIG.C_C_SCK_RATIO" value="2"/>
 			<user_parameter name="CONFIG.C_USE_STARTUP" value="0"/>
 			<user_parameter name="CONFIG.C_USE_STARTUP_INT" value="0"/>
 		</user_parameters>

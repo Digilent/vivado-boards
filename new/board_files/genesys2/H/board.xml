@@ -9,7 +9,11 @@
   <component name="part0" display_name="Genesys2" type="fpga" part_name="xc7k325tffg900-2" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="www.digilentinc.com/genesys2">
     <interfaces>
       <interface mode="master" name="audio_codec_iic" type="xilinx.com:interface:iic_rtl:1.0" of_component="audio_codec_iic">
-        <port_maps>
+        <description>I2C bus to communicate with the Audio Codec</description>
+		<preferred_ips>
+            <preferred_ip vendor="xilinx.com" library="ip" name="axi_iic" order="0"/>
+        </preferred_ips>
+		<port_maps>
           <port_map logical_port="SDA_I" physical_port="aud_sda_i" dir="in">
             <pin_maps>
               <pin_map port_index="0" component_pin="aud_sda_i"/> 
@@ -43,9 +47,17 @@
         </port_maps>
       </interface>
       <interface mode="master" name="ddr3_sdram" type="xilinx.com:interface:ddrx_rtl:1.0" of_component="ddr3_sdram" preset_proc="ddr3_sdram_preset"> 
-      </interface>
+      <description>DDR3 board interface, it can use MIG IP for connection.</description>
+	  <preferred_ips>
+			<preferred_ip vendor="xilinx.com" library="ip" name="mig_7series" order="0"/>
+	  </preferred_ips>
+	  </interface>
       <interface mode="master" name="dip_switches_8bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="dip_switches_8bits" preset_proc="dip_switches_8bits_preset">
-        <port_maps>
+        <description>8 DIP Switches</description>
+		<preferred_ips>
+			<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+		</preferred_ips>
+		<port_maps>
           <port_map logical_port="TRI_I" physical_port="dip_switches_8bits_tri_i" dir="in" left="7" right="0"> 
             <pin_maps>
               <pin_map port_index="0" component_pin="dip_switches_8bits_tri_i_0"/> 
@@ -127,7 +139,8 @@
         </port_maps>
       </interface>
       <interface mode="master" name="dspi" type="xilinx.com:interface:spi_rtl:1.0" of_component="dspi" preset_proc="dspi_preset">
-        <port_maps>
+        <description>System Dual-SPI</description>
+		<port_maps>
           <port_map logical_port="IO0_I" physical_port="miso_i" dir="in">
             <pin_maps>
               <pin_map port_index="0" component_pin="miso_i"/> 
@@ -191,7 +204,8 @@
         </port_maps>
       </interface>
       <interface mode="master" name="eth_mdio_mdc" type="xilinx.com:interface:mdio_rtl:1.0" of_component="phy_onboard">
-        <port_maps>
+        <description>Secondary interface to communicate with ethernet phy. </description>
+		<port_maps>
           <port_map logical_port="MDIO_I" physical_port="eth_mdio_i" dir="in">
             <pin_maps>
               <pin_map port_index="0" component_pin="eth_mdio_i"/> 
@@ -215,7 +229,8 @@
         </port_maps>
       </interface>
       <interface mode="master" name="eth_rgmii" type="xilinx.com:interface:rgmii_rtl:1.0" of_component="phy_onboard">
-        <port_maps>
+        <description>Primary interface to communicate with ethernet phy in RGMII mode. </description>
+		<port_maps>
           <port_map logical_port="TD" physical_port="eth_rgmii_td" dir="out" left="3" right="0"> 
             <pin_maps>
               <pin_map port_index="0" component_pin="eth_rgmii_td_0"/> 
@@ -255,19 +270,21 @@
         </port_maps>
       </interface>
 	  <interface mode="master" name="phy_reset_out" type="xilinx.com:signal:reset_rtl:1.0" of_component="phy_onboard">
-          <preferred_ips>
+          <description>Onboard Reset Button</description>
+		  <preferred_ips>
             <preferred_ip vendor="xilinx.com" library="ip" name="axi_ethernet" order="0"/>
           </preferred_ips>
           <port_maps>
-            <port_map logical_port="RESET" physical_port="phy_rst_n" dir="out">
+            <port_map logical_port="RESET" physical_port="phy_reset_n" dir="out">
               <pin_maps>
-                <pin_map port_index="0" component_pin="PHY_RESET"/>
+                <pin_map port_index="0" component_pin="phy_reset_n"/>
               </pin_maps>
             </port_map>
           </port_maps>
         </interface>
       <interface mode="master" name="iic_bus" type="xilinx.com:interface:iic_rtl:1.0" of_component="iic_bus">
-        <port_maps>
+        <description>System I2C</description>
+		<port_maps>
           <port_map logical_port="SDA_I" physical_port="sda_i" dir="in">
             <pin_maps>
               <pin_map port_index="0" component_pin="sda_i"/> 
@@ -301,7 +318,11 @@
         </port_maps>
       </interface>
       <interface mode="master" name="led_8bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="led_8bits" preset_proc="led_8bits_preset">
-        <port_maps>
+        <description>8 LEDs</description>
+		<preferred_ips>
+			<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+		</preferred_ips>
+		<port_maps>
           <port_map logical_port="TRI_O" physical_port="led_8bits_tri_o" dir="out" left="7" right="0"> 
             <pin_maps>
               <pin_map port_index="0" component_pin="led_8bits_tri_o_0"/> 
@@ -317,7 +338,11 @@
         </port_maps>
       </interface>
       <interface mode="master" name="push_buttons_5bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="push_buttons_5bits" preset_proc="push_buttons_5bits_preset">
-        <port_maps>
+        <description>5 Push Buttons</description>
+		<preferred_ips>
+			<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+		</preferred_ips>
+		<port_maps>
           <port_map logical_port="TRI_I" physical_port="push_buttons_5bits_tri_i" dir="in" left="4" right="0"> 
             <pin_maps>
               <pin_map port_index="0" component_pin="push_buttons_5bits_tri_i_0"/> 
@@ -330,7 +355,11 @@
         </port_maps>
       </interface>
       <interface mode="master" name="qspi_flash" type="xilinx.com:interface:spi_rtl:1.0" of_component="qspi_flash" preset_proc="qspi_preset">
-        <port_maps>
+        <description>Quad SPI Flash</description>
+		<preferred_ips>
+			<preferred_ip vendor="xilinx.com" library="ip" name="axi_quad_spi" order="0"/>
+		</preferred_ips>
+		<port_maps>
           <port_map logical_port="IO0_I" physical_port="qspi_db0_i" dir="in">
             <pin_maps>
               <pin_map port_index="0" component_pin="qspi_db0_i"/> 
@@ -409,7 +438,11 @@
         </port_maps>
       </interface>
       <interface mode="slave" name="reset" type="xilinx.com:signal:reset_rtl:1.0" of_component="reset">
-        <port_maps>
+        <description>Onboard Reset Button</description>
+		<preferred_ips>
+            <preferred_ip vendor="xilinx.com" library="ip" name="proc_sys_reset" order="0"/>
+          </preferred_ips>
+		<port_maps>
           <port_map logical_port="RESET" physical_port="reset" dir="in">
             <pin_maps>
               <pin_map port_index="0" component_pin="reset"/> 
@@ -421,7 +454,11 @@
        </parameters>
       </interface>
       <interface mode="master" name="sd_spi_mode" type="xilinx.com:interface:spi_rtl:1.0" of_component="sd_spi_mode" preset_proc="spi_preset">
-        <port_maps>
+        <description>SD Card reader in SPI Mode</description>
+		<preferred_ips>
+			<preferred_ip vendor="xilinx.com" library="ip" name="axi_quad_spi" order="0"/>
+		</preferred_ips>
+		<port_maps>
           <port_map logical_port="IO0_I" physical_port="sd_miso_i" dir="in">
             <pin_maps>
               <pin_map port_index="0" component_pin="sd_miso_i"/> 
@@ -572,13 +609,13 @@
 	<description>DIP Switches 7 to 0</description>
   </component>
   <component name="displayport_in" display_name="Displayport In" type="chip" sub_type="chip" major_group="Displayport">
-	<description>Displayport In</description>
+	<description>Displayport In (Needs Work)</description>
   </component>
   <component name="displayport_in_hpd_led" display_name="Displayport In HPD" type="chip" sub_type="led" major_group="Displayport">
 	<description>Displayport in HPD (Connected to LD8)</description>
   </component>
   <component name="displayport_out" display_name="Displayport out" type="chip" sub_type="chip" major_group="Displayport">
-	<description>Displayport Out</description>
+	<description>Displayport Out (Needs Work)</description>
   </component>
   <component name="displayport_out_hpd_led" display_name="Displayport out HPD" type="chip" sub_type="led" major_group="Displayport">
 	<description>Displayport out HPD</description>
@@ -616,8 +653,11 @@
   <component name="sd_spi_mode" display_name="SD Card (SPI)" type="chip" sub_type="memory_flash_qspi" major_group="External Memory">
 	<description>SD Card in SPI Mode</description>
   </component>
-  <component name="usb_otg_master" display_name="USB OTG" type="chip" sub_type="chip" major_group="UART">
+  <component name="usb_otg_master" display_name="USB OTG" type="chip" sub_type="uart" major_group="UART">
 	<description>USB OTG (Needs work)</description>
+	<preferred_ips>
+		<preferred_ip vendor="xilinx.com" library="ip" name="axi_usb2_device" order="0"/>
+	</preferred_ips>
   </component>
   <component name="usb_uart" display_name="USB UART" type="chip" sub_type="uart" major_group="UART">
 	<description>USB-to-UART Bridge, which allows a connection to a host computer with a USB port</description>
@@ -655,9 +695,6 @@
     <connection_map name="part0_eth_mdio_mdc_1" c1_st_index="22" c1_end_index="23" c2_st_index="0" c2_end_index="1"/>
 	<connection_map name="part0_eth_phy_reset_n" c1_st_index="80" c1_end_index="80" c2_st_index="0" c2_end_index="0"/>
   </connection>
-  <!--<connection name="part0_eth_rgmii" component1="part0" component2="eth_rgmii">
-    <connection_map name="part0_eth_rgmii_1" c1_st_index="24" c1_end_index="35" c2_st_index="0" c2_end_index="11"/>
-  </connection>-->
   <connection name="part0_iic_bus" component1="part0" component2="iic_bus">
     <connection_map name="part0_iic_bus_1" c1_st_index="71" c1_end_index="72" c2_st_index="0" c2_end_index="1"/>
   </connection>
