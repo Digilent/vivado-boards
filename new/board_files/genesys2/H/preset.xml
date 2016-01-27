@@ -299,4 +299,14 @@
     </ip>
   </ip_preset>
   
+  <ip_preset preset_proc_name="hdmi_in_preset">
+    <ip vendor="digilentinc.com" library="ip" name="dvi2rgb">
+        <user_parameters>
+          <user_parameter name="CONFIG.kRstActiveHigh" value="false"/> 
+          <user_parameter name="CONFIG.kClkRange" value="2"/> 
+		  <user_parameter name="CONFIG.kAddBUFG" value="false"/> 
+        </user_parameters>
+    </ip>
+  </ip_preset>
+  
 </ip_presets>

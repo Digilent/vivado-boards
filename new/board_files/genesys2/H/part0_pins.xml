@@ -13,16 +13,16 @@
   <pin index="9" name ="dip_switches_8bits_tri_i_5" iostandard="LVCMOS12" loc="P19"/>
   <pin index="10" name ="dip_switches_8bits_tri_i_6" iostandard="LVCMOS33" loc="P26"/>
   <pin index="11" name ="dip_switches_8bits_tri_i_7" iostandard="LVCMOS33" loc="P27"/>
-  <pin index="12" name ="dp_rx_hpd" iostandard="LVCMOS33" loc="AE21"/>
-  <pin index="13" name ="dp_rx_in_n" iostandard="LVCMOS18" loc="AC19"/>
-  <pin index="14" name ="dp_rx_in_p" iostandard="LVCMOS18" loc="AB19"/>
-  <pin index="15" name ="dp_rx_out_n" iostandard="LVCMOS18" loc="Y18"/>
-  <pin index="16" name ="dp_rx_out_p" iostandard="LVCMOS18" loc="Y19"/>
-  <pin index="17" name ="dp_tx_hpd" iostandard="LVCMOS33" loc="AD21"/>
-  <pin index="18" name ="dp_tx_in_n" iostandard="LVCMOS18" loc="AD16"/>
-  <pin index="19" name ="dp_tx_in_p" iostandard="LVCMOS18" loc="AD17"/>
-  <pin index="20" name ="dp_tx_out_n" iostandard="LVCMOS18" loc="AB18"/>
-  <pin index="21" name ="dp_tx_out_p" iostandard="LVCMOS18" loc="AA18"/>
+  <pin index="12" name ="hdmi_rx_hpd" iostandard="LVCMOS33" loc="AH29"/>
+  <pin index="13" name ="TMDS_IN_clk_p" iostandard="TMDS_33" loc="AE28"/>
+  <pin index="14" name ="TMDS_IN_clk_n" iostandard="TMDS_33" loc="AF28"/>
+  <pin index="15" name ="TMDS_IN_data_p_0" iostandard="TMDS_33" loc="AJ26"/>
+  <pin index="16" name ="TMDS_IN_data_p_1" iostandard="TMDS_33" loc="AG27"/>
+  <pin index="17" name ="TMDS_IN_data_p_2" iostandard="TMDS_33" loc="AH26"/>
+  <pin index="18" name ="TMDS_IN_data_n_0" iostandard="TMDS_33" loc="AK26"/>
+  <pin index="19" name ="TMDS_IN_data_n_1" iostandard="TMDS_33" loc="AG28"/>
+  <pin index="20" name ="TMDS_IN_data_n_2" iostandard="TMDS_33" loc="AH27"/>
+  <pin index="21" name ="hdmi_tx_hpd" iostandard="LVCMOS18" loc="AG29"/>
   <pin index="22" name ="eth_mdc" iostandard="LVCMOS15" loc="AF12"/>
   <pin index="23" name ="eth_mdio_i" iostandard="LVCMOS15" loc="AG12"/>
   <pin index="24" name ="eth_rgmii_rd_0" iostandard="LVCMOS15" loc="AJ14"/>
@@ -82,5 +82,15 @@
   <pin index="78" name ="usb_uart_rxd" iostandard="LVCMOS33" loc="Y20"/>
   <pin index="79" name ="usb_uart_txd" iostandard="LVCMOS33" loc="Y23"/>
   <pin index="80" name ="phy_reset_n" iostandard="LVCMOS33" loc="AH24"/>
+  <pin index="81" name ="TMDS_OUT_clk_p" iostandard="LVCMOS33" loc="AA20"/>
+  <pin index="82" name ="TMDS_OUT_clk_n" iostandard="LVCMOS33" loc="AB20"/>
+  <pin index="83" name ="TMDS_OUT_data_p_0" iostandard="LVCMOS33" loc="AC20"/>
+  <pin index="84" name ="TMDS_OUT_data_p_1" iostandard="LVCMOS33" loc="AA22"/>
+  <pin index="85" name ="TMDS_OUT_data_p_2" iostandard="LVCMOS33" loc="AB24"/>
+  <pin index="86" name ="TMDS_OUT_data_n_0" iostandard="LVCMOS33" loc="AC21"/>
+  <pin index="87" name ="TMDS_OUT_data_n_1" iostandard="LVCMOS33" loc="AA23"/>
+  <pin index="88" name ="TMDS_OUT_data_n_2" iostandard="LVCMOS33" loc="AC25"/>
+  <pin index="89" name ="hdmi_in_ddc_scl" iostandard="LVCMOS33" loc="AJ28"/>
+  <pin index="90" name ="hdmi_in_ddc_sda" iostandard="LVCMOS33" loc="AJ29"/>
 </pins>
 </part_info>
