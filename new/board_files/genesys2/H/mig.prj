@@ -7,7 +7,7 @@
     <Debug_En>OFF</Debug_En>
     <DataDepth_En>1024</DataDepth_En>
     <LowPower_En>ON</LowPower_En>
-    <XADC_En>Disabled</XADC_En>
+    <XADC_En>Enabled</XADC_En>
     <TargetFPGA>xc7k325t-ffg900/-2</TargetFPGA>
     <Version>2.3</Version>
     <SystemClock>Differential</SystemClock>
