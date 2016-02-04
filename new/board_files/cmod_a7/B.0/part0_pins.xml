@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?> 
-<part_info part_name="xc7a35tcpg236-1">
+<part_info part_name="xc7a15tcpg236-1">
 <pins>
   <pin index="0" name ="clk" iostandard="LVCMOS33" loc="L17"/>
   <pin index="1" name ="cellular_ram_addr_0" iostandard="LVCMOS33" loc="M18"/>
