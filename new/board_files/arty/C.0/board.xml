@@ -269,21 +269,6 @@
               <pin_map port_index="0" component_pin="qspi_db3_i"/> 
             </pin_maps>
           </port_map>
-          <port_map logical_port="SCK_I" physical_port="qspi_sclk_i" dir="in">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="qspi_sclk_i"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="SCK_O" physical_port="qspi_sclk_o" dir="out">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="qspi_sclk_i"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="SCK_T" physical_port="qspi_sclk_t" dir="out">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="qspi_sclk_i"/> 
-            </pin_maps>
-          </port_map>
           <port_map logical_port="SS_I" physical_port="qspi_csn_i" dir="in">
             <pin_maps>
               <pin_map port_index="0" component_pin="qspi_csn_i"/> 
@@ -310,7 +295,7 @@
             <preferred_ip vendor="xilinx.com" library="ip" name="proc_sys_reset" order="0"/>
           </preferred_ips>
 		<port_maps>
-          <port_map logical_port="RESET" physical_port="reset" dir="in">
+          <port_map logical_port="RST" physical_port="reset" dir="in">
             <pin_maps>
               <pin_map port_index="0" component_pin="reset"/> 
             </pin_maps>
