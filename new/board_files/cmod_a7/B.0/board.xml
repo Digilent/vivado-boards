@@ -254,7 +254,7 @@
       </interface>
     </interfaces>
   </component>
-  <component name="cellular_ram" display_name="Block RAM" type="chip" sub_type="memory_flash_bpi" major_group="External Memory">
+  <component name="cellular_ram" display_name="Cell RAM" type="chip" sub_type="memory_flash_bpi" major_group="External Memory">
 	<description>512KB SRAM</description>
   </component>
   <component name="led_2bits" display_name="2 LEDs" type="chip" sub_type="led" major_group="GPIO">
