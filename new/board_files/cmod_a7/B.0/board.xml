@@ -119,6 +119,15 @@
           </port_map>
         </port_maps>
       </interface>
+	  <interface mode="master" name="push_buttons_1bit" type="xilinx.com:interface:gpio_rtl:1.0" of_component="push_buttons_2bits" preset_proc="push_buttons_1bit_preset">
+        <port_maps>
+          <port_map logical_port="TRI_I" physical_port="push_buttons_2bits_tri_i" dir="in"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="push_buttons_2bits_tri_i_1"/> 
+            </pin_maps>
+          </port_map>
+        </port_maps>
+      </interface>
       <interface mode="master" name="qspi_flash" type="xilinx.com:interface:spi_rtl:1.0" of_component="qspi_flash" preset_proc="qspi_preset">
         <description>Quad SPI Flash</description>
 		<preferred_ips>
@@ -254,8 +263,20 @@
   <component name="rgb_led" display_name="RGB LED" type="chip" sub_type="led" major_group="GPIO">
 	<description>RGB led 2 downto 0 [R G B]</description>
   </component>
-  <component name="push_buttons_2bits" display_name="2 Push Buttons" type="chip" sub_type="push_button" major_group="GPIO">
+  <component name="push_buttons_2bits" display_name="Push Buttons" type="chip" sub_type="push_button" major_group="GPIO">
 	<description>Push buttons 1 to 0</description>
+	<component_modes>
+        <component_mode name="2_btns" display_name="2 Buttons (No Reset)">
+		  <interfaces>
+            <interface name="push_buttons_2bits" order="0"/>
+          </interfaces>
+		</component_mode>
+		<component_mode name="1_btn" display_name="Just use BTN1">
+		  <interfaces>
+            <interface name="push_buttons_1bit" order="0"/>
+          </interfaces>
+		</component_mode>
+	 </component_modes>
   </component>
   <component name="qspi_flash" display_name="QSPI Flash" type="chip" sub_type="memory_flash_qspi" major_group="External Memory">
 	<description>QSPI Flash</description>
