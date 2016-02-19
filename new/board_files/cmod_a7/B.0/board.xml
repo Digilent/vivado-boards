@@ -234,7 +234,7 @@
           </port_map>
         </port_maps>
         <parameters>
-          <parameter name="frequency" value="100000000" />
+          <parameter name="frequency" value="12000000" />
        </parameters>
       </interface>
       <interface mode="master" name="usb_uart" type="xilinx.com:interface:uart_rtl:1.0" of_component="usb_uart" preset_proc="uart_preset">
