@@ -225,7 +225,7 @@
        </parameters>
       </interface>
       <interface mode="slave" name="sys_clock" type="xilinx.com:signal:clock_rtl:1.0" of_component="sys_clock" preset_proc="sys_clock_preset">
-        <description>100 MHz Single-Ended System Clock</description>
+        <description>12 MHz Single-Ended System Clock</description>
 		<port_maps>
           <port_map logical_port="CLK" physical_port="clk" dir="in">
             <pin_maps>
@@ -285,7 +285,7 @@
 	<description>Configure BTN0 as System Reset button, active high</description>
   </component>
   <component name="sys_clock" display_name="System Clock" type="chip" sub_type="system_clock" major_group="Clocks">
-	<description>100 MHz System Clock</description>
+	<description>12 MHz System Clock</description>
   </component>
   <component name="usb_uart" display_name="USB UART" type="chip" sub_type="uart" major_group="UART">
 	<description>USB UART</description>
