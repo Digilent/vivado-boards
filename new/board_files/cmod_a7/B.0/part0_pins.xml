@@ -44,7 +44,7 @@
   <pin index="40" name ="qspi_db3" iostandard="LVCMOS33" loc="F18"/>
   <pin index="41" name ="push_buttons_2bits_tri_i_0" iostandard="LVCMOS33" loc="A18"/>
   <pin index="42" name ="push_buttons_2bits_tri_i_1" iostandard="LVCMOS33" loc="B18"/>
-  <pin index="43" name ="usb_uart_txd" iostandard="LVCMOS33" loc="J17"/>
-  <pin index="44" name ="usb_uart_rxd" iostandard="LVCMOS33" loc="J18"/>
+  <pin index="43" name ="usb_uart_txd" iostandard="LVCMOS33" loc="J18"/>
+  <pin index="44" name ="usb_uart_rxd" iostandard="LVCMOS33" loc="J17"/>
 </pins>
 </part_info>
