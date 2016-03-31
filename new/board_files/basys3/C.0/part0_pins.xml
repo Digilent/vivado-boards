@@ -58,5 +58,37 @@
   <pin index="54" name ="seven_seg_led_disp_tri_o_7" iostandard="LVCMOS33" loc="V7"/>
   <pin index="55" name ="usb_uart_rxd" iostandard="LVCMOS33" loc="B18"/>
   <pin index="56" name ="usb_uart_txd" iostandard="LVCMOS33" loc="A18"/>
+  <pin index="57" name ="JA1" iostandard="LVCMOS33"  loc="J1"/>
+  <pin index="58" name ="JA2" iostandard="LVCMOS33"  loc="L2"/>
+  <pin index="59" name ="JA3" iostandard="LVCMOS33"  loc="J2"/>
+  <pin index="60" name ="JA4" iostandard="LVCMOS33"  loc="G2"/>
+  <pin index="61" name ="JA7" iostandard="LVCMOS33"  loc="H1"/>
+  <pin index="62" name ="JA8" iostandard="LVCMOS33"  loc="K2"/>
+  <pin index="63" name ="JA9" iostandard="LVCMOS33"  loc="H2"/>
+  <pin index="64" name ="JA10" iostandard="LVCMOS33" loc="G3"/>
+  <pin index="65" name ="JB1" iostandard="LVCMOS33"  loc="A14"/>
+  <pin index="66" name ="JB2" iostandard="LVCMOS33"  loc="A16"/>
+  <pin index="67" name ="JB3" iostandard="LVCMOS33"  loc="B15"/>
+  <pin index="68" name ="JB4" iostandard="LVCMOS33"  loc="B16"/>
+  <pin index="69" name ="JB7" iostandard="LVCMOS33"  loc="A15"/>
+  <pin index="70" name ="JB8" iostandard="LVCMOS33"  loc="A17"/>
+  <pin index="71" name ="JB9" iostandard="LVCMOS33"  loc="C15"/>
+  <pin index="72" name ="JB10" iostandard="LVCMOS33" loc="C16"/>
+  <pin index="73" name ="JC1"  iostandard="LVCMOS33" loc="K17"/>
+  <pin index="74" name ="JC2" iostandard="LVCMOS33"  loc="M18"/>
+  <pin index="75" name ="JC3" iostandard="LVCMOS33"  loc="N17"/>
+  <pin index="76" name ="JC4" iostandard="LVCMOS33"  loc="P18"/>
+  <pin index="77" name ="JC7" iostandard="LVCMOS33"  loc="L17"/>
+  <pin index="78" name ="JC8" iostandard="LVCMOS33"  loc="M19"/>
+  <pin index="79" name ="JC9" iostandard="LVCMOS33"  loc="P17"/>
+  <pin index="80" name ="JC10" iostandard="LVCMOS33" loc="R18"/>
+  <pin index="81" name ="JXADC1" iostandard="LVCMOS33"  loc="J3"/>
+  <pin index="82" name ="JXADC2" iostandard="LVCMOS33"  loc="L3"/>
+  <pin index="83" name ="JXADC3" iostandard="LVCMOS33"  loc="M2"/>
+  <pin index="84" name ="JXADC4" iostandard="LVCMOS33"  loc="N2"/>
+  <pin index="85" name ="JXADC7" iostandard="LVCMOS33"  loc="K3"/>
+  <pin index="86" name ="JXADC8" iostandard="LVCMOS33"  loc="M3"/>
+  <pin index="87" name ="JXADC9" iostandard="LVCMOS33"  loc="M1"/>
+  <pin index="88" name ="JXADC10" iostandard="LVCMOS33" loc="N1"/>
 </pins>
 </part_info>
