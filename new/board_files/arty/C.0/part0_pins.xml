@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?> 
-<part_info part_name="xc7a35tcsg324-2L">
+<part_info part_name="xc7a35tcsg324-1L">
 <pins>
   <pin index="0" name ="clk" iostandard="LVCMOS33" loc="E3"/>
   <pin index="1" name ="dip_switches_4bits_tri_i_0" iostandard="LVCMOS33" loc="A8"/>
