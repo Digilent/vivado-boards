@@ -116,13 +116,13 @@
   <pin index="112" name ="JD8" iostandard="LVCMOS33" loc="G4"/>
   <pin index="113" name ="JD9" iostandard="LVCMOS33" loc="G2"/>
   <pin index="114" name ="JD10" iostandard="LVCMOS33" loc="F3"/>
-  <pin index="115" name ="JXADC1" iostandard="TMDS_33" loc="A13"/>
-  <pin index="116" name ="JXADC2" iostandard="TMDS_33" loc="A15"/>
-  <pin index="117" name ="JXADC3" iostandard="TMDS_33" loc="B16"/>
-  <pin index="118" name ="JXADC4" iostandard="TMDS_33" loc="B18"/>
-  <pin index="119" name ="JXADC7" iostandard="TMDS_33" loc="A14"/>
-  <pin index="120" name ="JXADC8" iostandard="TMDS_33" loc="A16"/>
-  <pin index="121" name ="JXADC9" iostandard="TMDS_33" loc="B17"/>
-  <pin index="122" name ="JXADC10" iostandard="TMDS_33" loc="A18"/>
+  <pin index="115" name ="JXADC1" iostandard="LVCMOS33" loc="A13"/>
+  <pin index="116" name ="JXADC2" iostandard="LVCMOS33" loc="A15"/>
+  <pin index="117" name ="JXADC3" iostandard="LVCMOS33" loc="B16"/>
+  <pin index="118" name ="JXADC4" iostandard="LVCMOS33" loc="B18"/>
+  <pin index="119" name ="JXADC7" iostandard="LVCMOS33" loc="A14"/>
+  <pin index="120" name ="JXADC8" iostandard="LVCMOS33" loc="A16"/>
+  <pin index="121" name ="JXADC9" iostandard="LVCMOS33" loc="B17"/>
+  <pin index="122" name ="JXADC10" iostandard="LVCMOS33" loc="A18"/>
 </pins>
 </part_info>
