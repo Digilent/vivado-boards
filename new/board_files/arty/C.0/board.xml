@@ -284,6 +284,21 @@
               <pin_map port_index="0" component_pin="qspi_csn_i"/> 
             </pin_maps>
           </port_map>
+		  <port_map logical_port="SCK_I" physical_port="qspi_sclk_i" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_sclk_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="SCK_O" physical_port="qspi_sclk_o" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_sclk_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="SCK_T" physical_port="qspi_sclk_t" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="qspi_sclk_i"/> 
+            </pin_maps>
+          </port_map>
         </port_maps>
       </interface>
       <interface mode="slave" name="reset" type="xilinx.com:signal:reset_rtl:1.0" of_component="reset">
