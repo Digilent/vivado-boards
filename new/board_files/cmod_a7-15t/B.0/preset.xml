@@ -22,8 +22,8 @@
 			<user_parameter name="CONFIG.C_SPI_MEMORY" value="2"/>
 			<user_parameter name="CONFIG.C_SPI_MODE" value="2"/>
 			<user_parameter name="CONFIG.C_C_SCK_RATIO" value="2"/>
-			<user_parameter name="CONFIG.C_USE_STARTUP" value="0"/>
-			<user_parameter name="CONFIG.C_USE_STARTUP_INT" value="0"/>
+			<user_parameter name="CONFIG.C_USE_STARTUP" value="1"/>
+			<user_parameter name="CONFIG.C_USE_STARTUP_INT" value="1"/>
 		</user_parameters>
 	</ip>
   </ip_preset>
