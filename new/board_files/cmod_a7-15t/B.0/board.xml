@@ -252,7 +252,131 @@
           </port_map>
         </port_maps>
       </interface>
-    </interfaces>
+      <interface mode="master" name="ja" type="digilentinc.com:interface:pmod_rtl:1.0" of_component="ja">
+        <port_maps>
+          <port_map logical_port="PIN1_I" physical_port="JA1" dir="in"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA1"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN1_O" physical_port="JA1" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA1"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN1_T" physical_port="JA1" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA1"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN2_I" physical_port="JA2" dir="in"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA2"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN2_O" physical_port="JA2" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA2"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN2_T" physical_port="JA2" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA2"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN3_I" physical_port="JA3" dir="in"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA3"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN3_O" physical_port="JA3" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA3"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN3_T" physical_port="JA3" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA3"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN4_I" physical_port="JA4" dir="in"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA4"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN4_O" physical_port="JA4" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA4"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN4_T" physical_port="JA4" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA4"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN7_I" physical_port="JA7" dir="in"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA7"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN7_O" physical_port="JA7" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA7"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN7_T" physical_port="JA7" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA7"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN8_I" physical_port="JA8" dir="in"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA8"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN8_O" physical_port="JA8" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA8"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN8_T" physical_port="JA8" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA8"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN9_I" physical_port="JA9" dir="in"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA9"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN9_O" physical_port="JA9" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA9"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN9_T" physical_port="JA9" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA9"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN10_I" physical_port="JA10" dir="in"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA10"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN10_O" physical_port="JA10" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA10"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN10_T" physical_port="JA10" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="JA10"/> 
+			</pin_maps>
+		  </port_map>
+        </port_maps>
+      </interface>
+	</interfaces>
   </component>
   <component name="cellular_ram" display_name="Cell RAM" type="chip" sub_type="memory_flash_bpi" major_group="External Memory">
 	<description>512KB SRAM</description>
@@ -290,6 +414,9 @@
   <component name="usb_uart" display_name="USB UART" type="chip" sub_type="uart" major_group="UART">
 	<description>USB UART</description>
   </component>
+  <component name="ja" display_name="Connector JA" type="chip" sub_type="chip" major_group="Pmod">
+	<description>Pmod Connector JA</description>
+  </component>
 </components>
 <jtag_chains>
   <jtag_chain name="chain1">
@@ -320,6 +447,9 @@
   </connection>
   <connection name="part0_usb_uart" component1="part0" component2="usb_uart">
     <connection_map name="part0_usb_uart_1" c1_st_index="43" c1_end_index="44" c2_st_index="0" c2_end_index="1"/>
+  </connection>
+  <connection name="part0_ja" component1="part0" component2="ja">
+    <connection_map name="part0_ja_1" c1_st_index="45" c1_end_index="52" c2_st_index="0" c2_end_index="7"/>
   </connection>
 </connections>
 </board>
