@@ -128,6 +128,7 @@
   <pin index="124" name ="OLED4" iostandard="LVCMOS18" loc="AF17"/>
   <pin index="125" name ="OLED7" iostandard="LVCMOS18" loc="AC17"/>
   <pin index="126" name ="OLED8" iostandard="LVCMOS18" loc="AB17"/>
+  <pin index="127" name ="OLED9" iostandard="LVCMOS33" loc="AB22"/>
   <pin index="128" name ="OLED10" iostandard="LVCMOS18" loc="AG17"/>
 </pins>
 </part_info>
