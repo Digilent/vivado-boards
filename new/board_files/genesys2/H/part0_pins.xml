@@ -124,5 +124,10 @@
   <pin index="120" name ="JA8" iostandard="LVCMOS33" loc="T23"/>
   <pin index="121" name ="JA9" iostandard="LVCMOS33" loc="T20"/>
   <pin index="122" name ="JA10" iostandard="LVCMOS33" loc="T21"/>
+  <pin index="123" name ="OLED2" iostandard="LVCMOS18" loc="Y15"/>
+  <pin index="124" name ="OLED4" iostandard="LVCMOS18" loc="AF17"/>
+  <pin index="125" name ="OLED7" iostandard="LVCMOS18" loc="AC17"/>
+  <pin index="126" name ="OLED8" iostandard="LVCMOS18" loc="AB17"/>
+  <pin index="128" name ="OLED10" iostandard="LVCMOS18" loc="AG17"/>
 </pins>
 </part_info>
