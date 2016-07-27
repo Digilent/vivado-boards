@@ -790,23 +790,23 @@
     <connection name="part0_sys_clock" component1="part0" component2="sys_clock">
       <connection_map name="part0_sys_clock_1" c1_st_index="21" c1_end_index="21" c2_st_index="0" c2_end_index="0"/>
     </connection>
-	  <connection name="part0_ja" component1="part0" component2="ja">
+	<connection name="part0_ja" component1="part0" component2="ja">
     <connection_map name="part0_ja_1" c1_st_index="38" c1_end_index="45" c2_st_index="0" c2_end_index="7"/>
     </connection>
     <connection name="part0_jb" component1="part0" component2="jb">
-      <connection_map name="part0_jb_1" c1_st_index="22" c1_end_index="29" c2_st_index="0" c2_end_index="7"/>
+    <connection_map name="part0_jb_1" c1_st_index="22" c1_end_index="29" c2_st_index="0" c2_end_index="7"/>
     </connection>
     <connection name="part0_jc" component1="part0" component2="jc">
-      <connection_map name="part0_jc_1" c1_st_index="30" c1_end_index="37" c2_st_index="0" c2_end_index="7"/>
+    <connection_map name="part0_jc_1" c1_st_index="30" c1_end_index="37" c2_st_index="0" c2_end_index="7"/>
     </connection>
     <connection name="part0_jd" component1="part0" component2="jd">
-      <connection_map name="part0_jd_1" c1_st_index="46" c1_end_index="53" c2_st_index="0" c2_end_index="7"/>
+    <connection_map name="part0_jd_1" c1_st_index="46" c1_end_index="53" c2_st_index="0" c2_end_index="7"/>
     </connection>
     <connection name="part0_oled" component1="part0" component2="oled">
-      <connection_map name="part0_oled_1" c1_st_index="54" c1_end_index="59" c2_st_index="0" c2_end_index="5"/>
+    <connection_map name="part0_oled_1" c1_st_index="54" c1_end_index="59" c2_st_index="0" c2_end_index="5"/>
     </connection>
 	<connection name="part0_usb_uart" component1="part0" component2="usb_uart">
-      <connection_map name="part0_usb_uart_1" c1_st_index="60" c1_end_index="61" c2_st_index="0" c2_end_index="1"/>
+    <connection_map name="part0_usb_uart_1" c1_st_index="60" c1_end_index="61" c2_st_index="0" c2_end_index="1"/>
     </connection>
   </connections>
 </board>
