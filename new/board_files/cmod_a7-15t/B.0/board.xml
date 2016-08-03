@@ -95,12 +95,38 @@
               <pin_map port_index="1" component_pin="led_2bits_tri_o_1"/>
             </pin_maps>
           </port_map>
+		  <port_map logical_port="TRI_I" physical_port="led_2bits_tri_o" dir="in" left="1" right="0"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="led_2bits_tri_o_0"/> 
+              <pin_map port_index="1" component_pin="led_2bits_tri_o_1"/>
+            </pin_maps>
+          </port_map>
+		  <port_map logical_port="TRI_T" physical_port="led_2bits_tri_o" dir="out" left="1" right="0"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="led_2bits_tri_o_0"/> 
+              <pin_map port_index="1" component_pin="led_2bits_tri_o_1"/>
+            </pin_maps>
+          </port_map>
         </port_maps>
       </interface>
 	  <interface mode="master" name="rgb_led" type="xilinx.com:interface:gpio_rtl:1.0" of_component="rgb_led" preset_proc="output_3bits_preset">
         <description>RGB LED</description>
 		<port_maps>
           <port_map logical_port="TRI_O" physical_port="rgb_led_tri_o" dir="out" left="2" right="0"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="rgb_led_tri_o_0"/> 
+              <pin_map port_index="1" component_pin="rgb_led_tri_o_1"/>
+			  <pin_map port_index="2" component_pin="rgb_led_tri_o_2"/>
+            </pin_maps>
+          </port_map>
+		  <port_map logical_port="TRI_I" physical_port="rgb_led_tri_o" dir="in" left="2" right="0"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="rgb_led_tri_o_0"/> 
+              <pin_map port_index="1" component_pin="rgb_led_tri_o_1"/>
+			  <pin_map port_index="2" component_pin="rgb_led_tri_o_2"/>
+            </pin_maps>
+          </port_map>
+		  <port_map logical_port="TRI_T" physical_port="rgb_led_tri_o" dir="out" left="2" right="0"> 
             <pin_maps>
               <pin_map port_index="0" component_pin="rgb_led_tri_o_0"/> 
               <pin_map port_index="1" component_pin="rgb_led_tri_o_1"/>

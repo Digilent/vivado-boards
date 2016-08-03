@@ -30,6 +30,22 @@
               <pin_map port_index="3" component_pin="leds_4bits_tri_o_3"/> 
             </pin_maps>
           </port_map>
+		  <port_map logical_port="TRI_I" physical_port="leds_4bits_tri_o" dir="in" left="3" right="0"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="leds_4bits_tri_o_0"/> 
+              <pin_map port_index="1" component_pin="leds_4bits_tri_o_1"/> 
+              <pin_map port_index="2" component_pin="leds_4bits_tri_o_2"/> 
+              <pin_map port_index="3" component_pin="leds_4bits_tri_o_3"/> 
+            </pin_maps>
+          </port_map>
+		  <port_map logical_port="TRI_T" physical_port="leds_4bits_tri_o" dir="out" left="3" right="0"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="leds_4bits_tri_o_0"/> 
+              <pin_map port_index="1" component_pin="leds_4bits_tri_o_1"/> 
+              <pin_map port_index="2" component_pin="leds_4bits_tri_o_2"/> 
+              <pin_map port_index="3" component_pin="leds_4bits_tri_o_3"/> 
+            </pin_maps>
+          </port_map>
         </port_maps>
       </interface>
       <interface mode="master" name="ps7_fixedio" type="xilinx.com:display_processing_system7:fixedio_rtl:1.0" of_component="ps7_fixedio" preset_proc="ps7_preset"> 
@@ -349,6 +365,26 @@
 		</preferred_ips>
 		<port_maps>
           <port_map logical_port="TRI_O" physical_port="rgb_led_tri_o" dir="out" left="5" right="0"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="rgb_led_tri_o_0"/> 
+              <pin_map port_index="1" component_pin="rgb_led_tri_o_1"/> 
+              <pin_map port_index="2" component_pin="rgb_led_tri_o_2"/> 
+              <pin_map port_index="3" component_pin="rgb_led_tri_o_3"/> 
+              <pin_map port_index="4" component_pin="rgb_led_tri_o_4"/> 
+              <pin_map port_index="5" component_pin="rgb_led_tri_o_5"/> 
+            </pin_maps>
+          </port_map>
+		  <port_map logical_port="TRI_I" physical_port="rgb_led_tri_o" dir="in" left="5" right="0"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="rgb_led_tri_o_0"/> 
+              <pin_map port_index="1" component_pin="rgb_led_tri_o_1"/> 
+              <pin_map port_index="2" component_pin="rgb_led_tri_o_2"/> 
+              <pin_map port_index="3" component_pin="rgb_led_tri_o_3"/> 
+              <pin_map port_index="4" component_pin="rgb_led_tri_o_4"/> 
+              <pin_map port_index="5" component_pin="rgb_led_tri_o_5"/> 
+            </pin_maps>
+          </port_map>
+		  <port_map logical_port="TRI_T" physical_port="rgb_led_tri_o" dir="out" left="5" right="0"> 
             <pin_maps>
               <pin_map port_index="0" component_pin="rgb_led_tri_o_0"/> 
               <pin_map port_index="1" component_pin="rgb_led_tri_o_1"/> 

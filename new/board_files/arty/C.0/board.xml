@@ -367,7 +367,7 @@
               <pin_map port_index="11" component_pin="rgb_led_tri_o_11"/> 
             </pin_maps>
           </port_map>
-		  <port_map logical_port="TRI_I" physical_port="rgb_led_tri_i" dir="out" left="11" right="0"> 
+		  <port_map logical_port="TRI_I" physical_port="rgb_led_tri_i" dir="in" left="11" right="0"> 
             <pin_maps>
               <pin_map port_index="0" component_pin="rgb_led_tri_o_0"/> 
               <pin_map port_index="1" component_pin="rgb_led_tri_o_1"/> 
