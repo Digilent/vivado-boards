@@ -4,7 +4,7 @@
     <ip vendor="xilinx.com" library="ip" name="processing_system7" version="*">
       <user_parameters>
         <user_parameter name="CONFIG.PCW_DDR_RAM_BASEADDR" value="0x00100000"/> 
-        <user_parameter name="CONFIG.PCW_DDR_RAM_HIGHADDR" value="0x0FFFFFFF"/> 
+        <user_parameter name="CONFIG.PCW_DDR_RAM_HIGHADDR" value="0x1FFFFFFF"/> 
         <user_parameter name="CONFIG.PCW_UART0_BASEADDR" value="0xE0000000"/> 
         <user_parameter name="CONFIG.PCW_UART0_HIGHADDR" value="0xE0000FFF"/> 
         <user_parameter name="CONFIG.PCW_UART1_BASEADDR" value="0xE0001000"/> 
@@ -45,13 +45,13 @@
         <user_parameter name="CONFIG.PCW_FCLK_CLK3_BUF" value="false"/> 
         <user_parameter name="CONFIG.PCW_UIPARAM_DDR_FREQ_MHZ" value="525"/> 
         <user_parameter name="CONFIG.PCW_UIPARAM_DDR_BANK_ADDR_COUNT" value="3"/> 
-        <user_parameter name="CONFIG.PCW_UIPARAM_DDR_ROW_ADDR_COUNT" value="14"/> 
+        <user_parameter name="CONFIG.PCW_UIPARAM_DDR_ROW_ADDR_COUNT" value="15"/> 
         <user_parameter name="CONFIG.PCW_UIPARAM_DDR_COL_ADDR_COUNT" value="10"/> 
         <user_parameter name="CONFIG.PCW_UIPARAM_DDR_CL" value="7"/> 
         <user_parameter name="CONFIG.PCW_UIPARAM_DDR_CWL" value="6"/> 
         <user_parameter name="CONFIG.PCW_UIPARAM_DDR_T_RCD" value="7"/> 
         <user_parameter name="CONFIG.PCW_UIPARAM_DDR_T_RP" value="7"/> 
-        <user_parameter name="CONFIG.PCW_UIPARAM_DDR_T_RC" value="48.75"/> 
+        <user_parameter name="CONFIG.PCW_UIPARAM_DDR_T_RC" value="48.91"/> 
         <user_parameter name="CONFIG.PCW_UIPARAM_DDR_T_RAS_MIN" value="35.0"/> 
         <user_parameter name="CONFIG.PCW_UIPARAM_DDR_T_FAW" value="40.0"/> 
         <user_parameter name="CONFIG.PCW_UIPARAM_DDR_AL" value="0"/> 
@@ -395,9 +395,9 @@
         <user_parameter name="CONFIG.PCW_UIPARAM_DDR_BUS_WIDTH" value="16 Bit"/> 
         <user_parameter name="CONFIG.PCW_UIPARAM_DDR_BL" value="8"/> 
         <user_parameter name="CONFIG.PCW_UIPARAM_DDR_HIGH_TEMP" value="Normal (0-85)"/> 
-        <user_parameter name="CONFIG.PCW_UIPARAM_DDR_PARTNO" value="MT41K128M16 JT-125"/> 
+        <user_parameter name="CONFIG.PCW_UIPARAM_DDR_PARTNO" value="MT41J256M16 RE-125"/> 
         <user_parameter name="CONFIG.PCW_UIPARAM_DDR_DRAM_WIDTH" value="16 Bits"/> 
-        <user_parameter name="CONFIG.PCW_UIPARAM_DDR_DEVICE_CAPACITY" value="2048 MBits"/> 
+        <user_parameter name="CONFIG.PCW_UIPARAM_DDR_DEVICE_CAPACITY" value="4096 MBits"/> 
         <user_parameter name="CONFIG.PCW_UIPARAM_DDR_SPEED_BIN" value="DDR3_1066F"/> 
         <user_parameter name="CONFIG.PCW_UIPARAM_DDR_TRAIN_WRITE_LEVEL" value="1"/> 
         <user_parameter name="CONFIG.PCW_UIPARAM_DDR_TRAIN_READ_GATE" value="1"/> 
