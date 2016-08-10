@@ -30,12 +30,12 @@
   <pin index="26" name ="JB10" iostandard="LVCMOS33" loc="W13"/>
   <pin index="27" name ="i2c_scl_i" iostandard="LVCMOS33" loc="P16"/>
   <pin index="28" name ="i2c_sda_i" iostandard="LVCMOS33" loc="P15"/>
-  <pin index="29" name ="rgb_led_tri_o_0" iostandard="LVCMOS33" loc="G14"/>
-  <pin index="30" name ="rgb_led_tri_o_1" iostandard="LVCMOS33" loc="L14"/>
-  <pin index="31" name ="rgb_led_tri_o_2" iostandard="LVCMOS33" loc="M15"/>
-  <pin index="32" name ="rgb_led_tri_o_3" iostandard="LVCMOS33" loc="L15"/>
-  <pin index="33" name ="rgb_led_tri_o_4" iostandard="LVCMOS33" loc="G17"/>
-  <pin index="34" name ="rgb_led_tri_o_5" iostandard="LVCMOS33" loc="N15"/>
+  <pin index="29" name ="rgb_led_tri_o_0" iostandard="LVCMOS33" loc="L15"/>
+  <pin index="30" name ="rgb_led_tri_o_1" iostandard="LVCMOS33" loc="G17"/>
+  <pin index="31" name ="rgb_led_tri_o_2" iostandard="LVCMOS33" loc="N15"/>
+  <pin index="32" name ="rgb_led_tri_o_3" iostandard="LVCMOS33" loc="G14"/>
+  <pin index="33" name ="rgb_led_tri_o_4" iostandard="LVCMOS33" loc="L14"/>
+  <pin index="34" name ="rgb_led_tri_o_5" iostandard="LVCMOS33" loc="M15"/>
   <pin index="35" name ="shield_dp0_dp13_tri_i_0" iostandard="LVCMOS33" loc="T14"/>
   <pin index="36" name ="shield_dp0_dp13_tri_i_1" iostandard="LVCMOS33" loc="U12"/>
   <pin index="37" name ="shield_dp0_dp13_tri_i_2" iostandard="LVCMOS33" loc="U13"/>
