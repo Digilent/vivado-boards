@@ -130,5 +130,12 @@
   <pin index="126" name ="OLED8" iostandard="LVCMOS18" loc="AB17"/>
   <pin index="127" name ="OLED9" iostandard="LVCMOS33" loc="AB22"/>
   <pin index="128" name ="OLED10" iostandard="LVCMOS18" loc="AG17"/>
+  <pin index="129" name ="SD1" iostandard="LVCMOS33" loc="T30"/>
+  <pin index="130" name ="SD2" iostandard="LVCMOS33" loc="R29"/>
+  <pin index="131" name ="SD3" iostandard="LVCMOS33" loc="R26"/>
+  <pin index="132" name ="SD4" iostandard="LVCMOS33" loc="R28"/>
+  <pin index="133" name ="SD7" iostandard="LVCMOS33" loc="R30"/>
+  <pin index="134" name ="SD8" iostandard="LVCMOS33" loc="P29"/>
+  <pin index="135" name ="SD9" iostandard="LVCMOS33" loc="P28"/>
 </pins>
 </part_info>

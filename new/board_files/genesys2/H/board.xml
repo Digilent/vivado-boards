@@ -1174,7 +1174,119 @@
 		  </port_map>
         </port_maps>
       </interface>
-	  
+	  <interface mode="master" name="sd" type="digilentinc.com:interface:pmod_rtl:1.0" of_component="sd">
+	  <preferred_ips>
+			<preferred_ip vendor="digilentinc.com" library="ip" name="PmodSD" order="0"/>
+			<preferred_ip vendor="digilentinc.com" library="ip" name="pmod_bridge" order="1"/>
+		</preferred_ips>
+        <port_maps>
+          <port_map logical_port="PIN1_I" physical_port="SD1" dir="in"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="SD1"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN1_O" physical_port="SD1" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="SD1"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN1_T" physical_port="SD1" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="SD1"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN2_I" physical_port="SD2" dir="in"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="SD2"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN2_O" physical_port="SD2" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="SD2"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN2_T" physical_port="SD2" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="SD2"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN3_I" physical_port="SD3" dir="in"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="SD3"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN3_O" physical_port="SD3" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="SD3"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN3_T" physical_port="SD3" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="SD3"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN4_I" physical_port="SD4" dir="in"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="SD4"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN4_O" physical_port="SD4" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="SD4"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN4_T" physical_port="SD4" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="SD4"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN7_I" physical_port="SD7" dir="in"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="SD7"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN7_O" physical_port="SD7" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="SD7"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN7_T" physical_port="SD7" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="SD7"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN8_I" physical_port="SD8" dir="in"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="SD8"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN8_O" physical_port="SD8" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="SD8"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN8_T" physical_port="SD8" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="SD8"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN9_I" physical_port="SD9" dir="in"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="SD9"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN9_O" physical_port="SD9" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="SD9"/> 
+			</pin_maps>
+		  </port_map>
+		  <port_map logical_port="PIN9_T" physical_port="SD9" dir="out"> 
+            <pin_maps>
+              <pin_map port_index="0" component_pin="SD9"/> 
+			</pin_maps>
+		  </port_map>
+        </port_maps>
+      </interface>	  
 	   <interface mode="master" name="oled" type="digilentinc.com:interface:pmod_rtl:1.0" of_component="oled" preset_proc="oled_preset">
        <preferred_ips>
 			<preferred_ip vendor="digilentinc.com" library="ip" name="PmodOLED" order="0"/>
@@ -1394,6 +1506,27 @@
   <component name="jd" display_name="Connector JD" type="chip" sub_type="chip" major_group="Pmod">
 	<description>Pmod Connector JD</description>
   </component>
+  <component name="sd" display_name="Micro SD Card" type="chip" sub_type="chip" major_group="External Memory">
+	<description>Micro SD Card Reader</description>
+	<component_modes>
+	<component_mode name="apmodsd" display_name="Digilent PmodSD IP">
+	  <interfaces>
+		<interface name="sd"/>
+	  </interfaces>
+	  <preferred_ips>
+			<preferred_ip vendor="digilentinc.com" library="ip" name="PmodSD" order="0"/>
+	  </preferred_ips>
+	</component_mode>
+	<component_mode name="bpmodbridge" display_name="Pmod Bridge (Custom SPI/GPIO)">
+	  <interfaces>
+		<interface name="sd"/>
+	  </interfaces>
+	  <preferred_ips>
+		  <preferred_ip vendor="digilentinc.com" library="ip" name="pmod_bridge" order="0"/>
+	  </preferred_ips>
+	</component_mode>
+  </component_modes>
+  </component>
   <component name="oled" display_name="Onboard OLED" type="chip" sub_type="chip" major_group="GPIO">
   <component_modes>
 	<component_mode name="apmodoled" display_name="Digilent PmodOLED IP">
@@ -1493,6 +1626,9 @@
   </connection>
   <connection name="part0_ja" component1="part0" component2="ja">
     <connection_map name="part0_ja_1" c1_st_index="115" c1_end_index="122" c2_st_index="0" c2_end_index="7"/>
+  </connection>
+  <connection name="part0_sd" component1="part0" component2="sd">
+    <connection_map name="part0_ja_1" c1_st_index="129" c1_end_index="135" c2_st_index="0" c2_end_index="6"/>
   </connection>
   <connection name="part0_oled" component1="part0" component2="oled">
     <connection_map name="part0_oled_1" c1_st_index="123" c1_end_index="128" c2_st_index="0" c2_end_index="5"/>
