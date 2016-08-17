@@ -124,5 +124,13 @@
   <pin index="120" name ="JXADC8" iostandard="LVCMOS33" loc="A16"/>
   <pin index="121" name ="JXADC9" iostandard="LVCMOS33" loc="B17"/>
   <pin index="122" name ="JXADC10" iostandard="LVCMOS33" loc="A18"/>
+  <pin index="171" name ="SD1" iostandard="LVCMOS33" loc="D2"/>
+  <pin index="172" name ="SD2" iostandard="LVCMOS33" loc="C1"/>
+  <pin index="173" name ="SD3" iostandard="LVCMOS33" loc="C2"/>
+  <pin index="174" name ="SD4" iostandard="LVCMOS33" loc="B1"/>
+  <pin index="175" name ="SD7" iostandard="LVCMOS33" loc="E1"/>
+  <pin index="176" name ="SD8" iostandard="LVCMOS33" loc="F1"/>
+  <pin index="177" name ="SD9" iostandard="LVCMOS33" loc="A1"/>
+  <pin index="178" name ="SD10" iostandard="LVCMOS33" loc="E2"/>
 </pins>
 </part_info>
