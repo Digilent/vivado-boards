@@ -132,5 +132,53 @@
   <pin index="128" name ="temp_sda_i" iostandard="LVCMOS33" loc="G16"/>
   <pin index="129" name ="usb_uart_rxd" iostandard="LVCMOS33" loc="C4"/>
   <pin index="130" name ="usb_uart_txd" iostandard="LVCMOS33" loc="D4"/>
+  <pin index="131" name ="JA1" iostandard="LVCMOS33" loc="B13"/>
+  <pin index="132" name ="JA2" iostandard="LVCMOS33" loc="F14"/>
+  <pin index="133" name ="JA3" iostandard="LVCMOS33" loc="D17"/>
+  <pin index="134" name ="JA4" iostandard="LVCMOS33" loc="E17"/>
+  <pin index="135" name ="JA7" iostandard="LVCMOS33" loc="G13"/>
+  <pin index="136" name ="JA8" iostandard="LVCMOS33" loc="C17"/>
+  <pin index="137" name ="JA9" iostandard="LVCMOS33" loc="D18"/>
+  <pin index="138" name ="JA10" iostandard="LVCMOS33" loc="E18"/>
+  <pin index="139" name ="JB1" iostandard="LVCMOS33" loc="G14"/>
+  <pin index="140" name ="JB2" iostandard="LVCMOS33" loc="P15"/>
+  <pin index="141" name ="JB3" iostandard="LVCMOS33" loc="V11"/>
+  <pin index="142" name ="JB4" iostandard="LVCMOS33" loc="V15"/>
+  <pin index="143" name ="JB7" iostandard="LVCMOS33" loc="K16"/>
+  <pin index="144" name ="JB8" iostandard="LVCMOS33" loc="R16"/>
+  <pin index="145" name ="JB9" iostandard="LVCMOS33" loc="T9"/>
+  <pin index="146" name ="JB10" iostandard="LVCMOS33" loc="U11"/>
+  <pin index="147" name ="JC1" iostandard="LVCMOS33" loc="K2"/>
+  <pin index="148" name ="JC2" iostandard="LVCMOS33" loc="E7"/>
+  <pin index="149" name ="JC3" iostandard="LVCMOS33" loc="J3"/>
+  <pin index="150" name ="JC4" iostandard="LVCMOS33" loc="J4"/>
+  <pin index="151" name ="JC7" iostandard="LVCMOS33" loc="K1"/>
+  <pin index="152" name ="JC8" iostandard="LVCMOS33" loc="E6"/>
+  <pin index="153" name ="JC9" iostandard="LVCMOS33" loc="J2"/>
+  <pin index="154" name ="JC10" iostandard="LVCMOS33" loc="G6"/>
+  <pin index="155" name ="JD1" iostandard="LVCMOS33" loc="H4"/>
+  <pin index="156" name ="JD2" iostandard="LVCMOS33" loc="H1"/>
+  <pin index="157" name ="JD3" iostandard="LVCMOS33" loc="G1"/>
+  <pin index="158" name ="JD4" iostandard="LVCMOS33" loc="G3"/>
+  <pin index="159" name ="JD7" iostandard="LVCMOS33" loc="H2"/>
+  <pin index="160" name ="JD8" iostandard="LVCMOS33" loc="G4"/>
+  <pin index="161" name ="JD9" iostandard="LVCMOS33" loc="G2"/>
+  <pin index="162" name ="JD10" iostandard="LVCMOS33" loc="F3"/>
+  <pin index="163" name ="JXADC1" iostandard="LVCMOS33" loc="A13"/>
+  <pin index="164" name ="JXADC2" iostandard="LVCMOS33" loc="A15"/>
+  <pin index="165" name ="JXADC3" iostandard="LVCMOS33" loc="B16"/>
+  <pin index="166" name ="JXADC4" iostandard="LVCMOS33" loc="B18"/>
+  <pin index="167" name ="JXADC7" iostandard="LVCMOS33" loc="A14"/>
+  <pin index="168" name ="JXADC8" iostandard="LVCMOS33" loc="A16"/>
+  <pin index="169" name ="JXADC9" iostandard="LVCMOS33" loc="B17"/>
+  <pin index="170" name ="JXADC10" iostandard="LVCMOS33" loc="A18"/>
+  <pin index="171" name ="SD1" iostandard="LVCMOS33" loc="D2"/>
+  <pin index="172" name ="SD2" iostandard="LVCMOS33" loc="C1"/>
+  <pin index="173" name ="SD3" iostandard="LVCMOS33" loc="C2"/>
+  <pin index="174" name ="SD4" iostandard="LVCMOS33" loc="B1"/>
+  <pin index="175" name ="SD7" iostandard="LVCMOS33" loc="E1"/>
+  <pin index="176" name ="SD8" iostandard="LVCMOS33" loc="F1"/>
+  <pin index="177" name ="SD9" iostandard="LVCMOS33" loc="A1"/>
+  <pin index="178" name ="SD10" iostandard="LVCMOS33" loc="E2"/>
 </pins>
 </part_info>

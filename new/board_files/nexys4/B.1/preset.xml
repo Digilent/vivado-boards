@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?> 
 <ip_presets schema="1.0">
+  <ip_preset preset_proc_name="emc_preset">
+	<ip vendor="xilinx.com" library="ip" name="axi_emc">
+		<user_parameters>
+			<user_parameter name="CONFIG.C_TWPH_PS_MEM_0" value="10000"/>
+			<user_parameter name="CONFIG.C_TWP_PS_MEM_0" value="55000"/>
+			<user_parameter name="CONFIG.C_TWC_PS_MEM_0" value="85000"/>
+			<user_parameter name="CONFIG.C_THZOE_PS_MEM_0" value="8000"/>
+			<user_parameter name="CONFIG.C_THZCE_PS_MEM_0" value="8000"/>
+			<user_parameter name="CONFIG.C_TPACC_PS_FLASH_0" value="70000"/>
+			<user_parameter name="CONFIG.C_TAVDV_PS_MEM_0" value="70000"/>
+			<user_parameter name="CONFIG.C_TCEDV_PS_MEM_0" value="70000"/>
+			<user_parameter name="CONFIG.C_MEM0_TYPE" value="1"/>
+		</user_parameters>
+	</ip>
+  </ip_preset>
   <ip_preset preset_proc_name="qspi_preset">
 	<ip vendor="xilinx.com" library="ip" name="axi_quad_spi">
 		<user_parameters>
