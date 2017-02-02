@@ -65,7 +65,7 @@
   <pin index="61" name ="shield_dp0_dp19_tri_i_7" iostandard="LVCMOS33" loc="T16"/>
   <pin index="62" name ="shield_dp0_dp19_tri_i_8" iostandard="LVCMOS33" loc="N15"/>
   <pin index="63" name ="shield_dp0_dp19_tri_i_9" iostandard="LVCMOS33" loc="M16"/>
-  <pin index="64" name ="shield_dp0_dp19_tri_i_10" iostandard="LVCMOS33" loc="V17"/>
+  <pin index="64" name ="shield_dp0_dp19_tri_i_10" iostandard="LVCMOS33" loc="C1"/>
   <pin index="65" name ="shield_dp0_dp19_tri_i_11" iostandard="LVCMOS33" loc="U18"/>
   <pin index="66" name ="shield_dp0_dp19_tri_i_12" iostandard="LVCMOS33" loc="R17"/>
   <pin index="67" name ="shield_dp0_dp19_tri_i_13" iostandard="LVCMOS33" loc="P17"/>
