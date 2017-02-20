@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?> 
-<board schema_version="2.0" vendor="digilentinc.com" name="arty-z7-10" display_name="Arty Z7-7010" url="http://www.digilentinc.com" preset_file="preset.xml" >
+<board schema_version="2.0" vendor="digilentinc.com" name="arty-z7-10" display_name="Arty Z7-10" url="http://www.digilentinc.com" preset_file="preset.xml" >
 <compatible_board_revisions>
   <revision id="0">A.0</revision>
 </compatible_board_revisions>
 <file_version>1.0</file_version>
-<description>Arty Z7-7010 </description>
+<description>Arty Z7-10 </description>
 <components>
-  <component name="part0" display_name="Arty Z7-7010" type="fpga" part_name="xc7z010clg400-1" pin_map_file="part0_pins.xml" vendor="xilinx.com" spec_url="http://www.digilentinc.com">
+  <component name="part0" display_name="Arty Z7-10" type="fpga" part_name="xc7z010clg400-1" pin_map_file="part0_pins.xml" vendor="xilinx.com" spec_url="http://www.digilentinc.com">
     <interfaces>
       <interface mode="master" name="btns_4bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="btns_4bits" preset_proc="push_buttons_4bits_preset">
         <port_maps>
