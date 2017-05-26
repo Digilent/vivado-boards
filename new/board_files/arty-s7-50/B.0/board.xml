@@ -439,9 +439,9 @@
           <preferred_ip vendor="xilinx.com" library="ip" name="clk_wiz" order="0"/>
         </preferred_ips>
 		<port_maps>
-          <port_map logical_port="clk" physical_port="clk" dir="in">
+          <port_map logical_port="clk" physical_port="ddr_clk" dir="in">
             <pin_maps>
-              <pin_map port_index="0" component_pin="clk"/> 
+              <pin_map port_index="0" component_pin="ddr_clk"/> 
             </pin_maps>
           </port_map>
         </port_maps>
@@ -457,9 +457,9 @@
           <preferred_ip vendor="xilinx.com" library="ip" name="clk_wiz" order="0"/>
         </preferred_ips>
 		<port_maps>
-          <port_map logical_port="clk" physical_port="clk" dir="in">
+          <port_map logical_port="clk" physical_port="sys_clk" dir="in">
             <pin_maps>
-              <pin_map port_index="0" component_pin="clk"/> 
+              <pin_map port_index="0" component_pin="sys_clk"/> 
             </pin_maps>
           </port_map>
         </port_maps>
@@ -1056,58 +1056,58 @@
 </jtag_chains>
 <connections>
   <connection name="part0_dip_switches_4bits" component1="part0" component2="dip_switches_4bits">
-    <connection_map name="part0_dip_switches_4bits_1" c1_st_index="1" c1_end_index="4" c2_st_index="0" c2_end_index="3"/>
+    <connection_map name="part0_dip_switches_4bits_1" c1_st_index="0" c1_end_index="3" c2_st_index="0" c2_end_index="3"/>
   </connection>
   <connection name="part0_push_buttons_4bits" component1="part0" component2="push_buttons_4bits">
-    <connection_map name="part0_push_buttons_4bits_1" c1_st_index="31" c1_end_index="34" c2_st_index="0" c2_end_index="3"/>
+    <connection_map name="part0_push_buttons_4bits_1" c1_st_index="4" c1_end_index="7" c2_st_index="0" c2_end_index="3"/>
   </connection>
   <connection name="part0_led_4bits" component1="part0" component2="led_4bits">
-    <connection_map name="part0_led_4bits_1" c1_st_index="27" c1_end_index="30" c2_st_index="0" c2_end_index="3"/>
+    <connection_map name="part0_led_4bits_1" c1_st_index="8" c1_end_index="11" c2_st_index="0" c2_end_index="3"/>
   </connection>
   <connection name="part0_rgb_led" component1="part0" component2="rgb_led">
-    <connection_map name="part0_rgb_led_1" c1_st_index="42" c1_end_index="53" c2_st_index="0" c2_end_index="5"/>
+    <connection_map name="part0_rgb_led_1" c1_st_index="12" c1_end_index="17" c2_st_index="0" c2_end_index="5"/>
   </connection>
   <connection name="part0_usb_uart" component1="part0" component2="usb_uart">
-    <connection_map name="part0_usb_uart_1" c1_st_index="94" c1_end_index="95" c2_st_index="0" c2_end_index="1"/>
+    <connection_map name="part0_usb_uart_1" c1_st_index="18" c1_end_index="19" c2_st_index="0" c2_end_index="1"/>
   </connection>
   <connection name="part0_qspi_flash" component1="part0" component2="qspi_flash">
-    <connection_map name="part0_qspi_flash_1" c1_st_index="35" c1_end_index="40" c2_st_index="0" c2_end_index="4"/>
+    <connection_map name="part0_qspi_flash_1" c1_st_index="20" c1_end_index="24" c2_st_index="0" c2_end_index="4"/>
   </connection>
   <connection name="part0_reset" component1="part0" component2="reset">
-    <connection_map name="part0_reset_1" c1_st_index="41" c1_end_index="41" c2_st_index="0" c2_end_index="0"/>
+    <connection_map name="part0_reset_1" c1_st_index="25" c1_end_index="25" c2_st_index="0" c2_end_index="0"/>
   </connection>
   <connection name="part0_ddr_clock" component1="part0" component2="ddr_clock">
-    <connection_map name="part0_ddr_clock_1" c1_st_index="0" c1_end_index="0" c2_st_index="0" c2_end_index="0"/>
+    <connection_map name="part0_ddr_clock_1" c1_st_index="26" c1_end_index="26" c2_st_index="0" c2_end_index="0"/>
   </connection>
   <connection name="part0_sys_clock" component1="part0" component2="sys_clock">
-    <connection_map name="part0_ddr_clock_1" c1_st_index="0" c1_end_index="0" c2_st_index="0" c2_end_index="0"/>
+    <connection_map name="part0_ddr_clock_1" c1_st_index="27" c1_end_index="27" c2_st_index="0" c2_end_index="0"/>
   </connection>
   <connection name="part0_shield_dp0_dp9" component1="part0" component2="shield_dp0_dp9">
-    <connection_map name="part0_shield_dp0_dp9_1" c1_st_index="54" c1_end_index="73" c2_st_index="0" c2_end_index="9"/>
+    <connection_map name="part0_shield_dp0_dp9_1" c1_st_index="28" c1_end_index="37" c2_st_index="0" c2_end_index="9"/>
   </connection>
   <connection name="part0_shield_a0_a5" component1="part0" component2="shield_a0_a5">
-    <connection_map name="part0_shield_a0_a5_1" c1_st_index="54" c1_end_index="73" c2_st_index="0" c2_end_index="5"/>
+    <connection_map name="part0_shield_a0_a5_1" c1_st_index="38" c1_end_index="43" c2_st_index="0" c2_end_index="5"/>
   </connection>
   <connection name="part0_shield_a10_a11" component1="part0" component2="shield_a10_a11">
-    <connection_map name="part0_shield_a10_a11_1" c1_st_index="54" c1_end_index="73" c2_st_index="0" c2_end_index="1"/>
+    <connection_map name="part0_shield_a10_a11_1" c1_st_index="44" c1_end_index="45" c2_st_index="0" c2_end_index="1"/>
   </connection>
   <connection name="part0_spi" component1="part0" component2="spi">
-    <connection_map name="part0_spi_1" c1_st_index="90" c1_end_index="93" c2_st_index="0" c2_end_index="3"/>
+    <connection_map name="part0_spi_1" c1_st_index="46" c1_end_index="49" c2_st_index="0" c2_end_index="3"/>
   </connection>
   <connection name="part0_i2c" component1="part0" component2="i2c">
-    <connection_map name="part0_i2c_1" c1_st_index="25" c1_end_index="26" c2_st_index="0" c2_end_index="1"/>
+    <connection_map name="part0_i2c_1" c1_st_index="50" c1_end_index="51" c2_st_index="0" c2_end_index="1"/>
   </connection>
    <connection name="part0_ja" component1="part0" component2="ja">
-    <connection_map name="part0_ja_1" c1_st_index="83" c1_end_index="90" c2_st_index="0" c2_end_index="7"/>
+    <connection_map name="part0_ja_1" c1_st_index="52" c1_end_index="59" c2_st_index="0" c2_end_index="7"/>
   </connection>
   <connection name="part0_jb" component1="part0" component2="jb">
-    <connection_map name="part0_jb_1" c1_st_index="91" c1_end_index="98" c2_st_index="0" c2_end_index="7"/>
+    <connection_map name="part0_jb_1" c1_st_index="60" c1_end_index="67" c2_st_index="0" c2_end_index="7"/>
   </connection>
   <connection name="part0_jc" component1="part0" component2="jc">
-    <connection_map name="part0_jc_1" c1_st_index="99" c1_end_index="106" c2_st_index="0" c2_end_index="7"/>
+    <connection_map name="part0_jc_1" c1_st_index="68" c1_end_index="75" c2_st_index="0" c2_end_index="7"/>
   </connection>
   <connection name="part0_jd" component1="part0" component2="jd">
-    <connection_map name="part0_jd_1" c1_st_index="107" c1_end_index="114" c2_st_index="0" c2_end_index="7"/>
+    <connection_map name="part0_jd_1" c1_st_index="76" c1_end_index="83" c2_st_index="0" c2_end_index="7"/>
   </connection>
 </connections>
 </board>
