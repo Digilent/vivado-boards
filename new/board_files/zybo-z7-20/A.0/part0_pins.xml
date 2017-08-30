@@ -15,7 +15,7 @@
   <pin index="11" name ="sws_4bits_tri_i_3" iostandard="LVCMOS33" loc="T16"/>
   <pin index="12" name ="sys_clk" iostandard="LVCMOS33" loc="K17"/>
   
-  <pin index="13" name ="hdmi_rx_hpd" iostandard="LVCMOS18" loc="W19"/>
+  <pin index="13" name ="hdmi_rx_hpd" iostandard="LVCMOS33" loc="W19"/>
   
   <pin index="14" name ="TMDS_IN_clk_p" iostandard="TMDS_33" loc="U18"/>
   <pin index="15" name ="TMDS_IN_clk_n" iostandard="TMDS_33" loc="U19"/>
@@ -27,7 +27,7 @@
   <pin index="21" name ="TMDS_IN_data_n_2" iostandard="TMDS_33" loc="P20"/> 
   
   
-  <pin index="22" name ="hdmi_tx_hpd" iostandard="LVCMOS18" loc="E18"/>
+  <pin index="22" name ="hdmi_tx_hpd" iostandard="LVCMOS33" loc="E18"/>
   
   <pin index="23" name ="TMDS_OUT_clk_p" iostandard="LVCMOS33" loc="H16"/>
   <pin index="24" name ="TMDS_OUT_clk_n" iostandard="LVCMOS33" loc="H17"/>
