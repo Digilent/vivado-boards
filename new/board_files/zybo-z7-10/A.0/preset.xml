@@ -39,31 +39,6 @@
 		<user_parameter name="CONFIG.PCW_ENET_RESET_POLARITY" value="Active Low"/>
 		<user_parameter name="CONFIG.PCW_ENET_RESET_SELECT" value="Share reset pin"/>
 		<user_parameter name="CONFIG.PCW_EN_4K_TIMER" value="0"/>
-		<user_parameter name="CONFIG.PCW_EN_CLK0_PORT" value="1"/>
-		<user_parameter name="CONFIG.PCW_EN_CLK1_PORT" value="0"/>
-		<user_parameter name="CONFIG.PCW_EN_CLK2_PORT" value="0"/>
-		<user_parameter name="CONFIG.PCW_EN_CLK3_PORT" value="0"/>
-		<user_parameter name="CONFIG.PCW_FCLK0_PERIPHERAL_CLKSRC" value="IO PLL"/>
-		<user_parameter name="CONFIG.PCW_FCLK0_PERIPHERAL_DIVISOR0" value="5"/>
-		<user_parameter name="CONFIG.PCW_FCLK0_PERIPHERAL_DIVISOR1" value="2"/>
-		<user_parameter name="CONFIG.PCW_FCLK1_PERIPHERAL_CLKSRC" value="IO PLL"/>
-		<user_parameter name="CONFIG.PCW_FCLK1_PERIPHERAL_DIVISOR0" value="1"/>
-		<user_parameter name="CONFIG.PCW_FCLK1_PERIPHERAL_DIVISOR1" value="1"/>
-		<user_parameter name="CONFIG.PCW_FCLK2_PERIPHERAL_CLKSRC" value="IO PLL"/>
-		<user_parameter name="CONFIG.PCW_FCLK2_PERIPHERAL_DIVISOR0" value="1"/>
-		<user_parameter name="CONFIG.PCW_FCLK2_PERIPHERAL_DIVISOR1" value="1"/>
-		<user_parameter name="CONFIG.PCW_FCLK3_PERIPHERAL_CLKSRC" value="IO PLL"/>
-		<user_parameter name="CONFIG.PCW_FCLK3_PERIPHERAL_DIVISOR0" value="1"/>
-		<user_parameter name="CONFIG.PCW_FCLK3_PERIPHERAL_DIVISOR1" value="1"/>
-		<user_parameter name="CONFIG.PCW_FCLK_CLK0_BUF" value="TRUE"/>
-		<user_parameter name="CONFIG.PCW_FCLK_CLK1_BUF" value="FALSE"/>
-		<user_parameter name="CONFIG.PCW_FCLK_CLK2_BUF" value="FALSE"/>
-		<user_parameter name="CONFIG.PCW_FCLK_CLK3_BUF" value="FALSE"/>
-		<user_parameter name="CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ" value="100"/>
-		<user_parameter name="CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ" value="200"/>
-		<user_parameter name="CONFIG.PCW_FPGA2_PERIPHERAL_FREQMHZ" value="50"/>
-		<user_parameter name="CONFIG.PCW_FPGA3_PERIPHERAL_FREQMHZ" value="50"/> 
-		<user_parameter name="CONFIG.PCW_GPIO_EMIO_GPIO_ENABLE" value="0"/>
 		<user_parameter name="CONFIG.PCW_GPIO_MIO_GPIO_ENABLE" value="1"/>
 		<user_parameter name="CONFIG.PCW_GPIO_MIO_GPIO_IO" value="MIO"/>
 		<user_parameter name="CONFIG.PCW_GPIO_PERIPHERAL_ENABLE" value="0"/>
