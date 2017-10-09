@@ -132,5 +132,8 @@
   <pin index="176" name ="SD8" iostandard="LVCMOS33" loc="F1"/>
   <pin index="177" name ="SD9" iostandard="LVCMOS33" loc="A1"/>
   <pin index="178" name ="SD10" iostandard="LVCMOS33" loc="E2"/>
+  <pin index="179" name ="usb_uart_rts" iostandard="LVCMOS33" loc="E5"/>
+  <pin index="180" name ="usb_uart_cts" iostandard="LVCMOS33" loc="D3"/>
+  
 </pins>
 </part_info>
