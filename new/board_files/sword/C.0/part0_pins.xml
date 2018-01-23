@@ -40,13 +40,13 @@
   <pin index="32"  name="led_16bits_tri_o_13"  iostandard="LVCMOS33"  loc="AB27"/>
   <pin index="33"  name="led_16bits_tri_o_14"  iostandard="LVCMOS33"  loc="AC27"/>
   <pin index="34"  name="led_16bits_tri_o_15"  iostandard="LVCMOS33"  loc="G30"/>
-  <!-- RGB LEDs-->
-  <pin index="35"  name="rgb_led_tri_o_0"  iostandard="LVCMOS33"  loc="F15"/>
-  <pin index="36"  name="rgb_led_tri_o_1"  iostandard="LVCMOS33"  loc="E14"/>
-  <pin index="37"  name="rgb_led_tri_o_2"  iostandard="LVCMOS33"  loc="E16"/>
-  <pin index="38"  name="rgb_led_tri_o_3"  iostandard="LVCMOS33"  loc="E15"/>
-  <pin index="39"  name="rgb_led_tri_o_4"  iostandard="LVCMOS33"  loc="C14"/>
-  <pin index="40"  name="rgb_led_tri_o_5"  iostandard="LVCMOS33"  loc="D14"/>
+  <!-- RGB LEDs -->
+  <pin index="35"  name="rgb_led_tri_o_0"  iostandard="LVCMOS33"  loc="F15"/> <!-- LED16_B -->
+  <pin index="36"  name="rgb_led_tri_o_1"  iostandard="LVCMOS33"  loc="E14"/> <!-- LED16_G -->
+  <pin index="37"  name="rgb_led_tri_o_2"  iostandard="LVCMOS33"  loc="E16"/> <!-- LED16_R -->
+  <pin index="38"  name="rgb_led_tri_o_3"  iostandard="LVCMOS33"  loc="E15"/> <!-- LED16_B -->
+  <pin index="39"  name="rgb_led_tri_o_4"  iostandard="LVCMOS33"  loc="C14"/> <!-- LED16_G -->
+  <pin index="40"  name="rgb_led_tri_o_5"  iostandard="LVCMOS33"  loc="D14"/> <!-- LED16_R -->
   <!-- Twenty-Five Button Keypad -->
   <pin index="41"  name="keypad_col_0"  iostandard="LVCMOS15"  loc="AE13"/>
   <pin index="42"  name="keypad_col_1"  iostandard="LVCMOS15"  loc="AJ14"/>
