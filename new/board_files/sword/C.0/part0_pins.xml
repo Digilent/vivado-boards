@@ -101,33 +101,26 @@
   <!-- USB-UART Interface -->
   <pin index="86"  name="usb_uart_rxd"  iostandard="LVCMOS33"  loc="G29"/>
   <pin index="87"  name="usb_uart_txd"  iostandard="LVCMOS33"  loc="F30"/>
-  <!-- HDMI Sink Port -->
-  <pin index="88"  name="hdmi_rx_hpd"       iostandard="LVCMOS33"  loc="AF20"/>
-  <pin index="89"  name="TMDS_IN_clk_p"     iostandard="TMDS_33"   loc="AG29"/>
-  <pin index="90"  name="TMDS_IN_clk_n"     iostandard="TMDS_33"   loc="AH29"/>
-  <pin index="91"  name="TMDS_IN_data_p_0"  iostandard="TMDS_33"   loc="AJ26"/>
-  <pin index="92"  name="TMDS_IN_data_p_1"  iostandard="TMDS_33"   loc="AH26"/>
-  <pin index="93"  name="TMDS_IN_data_p_2"  iostandard="TMDS_33"   loc="AF26"/>
-  <pin index="94"  name="TMDS_IN_data_n_0"  iostandard="TMDS_33"   loc="AK26"/>
-  <pin index="95"  name="TMDS_IN_data_n_1"  iostandard="TMDS_33"   loc="AH27"/>
-  <pin index="96"  name="TMDS_IN_data_n_2"  iostandard="TMDS_33"   loc="AF27"/>
-  <pin index="97"  name="hdmi_in_ddc_scl"   iostandard="LVCMOS33"  loc="AK24"/>
-  <pin index="98"  name="hdmi_in_ddc_sda"   iostandard="LVCMOS33"  loc="AK23"/>
-  <!-- HDMI Source Port -->
-  <pin index="99"  name="hdmi_tx_hpd"         iostandard="LVCMOS33"  loc="AG25"/>
-  <pin index="100"  name="TMDS_OUT_clk_p"     iostandard="TMDS_33"   loc="AG20"/>
-  <pin index="101"  name="TMDS_OUT_clk_n"     iostandard="TMDS_33"   loc="AH20"/>
-  <pin index="102"  name="TMDS_OUT_data_p_0"  iostandard="TMDS_33"   loc="AH21"/>
-  <pin index="103"  name="TMDS_OUT_data_p_1"  iostandard="TMDS_33"   loc="AJ22"/>
-  <pin index="104"  name="TMDS_OUT_data_p_2"  iostandard="TMDS_33"   loc="AG22"/>
-  <pin index="105"  name="TMDS_OUT_data_n_0"  iostandard="TMDS_33"   loc="AJ21"/>
-  <pin index="106"  name="TMDS_OUT_data_n_1"  iostandard="TMDS_33"   loc="AJ23"/>
-  <pin index="107"  name="TMDS_OUT_data_n_2"  iostandard="TMDS_33"   loc="AH22"/>
   <!-- QSPI Flash -->
-  <pin index="108"  name="qspi_csn_i"  iostandard="LVCMOS33" loc="U19"/>
-  <pin index="109"  name="qspi_db0_i"  iostandard="LVCMOS33" loc="P24"/>
-  <pin index="110"  name="qspi_db1_i"  iostandard="LVCMOS33" loc="R25"/>
-  <pin index="111"  name="qspi_db2_i"  iostandard="LVCMOS33" loc="R20"/>
-  <pin index="112"  name="qspi_db3_i"  iostandard="LVCMOS33" loc="R21"/>
+  <pin index="88"  name="qspi_csn_i"  iostandard="LVCMOS33" loc="U19"/>
+  <pin index="89"  name="qspi_db0_i"  iostandard="LVCMOS33" loc="P24"/>
+  <pin index="90"  name="qspi_db1_i"  iostandard="LVCMOS33" loc="R25"/>
+  <pin index="91"  name="qspi_db2_i"  iostandard="LVCMOS33" loc="R20"/>
+  <pin index="92"  name="qspi_db3_i"  iostandard="LVCMOS33" loc="R21"/>
+  <!-- Ethernet PHY -->
+  <pin index="93"  name="eth_mdc"           iostandard="LVCMOS18" loc="AA18"/>
+  <pin index="94"  name="eth_mdio_i"        iostandard="LVCMOS18" loc="Y18"/>
+  <pin index="95"  name="eth_rgmii_rd_0"    iostandard="LVCMOS18" loc="AE15"/>
+  <pin index="96"  name="eth_rgmii_rd_1"    iostandard="LVCMOS18" loc="AE18"/>
+  <pin index="97"  name="eth_rgmii_rd_2"    iostandard="LVCMOS18" loc="AD16"/>
+  <pin index="98"  name="eth_rgmii_rd_3"    iostandard="LVCMOS18" loc="AC19"/>
+  <pin index="99"  name="eth_rgmii_rxc"     iostandard="LVCMOS18" loc="AD18"/>
+  <pin index="100" name="eth_rgmii_rx_ctl"  iostandard="LVCMOS18" loc="AE14"/>
+  <pin index="101" name="eth_rgmii_td_0"    iostandard="LVCMOS18" loc="AA15"/>
+  <pin index="102" name="eth_rgmii_td_1"    iostandard="LVCMOS18" loc="AD17"/>
+  <pin index="103" name="eth_rgmii_td_2"    iostandard="LVCMOS18" loc="AG17"/>
+  <pin index="104" name="eth_rgmii_td_3"    iostandard="LVCMOS18" loc="AC17"/>
+  <pin index="105" name="eth_rgmii_txc"     iostandard="LVCMOS18" loc="AB15"/>
+  <pin index="106" name="eth_rgmii_tx_ctl"  iostandard="LVCMOS18" loc="AB17"/>
 </pins>
 </part_info>

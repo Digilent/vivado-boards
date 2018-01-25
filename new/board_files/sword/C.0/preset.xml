@@ -389,4 +389,20 @@
     </ip>
   </ip_preset>
   
+  <ip_preset preset_proc_name="mii_preset">
+    <ip vendor="xilinx.com" library="ip" name="axi_ethernetlite" ip_interface="mii">
+    </ip>
+	<ip vendor="xilinx.com" library="ip" name="axi_ethernet" ip_interface="mii">
+      <user_parameters>
+        <user_parameter name="CONFIG.PHY_TYPE" value="MII"/> 
+      </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="tri_mode_ethernet_mac" ip_interface="mii">
+      <user_parameters>
+        <user_parameter name="CONFIG.Physical_Interface" value="MII"/> 
+      </user_parameters>
+    </ip>
+  </ip_preset>
+  
+  </ip_preset>
 </ip_presets>
