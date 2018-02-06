@@ -6,7 +6,7 @@
 <file_version>1.0</file_version>
 <description>Arty A7-100</description>
 <components>
-  <component name="part0" display_name="Arty A7-100" type="fpga" part_name="xc7a100ticsg324-1L" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="www.digilentinc.com/Arty-A7-100"> <!--CONFIRM URL-->
+  <component name="part0" display_name="Arty A7-100" type="fpga" part_name="xc7a100tcsg324-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="www.digilentinc.com/Arty-A7-100"> <!--CONFIRM URL-->
     <interfaces>
       <interface mode="master" name="ddr3_sdram" type="xilinx.com:interface:ddrx_rtl:1.0" of_component="ddr3_sdram" preset_proc="ddr3_sdram_preset"> 
 		<description>DDR3 board interface, it can use MIG IP for connection.</description>
