@@ -25,6 +25,7 @@
 		<user_parameter name="CONFIG.PCW_DDR_WRITE_TO_CRITICAL_PRIORITY_LEVEL" value="2"/>
 		<user_parameter name="CONFIG.PCW_ENET0_ENET0_IO" value="MIO 16 .. 27"/>
 		<user_parameter name="CONFIG.PCW_ENET0_GRP_MDIO_ENABLE" value="1"/>
+		<user_parameter name="CONFIG.PCW_ENET0_GRP_MDIO_IO {MIO 52 .. 53}"/>
 		<user_parameter name="CONFIG.PCW_ENET0_PERIPHERAL_CLKSRC" value="IO PLL"/>
 		<user_parameter name="CONFIG.PCW_ENET0_PERIPHERAL_DIVISOR0" value="8"/>
 		<user_parameter name="CONFIG.PCW_ENET0_PERIPHERAL_DIVISOR1" value="1"/>
