@@ -94,7 +94,7 @@
   <pin index="90" name ="spi_miso_i" iostandard="LVCMOS33" loc="G1"/>
   <pin index="91" name ="spi_mosi_i" iostandard="LVCMOS33" loc="H1"/>
   <pin index="92" name ="spi_sclk_i" iostandard="LVCMOS33" loc="F1"/>
-  <pin index="93" name ="spi_ss_i" iostandard="LVCMOS33" loc="V17"/>
+  <pin index="93" name ="spi_ss_i" iostandard="LVCMOS33" loc="C1"/>
   <pin index="94" name ="usb_uart_rxd" iostandard="LVCMOS33" loc="A9"/>
   <pin index="95" name ="usb_uart_txd" iostandard="LVCMOS33" loc="D10"/>
   <pin index="96" name ="JA1" iostandard="LVCMOS33"   loc="G13"/>
