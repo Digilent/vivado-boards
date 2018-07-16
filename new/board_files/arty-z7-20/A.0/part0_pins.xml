@@ -66,8 +66,8 @@
   <pin index="62" name ="shield_dp26_dp41_tri_i_13" iostandard="LVCMOS33" loc="Y8"/>
   <pin index="63" name ="shield_dp26_dp41_tri_i_14" iostandard="LVCMOS33" loc="W9"/>
   <pin index="64" name ="shield_dp26_dp41_tri_i_15" iostandard="LVCMOS33" loc="Y9"/>
-  <pin index="65" name ="spi_miso_i" iostandard="LVCMOS33" loc="T12"/>
-  <pin index="66" name ="spi_mosi_i" iostandard="LVCMOS33" loc="W15"/>
+  <pin index="65" name ="spi_miso_i" iostandard="LVCMOS33" loc="W15"/>
+  <pin index="66" name ="spi_mosi_i" iostandard="LVCMOS33" loc="T12"/>
   <pin index="67" name ="spi_sclk_i" iostandard="LVCMOS33" loc="H15"/>
   <pin index="68" name ="spi_ss_i" iostandard="LVCMOS33" loc="T16"/>
 </pins>
