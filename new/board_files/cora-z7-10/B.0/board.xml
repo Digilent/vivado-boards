@@ -366,34 +366,34 @@
 						<preferred_ip vendor="xilinx.com" library="ip" name="axi_quad_spi" order="0"/>
 					</preferred_ips>
 					<port_maps>
-						<port_map logical_port="IO0_I" physical_port="shield_spi_miso_i" dir="in">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="shield_spi_miso_i"/> 
-							</pin_maps>
-						</port_map>
-						<port_map logical_port="IO0_O" physical_port="shield_spi_miso_o" dir="out">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="shield_spi_miso_i"/> 
-							</pin_maps>
-						</port_map>
-						<port_map logical_port="IO0_T" physical_port="shield_spi_miso_t" dir="out">
-							<pin_maps>
-								<pin_map port_index="0" component_pin="shield_spi_miso_i"/> 
-							</pin_maps>
-						</port_map>
-						<port_map logical_port="IO1_I" physical_port="shield_spi" dir="in">
+						<port_map logical_port="IO0_I" physical_port="shield_spi_mosi_i" dir="in">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="shield_spi_mosi_i"/> 
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="IO1_O" physical_port="shield_spi_mosi_o" dir="out">
+						<port_map logical_port="IO0_O" physical_port="shield_spi_mosi_o" dir="out">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="shield_spi_mosi_i"/> 
 							</pin_maps>
 						</port_map>
-						<port_map logical_port="IO1_T" physical_port="shield_spi_mosi_t" dir="out">
+						<port_map logical_port="IO0_T" physical_port="shield_spi_mosi_t" dir="out">
 							<pin_maps>
 								<pin_map port_index="0" component_pin="shield_spi_mosi_i"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="IO1_I" physical_port="shield_spi_miso_i" dir="in">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="shield_spi_miso_i"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="IO1_O" physical_port="shield_spi_miso_o" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="shield_spi_miso_i"/> 
+							</pin_maps>
+						</port_map>
+						<port_map logical_port="IO1_T" physical_port="shield_spi_miso_t" dir="out">
+							<pin_maps>
+								<pin_map port_index="0" component_pin="shield_spi_miso_i"/> 
 							</pin_maps>
 						</port_map>
 						<port_map logical_port="SCK_I" physical_port="shield_spi_sck_i" dir="in">
