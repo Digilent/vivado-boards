@@ -82,6 +82,23 @@
           </port_map>
         </port_maps>
       </interface>
+      <interface mode="master" name="pmod_usb_uart" type="xilinx.com:interface:uart_rtl:1.0" of_component="pmod_usb_uart"> 
+        <preferred_ips>
+          <preferred_ip vendor="xilinx.com" library="ip" name="axi_uartlite" order="0"/> 
+        </preferred_ips>
+        <port_maps>
+          <port_map logical_port="RxD" physical_port="pmod_usb_uart_if_rx" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="pmod_usb_uart_if_rx"/>
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="TxD" physical_port="pmod_usb_uart_if_tx" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="pmod_usb_uart_if_tx"/>
+            </pin_maps>
+          </port_map>
+        </port_maps>
+      </interface>
       <!-- MDC/MDIO shared amongst PHY chips -->
       <!-- Make sure this is assigned to ONE of the phy_onboard_# MAC definitions -->
       <interface mode="master" name="mdio" type="xilinx.com:interface:mdio_rtl:1.0" of_component="phy_onboard_1">
@@ -289,6 +306,9 @@
   <component name="reset" display_name="Reset Button" type="chip" sub_type="reset" major_group="Reset">
     <description>System Reset Button</description>
   </component>
+  <component name="pmod_usb_uart" display_name="PMOD USB-UART" type="chip" sub_type="uart" major_group="UART">
+    <description>PMOD USB UART on PMOD connector JB top row</description>
+  </component>
   <component name="phy_onboard_1" display_name="Ethernet PHY 1" type="chip" sub_type="ethernet" major_group="Ethernet">
     <description>Ethernet PHY 1 on the board not including reset/interrupt</description>
     <component_modes>
@@ -343,6 +363,9 @@
   </connection>
   <connection name="part0_reset" component1="part0" component2="reset">
     <connection_map c1_st_index="0" c1_end_index="0" c2_st_index="0" c2_end_index="0"/>
+  </connection>
+  <connection name="part0_pmod_usb_uart" component1="part0" component2="pmod_usb_uart">
+    <connection_map c1_st_index="11" c1_end_index="12" c2_st_index="0" c2_end_index="1"/>
   </connection>
   <connection name="part0_phy_onboard_1" component1="part0" component2="phy_onboard_1">
     <connection_map name="part0_rgmii_1" c1_st_index="15" c1_end_index="26" c2_st_index="0" c2_end_index="11"/>

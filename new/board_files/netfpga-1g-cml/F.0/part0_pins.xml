@@ -15,6 +15,9 @@
     <pin index="8" name="btn_1" iostandard="LVCMOS33" loc="E18"/>
     <pin index="9" name="btn_2" iostandard="LVCMOS15" loc="AC6"/>
     <pin index="10" name="btn_3" iostandard="LVCMOS15" loc="AB6"/>
+    <!-- PMOD USB-UART -->
+    <pin index="11" name="pmod_usb_uart_if_rx" iostandard="LVCMOS33" loc="H18"/>
+    <pin index="12" name="pmod_usb_uart_if_tx" iostandard="LVCMOS33" loc="E15"/>
     <!-- MDIO -->
     <pin index="13" name="mdc" iostandard="LVCMOS18" loc="V13"/>
     <pin index="14" name="mdio" iostandard="LVCMOS18" loc="W13"/>
