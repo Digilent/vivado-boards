@@ -6,12 +6,12 @@
 		<pin index="1" name ="btns_2bits_tri_i_0"         iostandard="LVCMOS33" loc="D20"/> <!-- Schematic Name: BTN0 -->
 		<pin index="2" name ="btns_2bits_tri_i_1"         iostandard="LVCMOS33" loc="D19"/> <!-- Schematic Name: BTN1 -->
 
-		<pin index="5" name ="rgb_leds_tri_o_2"           iostandard="LVCMOS33" loc="L15"/> <!-- Schematic Name: LED0_B -->
-		<pin index="4" name ="rgb_leds_tri_o_1"           iostandard="LVCMOS33" loc="G17"/> <!-- Schematic Name: LED0_G -->
 		<pin index="3" name ="rgb_leds_tri_o_0"           iostandard="LVCMOS33" loc="N15"/> <!-- Schematic Name: LED0_R -->
-		<pin index="8" name ="rgb_leds_tri_o_5"           iostandard="LVCMOS33" loc="G14"/> <!-- Schematic Name: LED1_B -->
-		<pin index="7" name ="rgb_leds_tri_o_4"           iostandard="LVCMOS33" loc="L14"/> <!-- Schematic Name: LED1_G -->
+		<pin index="4" name ="rgb_leds_tri_o_1"           iostandard="LVCMOS33" loc="G17"/> <!-- Schematic Name: LED0_G -->
+		<pin index="5" name ="rgb_leds_tri_o_2"           iostandard="LVCMOS33" loc="L15"/> <!-- Schematic Name: LED0_B -->
 		<pin index="6" name ="rgb_leds_tri_o_3"           iostandard="LVCMOS33" loc="M15"/> <!-- Schematic Name: LED1_R -->
+		<pin index="7" name ="rgb_leds_tri_o_4"           iostandard="LVCMOS33" loc="L14"/> <!-- Schematic Name: LED1_G -->
+		<pin index="8" name ="rgb_leds_tri_o_5"           iostandard="LVCMOS33" loc="G14"/> <!-- Schematic Name: LED1_B -->
 
 		<pin index="9"  name ="JA1" 			          iostandard="LVCMOS33" loc="Y18"/> <!-- Schematic Name: JA1_P -->
 		<pin index="10" name ="JA2" 			          iostandard="LVCMOS33" loc="Y19"/> <!-- Schematic Name: JA1_N -->
