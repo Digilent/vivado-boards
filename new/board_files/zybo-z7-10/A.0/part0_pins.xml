@@ -62,14 +62,14 @@
   <pin index="61" name ="JC9" iostandard="LVCMOS33" loc="T12"/>
   <pin index="62" name ="JC10" iostandard="LVCMOS33" loc="U12"/>
   
-  <pin index="63" name ="JD1" iostandard="LVCMOS33" loc="T15"/>
-  <pin index="64" name ="JD2" iostandard="LVCMOS33" loc="T14"/>
-  <pin index="65" name ="JD3" iostandard="LVCMOS33" loc="R14"/>
-  <pin index="66" name ="JD4" iostandard="LVCMOS33" loc="P14"/>
-  <pin index="67" name ="JD7" iostandard="LVCMOS33" loc="U15"/>
-  <pin index="68" name ="JD8" iostandard="LVCMOS33" loc="U14"/>
-  <pin index="69" name ="JD9" iostandard="LVCMOS33" loc="V18"/>
-  <pin index="70" name ="JD10" iostandard="LVCMOS33" loc="V17"/>
+  <pin index="63" name ="JD1" iostandard="LVCMOS33" loc="T14"/>
+  <pin index="64" name ="JD2" iostandard="LVCMOS33" loc="T15"/>
+  <pin index="65" name ="JD3" iostandard="LVCMOS33" loc="P14"/>
+  <pin index="66" name ="JD4" iostandard="LVCMOS33" loc="R14"/>
+  <pin index="67" name ="JD7" iostandard="LVCMOS33" loc="U14"/>
+  <pin index="68" name ="JD8" iostandard="LVCMOS33" loc="U15"/>
+  <pin index="69" name ="JD9" iostandard="LVCMOS33" loc="V17"/>
+  <pin index="70" name ="JD10" iostandard="LVCMOS33" loc="V18"/>
   
   <pin index="71" name ="JE1" iostandard="LVCMOS33" loc="V12"/>
   <pin index="72" name ="JE2" iostandard="LVCMOS33" loc="W16"/>
