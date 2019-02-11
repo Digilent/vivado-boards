@@ -7,6 +7,7 @@
         <user_parameter name="CONFIG.PCW_CRYSTAL_PERIPHERAL_FREQMHZ" value="50.000000"/> 
         <user_parameter name="CONFIG.PCW_ENET0_ENET0_IO" value="MIO 16 .. 27"/> 
         <user_parameter name="CONFIG.PCW_ENET0_GRP_MDIO_ENABLE" value="1"/> 
+        <user_parameter name="CONFIG.PCW_ENET0_GRP_MDIO_IO" value="MIO 52 .. 53"/> 
         <user_parameter name="CONFIG.PCW_ENET0_PERIPHERAL_ENABLE" value="1"/> 
         <user_parameter name="CONFIG.PCW_ENET0_RESET_ENABLE" value="0"/> 
         <user_parameter name="CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ" value="100"/> 
