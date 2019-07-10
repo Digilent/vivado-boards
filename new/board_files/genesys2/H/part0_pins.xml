@@ -3,8 +3,8 @@
 <pins>
   <pin index="0" name ="aud_scl_i" iostandard="LVCMOS18" loc="AE19"/>
   <pin index="1" name ="aud_sda_i" iostandard="LVCMOS18" loc="AF18"/>
-  <pin index="2" name ="clk_n" iostandard="TMDS_33" loc="AD11"/>
-  <pin index="3" name ="clk_p" iostandard="TMDS_33" loc="AD12"/>
+  <pin index="2" name ="clk_n" iostandard="LVDS" loc="AD11"/>
+  <pin index="3" name ="clk_p" iostandard="LVDS" loc="AD12"/>
   <pin index="4" name ="dip_switches_8bits_tri_i_0" iostandard="LVCMOS12" loc="G19"/>
   <pin index="5" name ="dip_switches_8bits_tri_i_1" iostandard="LVCMOS12" loc="G25"/>
   <pin index="6" name ="dip_switches_8bits_tri_i_2" iostandard="LVCMOS12" loc="H24"/>

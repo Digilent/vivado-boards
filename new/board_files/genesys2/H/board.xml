@@ -421,7 +421,7 @@
               <pin_map port_index="7" component_pin="led_8bits_tri_o_7"/> 
             </pin_maps>
           </port_map>
-		  <port_map logical_port="TRI_O" physical_port="led_8bits_tri_o" dir="out" left="7" right="0"> 
+		  <port_map logical_port="TRI_T" physical_port="led_8bits_tri_o" dir="out" left="7" right="0"> 
             <pin_maps>
               <pin_map port_index="0" component_pin="led_8bits_tri_o_0"/> 
               <pin_map port_index="1" component_pin="led_8bits_tri_o_1"/> 
