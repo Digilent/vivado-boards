@@ -913,11 +913,15 @@
   <ip_preset preset_proc_name="led_4bits_preset">
     <ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO">
         <user_parameters>
+		  <user_parameter name="CONFIG.C_ALL_INPUTS" value="0"/> 
+		  <user_parameter name="CONFIG.C_ALL_OUTPUTS" value="1"/>
           <user_parameter name="CONFIG.C_GPIO_WIDTH" value="4"/>
         </user_parameters>
     </ip>
     <ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO2">
         <user_parameters>
+		  <user_parameter name="CONFIG.C_ALL_INPUTS_2" value="0"/> 
+		  <user_parameter name="CONFIG.C_ALL_OUTPUTS_2" value="1"/>
           <user_parameter name="CONFIG.C_IS_DUAL" value="1"/> 
           <user_parameter name="CONFIG.C_GPIO2_WIDTH" value="4"/>
         </user_parameters>
@@ -975,11 +979,15 @@
   <ip_preset preset_proc_name="output_6bits_preset">
     <ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO">
         <user_parameters>
+		  <user_parameter name="CONFIG.C_ALL_INPUTS" value="0"/> 
+		  <user_parameter name="CONFIG.C_ALL_OUTPUTS" value="1"/>
           <user_parameter name="CONFIG.C_GPIO_WIDTH" value="6"/> 
         </user_parameters>
     </ip>
     <ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO2">
         <user_parameters>
+		  <user_parameter name="CONFIG.C_ALL_INPUTS_2" value="0"/> 
+		  <user_parameter name="CONFIG.C_ALL_OUTPUTS_2" value="1"/>
           <user_parameter name="CONFIG.C_IS_DUAL" value="1"/> 
           <user_parameter name="CONFIG.C_GPIO2_WIDTH" value="6"/> 
         </user_parameters>

@@ -131,30 +131,6 @@
               <pin_map port_index="7" component_pin="led_8bits_tri_o_7"/> 
             </pin_maps>
           </port_map>
-		  <port_map logical_port="TRI_I" physical_port="led_8bits_tri_o" dir="in" left="7" right="0"> 
-            <pin_maps>
-              <pin_map port_index="0" component_pin="led_8bits_tri_o_0"/> 
-              <pin_map port_index="1" component_pin="led_8bits_tri_o_1"/> 
-              <pin_map port_index="2" component_pin="led_8bits_tri_o_2"/> 
-              <pin_map port_index="3" component_pin="led_8bits_tri_o_3"/> 
-              <pin_map port_index="4" component_pin="led_8bits_tri_o_4"/> 
-              <pin_map port_index="5" component_pin="led_8bits_tri_o_5"/> 
-              <pin_map port_index="6" component_pin="led_8bits_tri_o_6"/> 
-              <pin_map port_index="7" component_pin="led_8bits_tri_o_7"/> 
-            </pin_maps>
-          </port_map>
-		  <port_map logical_port="TRI_T" physical_port="led_8bits_tri_o" dir="out" left="7" right="0"> 
-            <pin_maps>
-              <pin_map port_index="0" component_pin="led_8bits_tri_o_0"/> 
-              <pin_map port_index="1" component_pin="led_8bits_tri_o_1"/> 
-              <pin_map port_index="2" component_pin="led_8bits_tri_o_2"/> 
-              <pin_map port_index="3" component_pin="led_8bits_tri_o_3"/> 
-              <pin_map port_index="4" component_pin="led_8bits_tri_o_4"/> 
-              <pin_map port_index="5" component_pin="led_8bits_tri_o_5"/> 
-              <pin_map port_index="6" component_pin="led_8bits_tri_o_6"/> 
-              <pin_map port_index="7" component_pin="led_8bits_tri_o_7"/> 
-            </pin_maps>
-          </port_map>
         </port_maps>
       </interface>
       <interface mode="master" name="push_buttons_5bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="push_buttons_5bits" preset_proc="push_buttons_5bits_preset">

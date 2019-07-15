@@ -197,22 +197,6 @@
               <pin_map port_index="3" component_pin="led_4bits_tri_o_3"/> 
             </pin_maps>
           </port_map>
-		  <port_map logical_port="TRI_I" physical_port="led_4bits_tri_i" dir="in" left="3" right="0"> 
-            <pin_maps>
-              <pin_map port_index="0" component_pin="led_4bits_tri_o_0"/> 
-              <pin_map port_index="1" component_pin="led_4bits_tri_o_1"/> 
-              <pin_map port_index="2" component_pin="led_4bits_tri_o_2"/> 
-              <pin_map port_index="3" component_pin="led_4bits_tri_o_3"/> 
-            </pin_maps>
-          </port_map>
-		  <port_map logical_port="TRI_T" physical_port="led_4bits_tri_t" dir="out" left="3" right="0"> 
-            <pin_maps>
-              <pin_map port_index="0" component_pin="led_4bits_tri_o_0"/> 
-              <pin_map port_index="1" component_pin="led_4bits_tri_o_1"/> 
-              <pin_map port_index="2" component_pin="led_4bits_tri_o_2"/> 
-              <pin_map port_index="3" component_pin="led_4bits_tri_o_3"/> 
-            </pin_maps>
-          </port_map>
         </port_maps>
       </interface>
       <interface mode="master" name="push_buttons_4bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="push_buttons_4bits" preset_proc="push_buttons_4bits_preset">
@@ -352,38 +336,6 @@
 		</preferred_ips>
 		<port_maps>
           <port_map logical_port="TRI_O" physical_port="rgb_led_tri_o" dir="out" left="11" right="0"> 
-            <pin_maps>
-              <pin_map port_index="0" component_pin="rgb_led_tri_o_0"/> 
-              <pin_map port_index="1" component_pin="rgb_led_tri_o_1"/> 
-              <pin_map port_index="2" component_pin="rgb_led_tri_o_2"/> 
-              <pin_map port_index="3" component_pin="rgb_led_tri_o_3"/> 
-              <pin_map port_index="4" component_pin="rgb_led_tri_o_4"/> 
-              <pin_map port_index="5" component_pin="rgb_led_tri_o_5"/> 
-              <pin_map port_index="6" component_pin="rgb_led_tri_o_6"/> 
-              <pin_map port_index="7" component_pin="rgb_led_tri_o_7"/> 
-              <pin_map port_index="8" component_pin="rgb_led_tri_o_8"/> 
-              <pin_map port_index="9" component_pin="rgb_led_tri_o_9"/> 
-              <pin_map port_index="10" component_pin="rgb_led_tri_o_10"/> 
-              <pin_map port_index="11" component_pin="rgb_led_tri_o_11"/> 
-            </pin_maps>
-          </port_map>
-		  <port_map logical_port="TRI_I" physical_port="rgb_led_tri_i" dir="in" left="11" right="0"> 
-            <pin_maps>
-              <pin_map port_index="0" component_pin="rgb_led_tri_o_0"/> 
-              <pin_map port_index="1" component_pin="rgb_led_tri_o_1"/> 
-              <pin_map port_index="2" component_pin="rgb_led_tri_o_2"/> 
-              <pin_map port_index="3" component_pin="rgb_led_tri_o_3"/> 
-              <pin_map port_index="4" component_pin="rgb_led_tri_o_4"/> 
-              <pin_map port_index="5" component_pin="rgb_led_tri_o_5"/> 
-              <pin_map port_index="6" component_pin="rgb_led_tri_o_6"/> 
-              <pin_map port_index="7" component_pin="rgb_led_tri_o_7"/> 
-              <pin_map port_index="8" component_pin="rgb_led_tri_o_8"/> 
-              <pin_map port_index="9" component_pin="rgb_led_tri_o_9"/> 
-              <pin_map port_index="10" component_pin="rgb_led_tri_o_10"/> 
-              <pin_map port_index="11" component_pin="rgb_led_tri_o_11"/> 
-            </pin_maps>
-          </port_map>
-		  <port_map logical_port="TRI_T" physical_port="rgb_led_tri_t" dir="out" left="11" right="0"> 
             <pin_maps>
               <pin_map port_index="0" component_pin="rgb_led_tri_o_0"/> 
               <pin_map port_index="1" component_pin="rgb_led_tri_o_1"/> 
