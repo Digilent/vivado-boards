@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?> 
-<board schema_version="2.0" vendor="digilentinc.com" name="genesys2" display_name="Genesys2" url="www.digilentinc.com/genesys2" preset_file="preset.xml" >
+<board schema_version="2.0" vendor="digilentinc.com" name="genesys2" display_name="Genesys2" url="https://reference.digilentinc.com/reference/programmable-logic/genesys-2/start" preset_file="preset.xml" >
 <compatible_board_revisions>
   <revision id="0">H</revision>
 </compatible_board_revisions>
 <file_version>1.1</file_version>
 <description>Genesys2</description>
 <components>
-  <component name="part0" display_name="Genesys2" type="fpga" part_name="xc7k325tffg900-2" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="www.digilentinc.com/genesys2">
+  <component name="part0" display_name="Genesys2" type="fpga" part_name="xc7k325tffg900-2" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://reference.digilentinc.com/reference/programmable-logic/genesys-2/start">
     <interfaces>
       <interface mode="master" name="audio_codec_iic" type="xilinx.com:interface:iic_rtl:1.0" of_component="audio_codec_iic">
         <description>I2C bus to communicate with the Audio Codec</description>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?> 
-<board schema_version="2.0" vendor="digilentinc.com" name="zedboard" display_name="Zedboard" url="http://www.digilentinc.com" preset_file="preset.xml">
+<board schema_version="2.0" vendor="digilentinc.com" name="zedboard" display_name="Zedboard" url="https://reference.digilentinc.com/reference/programmable-logic/zedboard/start" preset_file="preset.xml">
   <images>
     <image name="zed_board.jpg" display_name="ZED BOARD" sub_type="board">
       <description>ZED Board File Image</description>
@@ -11,7 +11,7 @@
   <file_version>1.0</file_version>
   <description>ZedBoard Zynq Evaluation and Development Kit</description>
   <components>
-    <component name="part0" display_name="ZedBoard" type="fpga" part_name="xc7z020clg484-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://reference.digilentinc.com/reference/programmable-logic/zedboard/start?redirect=1id=zedboard/zedboard">
+    <component name="part0" display_name="ZedBoard" type="fpga" part_name="xc7z020clg484-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://reference.digilentinc.com/reference/programmable-logic/zedboard/start">
       <description>FPGA part on the board</description>
       <interfaces>
         <interface mode="master" name="btns_5bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="btns_5bits" preset_proc="btns_5bits_preset">

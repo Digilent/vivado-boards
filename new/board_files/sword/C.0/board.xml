@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?> 
 <!-- confirm url -->
-<board schema_version="2.0" vendor="digilentinc.com" name="sword" display_name="Sword" url="www.digilentinc.com" preset_file="preset.xml" >
+<board schema_version="2.0" vendor="digilentinc.com" name="sword" display_name="Sword" url="https://reference.digilentinc.com/reference/programmable-logic/sword/start" preset_file="preset.xml" >
 <compatible_board_revisions>
   <revision id="0">C.0</revision>
 </compatible_board_revisions>
 <file_version>1.0</file_version>
 <description>Sword</description>
 <components>
-  <component name="part0" display_name="Sword" type="fpga" part_name="xc7k325tffg900-2" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="www.digilentinc.com/sword">
+  <component name="part0" display_name="Sword" type="fpga" part_name="xc7k325tffg900-2" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://reference.digilentinc.com/reference/programmable-logic/sword/start">
     <interfaces>
 	  <!-- Clock Signal -->
 	  <interface mode="slave" name="sys_diff_clock" type="xilinx.com:interface:diff_clock_rtl:1.0" of_component="sys_diff_clock" preset_proc="sys_diff_clock_preset">
