@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?> 
-<board schema_version="2.0" vendor="digilentinc.com" name="zybo" display_name="Zybo" url="http://www.digilentinc.com" preset_file="preset.xml" >
+<board schema_version="2.0" vendor="digilentinc.com" name="zybo" display_name="Zybo" url="https://reference.digilentinc.com/reference/programmable-logic/zybo/start" preset_file="preset.xml" >
 <compatible_board_revisions>
   <revision id="0">B.3</revision>
 </compatible_board_revisions>
 <file_version>2.0</file_version>
 <description>Zybo</description>
 <components>
-  <component name="part0" display_name="Zybo" type="fpga" part_name="xc7z010clg400-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="http://www.digilentinc.com">
+  <component name="part0" display_name="Zybo" type="fpga" part_name="xc7z010clg400-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://reference.digilentinc.com/reference/programmable-logic/zybo/start">
     <interfaces>
       <interface mode="master" name="btns_4bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="btns_4bits" preset_proc="push_buttons_4bits_preset">
         <port_maps>

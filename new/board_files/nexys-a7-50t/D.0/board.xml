@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?> 
-<board schema_version="2.0" vendor="digilentinc.com" name="nexys-a7-50t" display_name="Nexys A7-50T" url="www.digilentinc.com/nexys-a7-50t" preset_file="preset.xml" >
+<board schema_version="2.0" vendor="digilentinc.com" name="nexys-a7-50t" display_name="Nexys A7-50T" url="https://reference.digilentinc.com/reference/programmable-logic/nexys-a7/start" preset_file="preset.xml" >
 <compatible_board_revisions>
   <revision id="0">D.0</revision>
 </compatible_board_revisions>
 <file_version>1.0</file_version>
 <description>Nexys A7-50T</description>
 <components>
-  <component name="part0" display_name="Nexys A7-50T" type="fpga" part_name="xc7a50ticsg324-1L" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="www.digilentinc.com/nexys-a7-50t">
+  <component name="part0" display_name="Nexys A7-50T" type="fpga" part_name="xc7a50ticsg324-1L" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://reference.digilentinc.com/reference/programmable-logic/nexys-a7/start">
     <interfaces>
       <interface mode="master" name="acl_spi" type="xilinx.com:interface:spi_rtl:1.0" of_component="acl_spi" preset_proc="spi_preset">
         <description>Accelerometer control through SPI</description>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?> 
-<board schema_version="2.0" vendor="digilentinc.com" name="nexys_video" display_name="Nexys Video" url="www.digilentinc.com/nexysvideo" preset_file="preset.xml" >
+<board schema_version="2.0" vendor="digilentinc.com" name="nexys_video" display_name="Nexys Video" url="https://reference.digilentinc.com/reference/programmable-logic/nexys-video/start" preset_file="preset.xml" >
 <compatible_board_revisions>
   <revision id="0">A.0</revision>
 </compatible_board_revisions>
 <file_version>1.1</file_version>
 <description>Nexys Video</description>
 <components>
-  <component name="part0" display_name="Nexys Video" type="fpga" part_name="xc7a200tsbg484-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="www.digilentinc.com/nexysvideo">
+  <component name="part0" display_name="Nexys Video" type="fpga" part_name="xc7a200tsbg484-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://reference.digilentinc.com/reference/programmable-logic/nexys-video/start">
     <interfaces>
       <interface mode="master" name="ddr3_sdram" type="xilinx.com:interface:ddrx_rtl:1.0" of_component="ddr3_sdram" preset_proc="ddr3_sdram_preset"> 
       <description>DDR3 board interface, it can use MIG IP for connection.</description>

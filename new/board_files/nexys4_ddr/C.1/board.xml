@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?> 
-<board schema_version="2.0" vendor="digilentinc.com" name="nexys4_ddr" display_name="Nexys4 DDR" url="www.digilentinc.com/nexys4" preset_file="preset.xml" >
+<board schema_version="2.0" vendor="digilentinc.com" name="nexys4_ddr" display_name="Nexys4 DDR" url="https://reference.digilentinc.com/reference/programmable-logic/nexys-4-ddr/start" preset_file="preset.xml" >
 <compatible_board_revisions>
   <revision id="0">C.1</revision>
 </compatible_board_revisions>
 <file_version>1.1</file_version>
 <description>Nexys4 DDR</description>
 <components>
-  <component name="part0" display_name="Nexys4 DDR" type="fpga" part_name="xc7a100tcsg324-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="www.digilentinc.com/nexys4">
+  <component name="part0" display_name="Nexys4 DDR" type="fpga" part_name="xc7a100tcsg324-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://reference.digilentinc.com/reference/programmable-logic/nexys-4-ddr/start">
     <interfaces>
       <interface mode="master" name="acl_spi" type="xilinx.com:interface:spi_rtl:1.0" of_component="acl_spi" preset_proc="spi_preset">
         <description>Accelerometer control through SPI</description>
