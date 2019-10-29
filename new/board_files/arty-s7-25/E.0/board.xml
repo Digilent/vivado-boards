@@ -984,7 +984,7 @@
   <component name="shield_a10_a11" display_name="Shield Pins A10 through A11 (digital)" type="chip" sub_type="led" major_group="GPIO">
   	<description>Shield pins A10 through A11 for digital use</description>
   </component>
-  <component name="spi" display_name="SPI connector J6" type="chip" sub_type="mux" major_group="SPI">
+  <component name="spi" display_name="SPI connector J7" type="chip" sub_type="mux" major_group="SPI">
   	<description>Shield SPI</description>
   </component>
   <component name="ddr_clock" display_name="DDR Clock" type="chip" sub_type="system_clock" major_group="Clocks">
