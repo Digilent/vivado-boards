@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> 
+<part_info part_name="xc7z020clg484-1">
+<pins>
+    <pin index="0"  name="sys_clk"              iostandard="LVCMOS33" loc="D18"/> <!-- Sch=sysclk    -->
+    
+	<pin index="1"  name="btn_2bits_tri_i_0"    iostandard="LVCMOS33" loc="C17"/> <!-- Sch=btn[0]    -->
+    <pin index="2"  name="btn_2bits_tri_i_1"    iostandard="LVCMOS33" loc="C18"/> <!-- Sch=btn[1]    -->
+    
+	<pin index="3"  name="rgbled_6bits_tri_o_0" iostandard="LVCMOS33" loc="A17"/> <!-- Sch=led0_b    -->
+    <pin index="4"  name="rgbled_6bits_tri_o_1" iostandard="LVCMOS33" loc="B16"/> <!-- Sch=led0_g    -->
+    <pin index="5"  name="rgbled_6bits_tri_o_2" iostandard="LVCMOS33" loc="B17"/> <!-- Sch=led0_r    -->
+    <pin index="6"  name="rgbled_6bits_tri_o_3" iostandard="LVCMOS33" loc="A16"/> <!-- Sch=led1_b    -->
+    <pin index="7"  name="rgbled_6bits_tri_o_4" iostandard="LVCMOS33" loc="A18"/> <!-- Sch=led1_g    -->
+    <pin index="8"  name="rgbled_6bits_tri_o_5" iostandard="LVCMOS33" loc="A19"/> <!-- Sch=led1_r    -->
+	
+    <pin index="9"  name="JA1"                  iostandard="LVCMOS33" loc="H17"/> <!-- Sch=ja1_fpga  -->
+    <pin index="10" name="JA2"                  iostandard="LVCMOS33" loc="H18"/> <!-- Sch=ja2_fpga  -->
+    <pin index="11" name="JA3"                  iostandard="LVCMOS33" loc="E16"/> <!-- Sch=ja3_fpga  -->
+    <pin index="12" name="JA4"                  iostandard="LVCMOS33" loc="F16"/> <!-- Sch=ja4_fpga  -->
+    <pin index="13" name="JA7"                  iostandard="LVCMOS33" loc="D17"/> <!-- Sch=ja7_fpga  -->
+    <pin index="14" name="JA8"                  iostandard="LVCMOS33" loc="D16"/> <!-- Sch=ja8_fpga  -->
+    <pin index="15" name="JA9"                  iostandard="LVCMOS33" loc="D15"/> <!-- Sch=ja9_fpga  -->
+    <pin index="16" name="JA10"                 iostandard="LVCMOS33" loc="E15"/> <!-- Sch=ja10_fpga -->
+    
+	<pin index="17" name="JB1"                  iostandard="LVCMOS33" loc="G16"/> <!-- Sch=jb1_fpga  -->
+    <pin index="18" name="JB2"                  iostandard="LVCMOS33" loc="G15"/> <!-- Sch=jb2_fpga  -->
+    <pin index="19" name="JB3"                  iostandard="LVCMOS33" loc="E18"/> <!-- Sch=jb3_fpga  -->
+    <pin index="20" name="JB4"                  iostandard="LVCMOS33" loc="F18"/> <!-- Sch=jb4_fpga  -->
+    <pin index="21" name="JB7"                  iostandard="LVCMOS33" loc="F17"/> <!-- Sch=jb7_fpga  -->
+    <pin index="22" name="JB8"                  iostandard="LVCMOS33" loc="G17"/> <!-- Sch=jb8_fpga  -->
+    <pin index="23" name="JB9"                  iostandard="LVCMOS33" loc="B15"/> <!-- Sch=jb9_fpga  -->
+    <pin index="24" name="JB10"                 iostandard="LVCMOS33" loc="C15"/> <!-- Sch=jb10_fpga -->
+</pins>
+</part_info>
