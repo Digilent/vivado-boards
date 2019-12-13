@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> 
+<part_info part_name="xczu3eg-sfvc784-1-e">
+<pins>
+	<pin index="0" name="btn_5bits_tri_i_0" iostandard="LVCMOS18" loc="A12"/> <!-- Sch=BTNR -->
+    <pin index="1" name="btn_5bits_tri_i_1" iostandard="LVCMOS18" loc="F12"/> <!-- Sch=BTNL -->
+	<pin index="2" name="btn_5bits_tri_i_2" iostandard="LVCMOS18" loc="J12"/> <!-- Sch=BTND -->
+    <pin index="3" name="btn_5bits_tri_i_3" iostandard="LVCMOS18" loc="H12"/> <!-- Sch=BTNC -->
+    <pin index="4" name="btn_5bits_tri_i_4" iostandard="LVCMOS18" loc="B10"/> <!-- Sch=BTNU -->
+
+    <pin index="5" name="switch_4bits_tri_i_0" iostandard="LVCMOS33" loc="AB15"/> <!-- Sch=SW0 -->
+    <pin index="6" name="switch_4bits_tri_i_1" iostandard="LVCMOS33" loc="W12"/>  <!-- Sch=SW1 -->
+    <pin index="7" name="switch_4bits_tri_i_2" iostandard="LVCMOS33" loc="Y13"/>  <!-- Sch=SW2 -->
+    <pin index="8" name="switch_4bits_tri_i_3" iostandard="LVCMOS33" loc="AB14"/> <!-- Sch=SW3 -->
+    
+	<pin index="9"  name="rgbled_3bits_tri_o_0" iostandard="LVCMOS12" loc="A8"/> <!-- Sch=LD5_B -->
+    <pin index="10" name="rgbled_3bits_tri_o_1" iostandard="LVCMOS12" loc="B9"/> <!-- Sch=LD5_G -->
+    <pin index="11" name="rgbled_3bits_tri_o_2" iostandard="LVCMOS12" loc="C9"/> <!-- Sch=LD5_R -->
+
+    <pin index="12" name="led_4bits_tri_o_0" iostandard="LVCMOS33" loc="J14"/> <!-- Sch=LD1 -->
+    <pin index="13" name="led_4bits_tri_o_1" iostandard="LVCMOS33" loc="K14"/> <!-- Sch=LD2 -->
+    <pin index="14" name="led_4bits_tri_o_2" iostandard="LVCMOS33" loc="L13"/> <!-- Sch=LD3 -->
+    <pin index="15" name="led_4bits_tri_o_3" iostandard="LVCMOS33" loc="L14"/> <!-- Sch=LD4 -->
+
+    <pin index="16" name="JB1"  iostandard="LVCMOS33" loc="AE13"/> <!-- Sch=JB1  -->
+    <pin index="17" name="JB2"  iostandard="LVCMOS33" loc="AG14"/> <!-- Sch=JB2  -->
+    <pin index="18" name="JB3"  iostandard="LVCMOS33" loc="AH14"/> <!-- Sch=JB3  -->
+    <pin index="19" name="JB4"  iostandard="LVCMOS33" loc="AG13"/> <!-- Sch=JB4  -->
+    <pin index="20" name="JB7"  iostandard="LVCMOS33" loc="AE14"/> <!-- Sch=JB7  -->
+    <pin index="21" name="JB8"  iostandard="LVCMOS33" loc="AF13"/> <!-- Sch=JB8  -->
+    <pin index="22" name="JB9"  iostandard="LVCMOS33" loc="AE15"/> <!-- Sch=JB9  -->
+    <pin index="23" name="JB10" iostandard="LVCMOS33" loc="AH13"/> <!-- Sch=JB10 -->
+    
+	<pin index="24" name="JC1"  iostandard="LVCMOS33" loc="E13"/> <!-- Sch=JC1  -->
+    <pin index="25" name="JC2"  iostandard="LVCMOS33" loc="G13"/> <!-- Sch=JC2  -->
+    <pin index="26" name="JC3"  iostandard="LVCMOS33" loc="B13"/> <!-- Sch=JC3  -->
+    <pin index="27" name="JC4"  iostandard="LVCMOS33" loc="D14"/> <!-- Sch=JC4  -->
+    <pin index="28" name="JC7"  iostandard="LVCMOS33" loc="F13"/> <!-- Sch=JC7  -->
+    <pin index="29" name="JC8"  iostandard="LVCMOS33" loc="C13"/> <!-- Sch=JC8  -->
+    <pin index="30" name="JC9"  iostandard="LVCMOS33" loc="C14"/> <!-- Sch=JC9  -->
+    <pin index="31" name="JC10" iostandard="LVCMOS33" loc="A13"/> <!-- Sch=JC10 -->
+    
+	<pin index="32" name="JD1"  iostandard="LVCMOS33" loc="E15"/> <!-- Sch=JD1  -->
+    <pin index="33" name="JD2"  iostandard="LVCMOS33" loc="A14"/> <!-- Sch=JD2  -->
+    <pin index="34" name="JD3"  iostandard="LVCMOS33" loc="B15"/> <!-- Sch=JD3  -->
+    <pin index="35" name="JD4"  iostandard="LVCMOS33" loc="F15"/> <!-- Sch=JD4  -->
+    <pin index="36" name="JD7"  iostandard="LVCMOS33" loc="E14"/> <!-- Sch=JD7  -->
+    <pin index="37" name="JD8"  iostandard="LVCMOS33" loc="B14"/> <!-- Sch=JD8  -->
+    <pin index="38" name="JD9"  iostandard="LVCMOS33" loc="D15"/> <!-- Sch=JD9  -->
+    <pin index="39" name="JD10" iostandard="LVCMOS33" loc="A15"/> <!-- Sch=JD10 -->
+</pins>
+</part_info>
