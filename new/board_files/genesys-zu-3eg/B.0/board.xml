@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?> 
-<board schema_version="2.1" vendor="digilentinc.com" name="genesys-zu-3eg" display_name="Genesys ZU-3EG" url="https://www.digilentinc.com" preset_file="preset.xml">
+<board schema_version="2.1" vendor="digilentinc.com" name="gzu_3eg" display_name="Genesys ZU-3EG" url="https://www.digilentinc.com" preset_file="preset.xml">
 <compatible_board_revisions>
 	<revision id="0">B.0</revision>
 </compatible_board_revisions>
