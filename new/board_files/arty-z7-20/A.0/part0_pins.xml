@@ -46,7 +46,7 @@
   <pin index="42" name ="shield_dp0_dp13_tri_i_7" iostandard="LVCMOS33" loc="U17"/>
   <pin index="43" name ="shield_dp0_dp13_tri_i_8" iostandard="LVCMOS33" loc="V17"/>
   <pin index="44" name ="shield_dp0_dp13_tri_i_9" iostandard="LVCMOS33" loc="V18"/>
-  <pin index="45" name ="shield_dp0_dp13_tri_i_10" iostandard="LVCMOS33" loc="T16"/>
+  <pin index="45" name ="shield_dp0_dp13_tri_i_10" iostandard="LVCMOS33" loc="F16"/>
   <pin index="46" name ="shield_dp0_dp13_tri_i_11" iostandard="LVCMOS33" loc="R17"/>
   <pin index="47" name ="shield_dp0_dp13_tri_i_12" iostandard="LVCMOS33" loc="P18"/>
   <pin index="48" name ="shield_dp0_dp13_tri_i_13" iostandard="LVCMOS33" loc="N17"/>
