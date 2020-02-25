@@ -10,4 +10,4 @@ Installation instructions for the `old` files can be found in the [Installing Vi
 
 ## Notes
 
-* Boards with ChipKit/Arduino headers have the pin locations of CK_IO10 and CK_SS swapped in order to support connection to the [Multi-Touch Display Shield](https://reference.digilentinc.com/reference/add-ons/mtdshield/start). This is not an ideal solution, and may be revised in future.
+* Boards with ChipKit/Arduino headers have the pin locations of CK_IO10 and CK_SS swapped in order to support connection to the [Multi-Touch Display Shield](https://reference.digilentinc.com/reference/add-ons/mtdshield/start). This is not an ideal solution, and may be revised in future. See [Issue 5](https://github.com/Digilent/vivado-boards/issues/5) for more information.
