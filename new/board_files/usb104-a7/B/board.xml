@@ -3,7 +3,7 @@
 <compatible_board_revisions>
   <revision id="0">B.2</revision>
 </compatible_board_revisions>
-<file_version>1.0</file_version>
+<file_version>1.1</file_version>
 <description>USB104 A7</description>
 <components>
   <component name="part0" display_name="USB104 A7" type="fpga" part_name="xc7a100tcsg324-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://reference.digilentinc.com/reference/programmable-logic/arty-a7/start">
@@ -61,9 +61,6 @@
             </pin_maps>
           </port_map>
         </port_maps>
-        <parameters>
-          <parameter name="frequency" value="100000000" />
-       </parameters>
       </interface>
 
       <interface mode="master" name="usb_uart" type="xilinx.com:interface:uart_rtl:1.0" of_component="usb_uart" preset_proc="uart_preset">
