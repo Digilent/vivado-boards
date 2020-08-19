@@ -9,9 +9,9 @@
     <LowPower_En>ON</LowPower_En>
     <XADC_En>Enabled</XADC_En>
     <TargetFPGA>xc7a50ti-csg324/-1l</TargetFPGA>
-    <Version>4.1</Version>
-    <SystemClock>No Buffer</SystemClock>
-    <ReferenceClock>Use System Clock</ReferenceClock>
+    <Version>4.2</Version>
+    <SystemClock>Single-Ended</SystemClock>
+    <ReferenceClock>No Buffer</ReferenceClock>
     <SysResetPolarity>ACTIVE LOW</SysResetPolarity>
     <BankSelectionFlag>FALSE</BankSelectionFlag>
     <InternalVref>1</InternalVref>
@@ -19,13 +19,13 @@
     <dci_cascade>0</dci_cascade>
     <Controller number="0" >
         <MemoryDevice>DDR2_SDRAM/Components/MT47H64M16HR-25E</MemoryDevice>
-        <TimePeriod>3333</TimePeriod>
+        <TimePeriod>5000</TimePeriod>
         <VccAuxIO>1.8V</VccAuxIO>
         <PHYRatio>4:1</PHYRatio>
-        <InputClkFreq>200.02</InputClkFreq>
+        <InputClkFreq>100</InputClkFreq>
         <UIExtraClocks>1</UIExtraClocks>
         <MMCM_VCO>1200</MMCM_VCO>
-        <MMCMClkOut0>12.000</MMCMClkOut0>
+        <MMCMClkOut0>6.000</MMCMClkOut0>
         <MMCMClkOut1>1</MMCMClkOut1>
         <MMCMClkOut2>1</MMCMClkOut2>
         <MMCMClkOut3>1</MMCMClkOut3>
@@ -91,6 +91,9 @@
             <Pin VCCAUX_IO="" IOSTANDARD="SSTL18_II" PADName="N4" SLEW="" name="ddr2_ras_n" IN_TERM="" />
             <Pin VCCAUX_IO="" IOSTANDARD="SSTL18_II" PADName="N2" SLEW="" name="ddr2_we_n" IN_TERM="" />
         </PinSelection>
+		<System_Clock>
+			<Pin Bank="35" PADName="E3(MRCC_P)" name="sys_clk_i"/>
+		</System_Clock>
         <System_Control>
             <Pin PADName="No connect" Bank="Select Bank" name="sys_rst" />
             <Pin PADName="No connect" Bank="Select Bank" name="init_calib_complete" />
