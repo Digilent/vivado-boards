@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?> 
-<board schema_version="2.0" vendor="digilentinc.com" name="usb104-a7" display_name="USB104 A7" url="https://reference.digilentinc.com/reference/programmable-logic/arty-a7/start" preset_file="preset.xml" >
+<board schema_version="2.0" vendor="digilentinc.com" name="usb104-a7" display_name="USB104 A7" url="https://reference.digilentinc.com/reference/programmable-logic/usb104a7/start" preset_file="preset.xml" >
 <compatible_board_revisions>
   <revision id="0">B.2</revision>
 </compatible_board_revisions>
 <file_version>1.1</file_version>
 <description>USB104 A7</description>
 <components>
-  <component name="part0" display_name="USB104 A7" type="fpga" part_name="xc7a100tcsg324-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://reference.digilentinc.com/reference/programmable-logic/arty-a7/start">
+  <component name="part0" display_name="USB104 A7" type="fpga" part_name="xc7a100tcsg324-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://reference.digilentinc.com/reference/programmable-logic/usb104a7/start">
     <interfaces>
       <interface mode="master" name="ddr3_sdram" type="xilinx.com:interface:ddrx_rtl:1.0" of_component="ddr3_sdram" preset_proc="ddr3_sdram_preset"> 
         <description>DDR3 board interface, it can use MIG IP for connection.</description>
@@ -33,7 +33,7 @@
       </interface>
 
       <interface mode="master" name="btn_2bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="btn_2bits" preset_proc="btn_2bits_preset">
-        <description>4 Push Buttons</description>
+        <description>2 Push Buttons</description>
         <preferred_ips>
           <preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
         </preferred_ips>
@@ -558,10 +558,10 @@
   </component>
   
   <component name="ddr3_sdram" display_name="DDR3 SDRAM" type="chip" sub_type="ddr" major_group="External Memory">
-    <description>256 MB DDR3L memory SODIMM (FIXME) </description>
+    <description>512 MB DDR3/DDR3L memory </description>
     <parameters>
         <parameter name="ddr_type" value="ddr3"/>
-        <parameter name="size" value="256MB"/>
+        <parameter name="size" value="512MB"/>
     </parameters>
   </component>
   <component name="led_4bits" display_name="4 LEDs" type="chip" sub_type="led" major_group="GPIO">
@@ -579,13 +579,13 @@
       <preferred_ip vendor="xilinx.com" library="ip" name="axi_uartlite" order="0"/>
     </preferred_ips>
   </component>
-   <component name="ja" display_name="Connector JA" type="chip" sub_type="chip" major_group="Pmod">
-    <description>Pmod Connector JA</description>
+   <component name="ja" display_name="PMOD A" type="chip" sub_type="chip" major_group="Pmod">
+    <description>Pmod Connector PMOD A</description>
   </component>
-  <component name="jb" display_name="Connector JB" type="chip" sub_type="chip" major_group="Pmod">
+  <component name="jb" display_name="PMOD B" type="chip" sub_type="chip" major_group="Pmod">
     <description>Pmod Connector JB</description>
   </component>
-  <component name="jc" display_name="Connector JC" type="chip" sub_type="chip" major_group="Pmod">
+  <component name="jc" display_name="PMOD C" type="chip" sub_type="chip" major_group="Pmod">
     <description>Pmod Connector JC</description>
   </component>
   <component name="qspi_flash" display_name="Quad SPI Flash" type="chip" sub_type="memory_flash_qspi" major_group="External Memory" part_name="S25FL128SAGNFI00" vendor="Cypress" spec_url="https://www.cypress.com/products/serial-nor-flash-memory">
