@@ -95,7 +95,7 @@
             <Pin VCCAUX_IO="" IOSTANDARD="SSTL135" PADName="P7" SLEW="" name="ddr3_we_n" IN_TERM="" />
         </PinSelection>
         <System_Clock>
-            <Pin PADName="R2" Bank="34" name="sys_clk_i" />
+            <Pin PADName="R2(MRCC_P)" Bank="34" name="sys_clk_i" />
         </System_Clock>
         <System_Control>
             <Pin PADName="No connect" Bank="Select Bank" name="sys_rst" />
