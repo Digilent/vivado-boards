@@ -487,10 +487,10 @@
 	   <user_parameter name="CONFIG.PCW_UIPARAM_DDR_DQS_3_LENGTH_MM" value="0"/>
 	   <user_parameter name="CONFIG.PCW_UIPARAM_DDR_DQS_3_PACKAGE_LENGTH" value="71.7715"/>
 	   <user_parameter name="CONFIG.PCW_UIPARAM_DDR_DQS_3_PROPOGATION_DELAY" value="160"/>
-	   <user_parameter name="CONFIG.PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0" value="-0.073"/>
-	   <user_parameter name="CONFIG.PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1" value="-0.034"/>
-	   <user_parameter name="CONFIG.PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2" value="-0.03"/>
-	   <user_parameter name="CONFIG.PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3" value="-0.082"/>
+	   <user_parameter name="CONFIG.PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0" value="0.0"/>
+	   <user_parameter name="CONFIG.PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1" value="0.0"/>
+	   <user_parameter name="CONFIG.PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2" value="0.0"/>
+	   <user_parameter name="CONFIG.PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3" value="0.0"/>
 	   <user_parameter name="CONFIG.PCW_UIPARAM_DDR_DQ_0_LENGTH_MM" value="0"/>
 	   <user_parameter name="CONFIG.PCW_UIPARAM_DDR_DQ_0_PACKAGE_LENGTH" value="104.5365"/>
 	   <user_parameter name="CONFIG.PCW_UIPARAM_DDR_DQ_0_PROPOGATION_DELAY" value="160"/>
