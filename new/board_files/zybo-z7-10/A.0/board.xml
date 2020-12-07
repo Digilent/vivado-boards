@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?> 
 <board schema_version="2.0" vendor="digilentinc.com" name="zybo-z7-10" display_name="Zybo Z7-10" url="https://reference.digilentinc.com/reference/programmable-logic/zybo-z7/start" preset_file="preset.xml" >
+<images>
+  <image name="zybo-z7-1.png" display_name="Zybo-Z7-10 " sub_type="board">
+    <description>Zybo-Z7-10 Image</description>
+  </image>
+</images>
 <compatible_board_revisions>
   <revision id="0">B.2</revision>
 </compatible_board_revisions>
