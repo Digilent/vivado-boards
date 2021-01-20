@@ -995,9 +995,6 @@
   </component>
   <component name="usb_uart" display_name="USB UART" type="chip" sub_type="uart" major_group="UART">
   	<description>USB-to-UART Bridge, which allows a connection to a host computer with a USB port</description>
-	<preferred_ips>
-	  <preferred_ip vendor="xilinx.com" library="ip" name="axi_uartlite" order="0"/>
-	</preferred_ips>
   </component>
    <component name="ja" display_name="Connector JA" type="chip" sub_type="chip" major_group="Pmod">
 	<description>Pmod Connector JA</description>
