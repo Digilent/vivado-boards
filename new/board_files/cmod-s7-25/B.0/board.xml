@@ -49,9 +49,6 @@
                 </interface>
                 <interface mode="master" name="rgb_led_3bits"      type="xilinx.com:interface:gpio_rtl:1.0"      of_component="rgb_led_3bits"      preset_proc="rgb_led_3bits_preset">
                     <description>RGB LED</description>
-                    <preferred_ips>
-                        <preferred_ip vendor="digilentinc.com" library="IP" name="PWM" version="2.0" order="0"/>
-                    </preferred_ips>
                     <port_maps>
                         <port_map logical_port="TRI_O" physical_port="rgb_led_3bits_tri_io" dir="out" left="2" right="0">
                             <pin_maps>
