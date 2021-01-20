@@ -94,6 +94,7 @@
         <user_parameters>
           <user_parameter name="CONFIG.C_USE_GPI4" value="1"/> 
           <user_parameter name="CONFIG.C_GPI4_SIZE" value="8"/> 
+        </user_parameters>
   </ip_preset>
   <ip_preset preset_proc_name="btns_5bits_preset">
     <ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO">
