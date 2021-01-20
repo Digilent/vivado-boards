@@ -574,7 +574,7 @@
           <preferred_ip vendor="xilinx.com" library="ip" name="clk_wiz" order="0"/>
         </preferred_ips>
 		<port_maps>
-          <port_map logical_port="clk" physical_port="clk" dir="in">
+          <port_map logical_port="CLK" physical_port="clk" dir="in">
             <pin_maps>
               <pin_map port_index="0" component_pin="clk"/> 
             </pin_maps>
