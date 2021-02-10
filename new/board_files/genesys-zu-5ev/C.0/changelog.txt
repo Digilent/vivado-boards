@@ -1,0 +1,2 @@
+1.0. Added the base board file for Genesys ZU-ZU5EV. At this stage the paramaters from the preset.xml starting
+from line 118 to line 182 are not tested.  
