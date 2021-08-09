@@ -14,7 +14,9 @@
 		<user_parameter name="CONFIG.PSU_BANK_3_IO_STANDARD" value="LVCMOS33"/>
 		<user_parameter name="CONFIG.PSU_DDR_RAM_HIGHADDR" value="0xFFFFFFFF"/>
 		<user_parameter name="CONFIG.PSU_DDR_RAM_HIGHADDR_OFFSET" value="0x800000000"/>
-	    <user_parameter name="CONFIG.PSU__PCIE__PERIPHERAL__ENABLE" value="1"/> 
+		<user_parameter name="CONFIG.PSU_DDR_RAM_LOWADDR_OFFSET" value="0x80000000"/>
+		<user_parameter name="CONFIG.PSU_DYNAMIC_DDR_CONFIG_EN" value="1"/>
+		<user_parameter name="CONFIG.PSU__PCIE__PERIPHERAL__ENABLE" value="1"/> 
 		<user_parameter name="CONFIG.PSU__PCIE__PERIPHERAL__ENDPOINT_ENABLE" value="0"/>
 		<user_parameter name="CONFIG.PSU__PCIE__PERIPHERAL__ROOTPORT_ENABLE" value="1"/>
 		<user_parameter name="CONFIG.PSU__PCIE__PERIPHERAL__ROOTPORT_IO" value="MIO 7"/>		
@@ -740,6 +742,7 @@
 		<user_parameter name="CONFIG.PSU__DDRC__DIMM_ADDR_MIRROR" value="0"/>
 		<user_parameter name="CONFIG.PSU__DDRC__STATIC_RD_MODE" value="0"/>
 		<user_parameter name="CONFIG.PSU__DDRC__DDR4_MAXPWR_SAVING_EN" value="0"/>
+    <user_parameter name="CONFIG.PSU__DDRC__DDR4_ADDR_MAPPING" value="1"/>
 		<user_parameter name="CONFIG.PSU__DDRC__PWR_DOWN_EN" value="0"/>
 		<user_parameter name="CONFIG.PSU__DDRC__DEEP_PWR_DOWN_EN" value="0"/>
 		<user_parameter name="CONFIG.PSU__DDRC__PLL_BYPASS" value="0"/>
@@ -955,7 +958,6 @@
 		<user_parameter name="CONFIG.PSU__CRL_APB__USB3_DUAL_REF_CTRL__ACT_FREQMHZ" value="20.000000"/>
 		<user_parameter name="CONFIG.PSU__CRL_APB__USB3_DUAL_REF_CTRL__FREQMHZ" value="20"/>
 		<user_parameter name="CONFIG.PSU__CRL_APB__USB1_BUS_REF_CTRL__SRCSEL" value="IOPLL"/>
-		<user_parameter name="CONFIG.PSU__CRL_APB__USB1_BUS_REF_CTRL__ACT_FREQMHZ" value="250.000000"/>
 		<user_parameter name="CONFIG.PSU__CRL_APB__USB1_BUS_REF_CTRL__ACT_FREQMHZ" value="250.000000"/>
 		<user_parameter name="CONFIG.PSU__CRL_APB__USB1_BUS_REF_CTRL__FREQMHZ" value="250"/>
 		<user_parameter name="CONFIG.PSU__FPGA_PL0_ENABLE" value="1"/>
