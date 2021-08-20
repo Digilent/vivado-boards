@@ -638,7 +638,7 @@
 				<user_parameter name="CONFIG.PSU__DDRC__BUS_WIDTH" value="64 Bit"/>
 				<user_parameter name="CONFIG.PSU__DDRC__CL" value="12"/>
 				<user_parameter name="CONFIG.PSU__DDRC__CLOCK_STOP_EN" value="0"/>
-				<user_parameter name="CONFIG.PSU_DYNAMIC_DDR_CONFIG_EN" value="0"/>
+				<user_parameter name="CONFIG.PSU_DYNAMIC_DDR_CONFIG_EN" value="1"/>
 				<user_parameter name="CONFIG.PSU__DDRC__COL_ADDR_COUNT" value="10"/>
 				<user_parameter name="CONFIG.PSU__DDRC__RANK_ADDR_COUNT" value="0"/>
 				<user_parameter name="CONFIG.PSU__DDRC__CWL" value="10"/>
@@ -685,7 +685,7 @@
 				<user_parameter name="CONFIG.PSU__DDRC__VENDOR_PART" value="OTHERS"/>
 				<user_parameter name="CONFIG.PSU__DDRC__SB_TARGET" value="12-12-12"/>
 				<user_parameter name="CONFIG.PSU__DDRC__LP_ASR" value="manual normal"/>
-				<user_parameter name="CONFIG.PSU__DDRC__DDR4_ADDR_MAPPING" value="1"/>
+				<user_parameter name="CONFIG.PSU__DDRC__DDR4_ADDR_MAPPING" value="0"/>
 				<user_parameter name="CONFIG.PSU__DDRC__SELF_REF_ABORT" value="0"/>
 				<user_parameter name="CONFIG.PSU__DDRC__ADDR_MIRROR" value="0"/>
 				<user_parameter name="CONFIG.PSU__DDRC__EN_2ND_CLK" value="0"/>
