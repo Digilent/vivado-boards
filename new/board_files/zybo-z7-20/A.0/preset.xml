@@ -297,6 +297,7 @@
 		<user_parameter name="CONFIG.PCW_TPIU_PERIPHERAL_CLKSRC" value="External"/>
 		<user_parameter name="CONFIG.PCW_TPIU_PERIPHERAL_DIVISOR0" value="1"/>
 		<user_parameter name="CONFIG.PCW_TPIU_PERIPHERAL_FREQMHZ" value="200"/>
+		<user_parameter name="CONFIG.PCW_UART0_PERIPHERAL_ENABLE" value="0"/> <!--Without this, UART1 is disabled in 2019.2-->
 		<user_parameter name="CONFIG.PCW_UART1_BAUD_RATE" value="115200"/>
 		<user_parameter name="CONFIG.PCW_UART1_GRP_FULL_ENABLE" value="0"/>
 		<user_parameter name="CONFIG.PCW_UART1_PERIPHERAL_ENABLE" value="1"/>

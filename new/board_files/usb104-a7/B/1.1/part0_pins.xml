@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> 
+<part_info part_name="xc7a100tcsg324-1">
+<pins>
+  <pin index="0"  name ="clk" iostandard="LVCMOS33" loc="E3"/>
+
+  <pin index="1"  name ="led_4bits_tri_o_0" iostandard="LVCMOS33" loc="R17"/>
+  <pin index="2"  name ="led_4bits_tri_o_1" iostandard="LVCMOS33" loc="P15"/>
+  <pin index="3"  name ="led_4bits_tri_o_2" iostandard="LVCMOS33" loc="R15"/>
+  <pin index="4"  name ="led_4bits_tri_o_3" iostandard="LVCMOS33" loc="T14"/>
+
+  <pin index="5"  name ="btn_2bits_tri_i_0" iostandard="LVCMOS33" loc="V16"/>
+  <pin index="6"  name ="btn_2bits_tri_i_1" iostandard="LVCMOS33" loc="U17"/>
+
+  <pin index="7"  name ="usb_uart_rxd" iostandard="LVCMOS33" loc="U12"/>
+  <pin index="8"  name ="usb_uart_txd" iostandard="LVCMOS33" loc="V12"/>
+
+  <pin index="9"  name ="JA1"  iostandard="LVCMOS33" loc="F4"/>
+  <pin index="10" name ="JA2"  iostandard="LVCMOS33" loc="F3"/>
+  <pin index="11" name ="JA3"  iostandard="LVCMOS33" loc="E2"/>
+  <pin index="12" name ="JA4"  iostandard="LVCMOS33" loc="D2"/>
+  <pin index="13" name ="JA7"  iostandard="LVCMOS33" loc="H2"/>
+  <pin index="14" name ="JA8"  iostandard="LVCMOS33" loc="G2"/>
+  <pin index="15" name ="JA9"  iostandard="LVCMOS33" loc="C2"/>
+  <pin index="16" name ="JA10" iostandard="LVCMOS33" loc="C1"/>
+
+  <pin index="17" name ="JB1"  iostandard="LVCMOS33" loc="C4"/>
+  <pin index="18" name ="JB2"  iostandard="LVCMOS33" loc="B2"/>
+  <pin index="19" name ="JB3"  iostandard="LVCMOS33" loc="B3"/>
+  <pin index="20" name ="JB4"  iostandard="LVCMOS33" loc="B4"/>
+  <pin index="21" name ="JB7"  iostandard="LVCMOS33" loc="B1"/>
+  <pin index="22" name ="JB8"  iostandard="LVCMOS33" loc="A1"/>
+  <pin index="23" name ="JB9"  iostandard="LVCMOS33" loc="A3"/>
+  <pin index="24" name ="JB10" iostandard="LVCMOS33" loc="A4"/>
+  
+  <pin index="25" name ="JC1"  iostandard="LVCMOS33" loc="C5"/>
+  <pin index="26" name ="JC2"  iostandard="LVCMOS33" loc="C6"/>
+  <pin index="27" name ="JC3"  iostandard="LVCMOS33" loc="B6"/>
+  <pin index="28" name ="JC4"  iostandard="LVCMOS33" loc="C7"/>
+  <pin index="29" name ="JC7"  iostandard="LVCMOS33" loc="A5"/>
+  <pin index="30" name ="JC8"  iostandard="LVCMOS33" loc="A6"/>
+  <pin index="31" name ="JC9"  iostandard="LVCMOS33" loc="B7"/>
+  <pin index="32" name ="JC10" iostandard="LVCMOS33" loc="D8"/>
+  
+  <pin index="33" name="qspi_cs_i" iostandard="LVCMOS33" loc="L13"/>
+  <pin index="34" name="qspi_sck_i" iostandard="LVCMOS33" loc="L16"/>
+  <pin index="35" name="qspi_dq0_i" iostandard="LVCMOS33" loc="K17"/>
+  <pin index="36" name="qspi_dq1_i" iostandard="LVCMOS33" loc="K18"/>
+  <pin index="37" name="qspi_dq2_i" iostandard="LVCMOS33" loc="L14"/>
+  <pin index="38" name="qspi_dq3_i" iostandard="LVCMOS33" loc="M14"/>
+
+</pins>
+</part_info>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
