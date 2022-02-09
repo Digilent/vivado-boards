@@ -742,7 +742,7 @@
 		<user_parameter name="CONFIG.PSU__DDRC__DIMM_ADDR_MIRROR" value="0"/>
 		<user_parameter name="CONFIG.PSU__DDRC__STATIC_RD_MODE" value="0"/>
 		<user_parameter name="CONFIG.PSU__DDRC__DDR4_MAXPWR_SAVING_EN" value="0"/>
-    <user_parameter name="CONFIG.PSU__DDRC__DDR4_ADDR_MAPPING" value="1"/>
+		<user_parameter name="CONFIG.PSU__DDRC__DDR4_ADDR_MAPPING" value="0"/>
 		<user_parameter name="CONFIG.PSU__DDRC__PWR_DOWN_EN" value="0"/>
 		<user_parameter name="CONFIG.PSU__DDRC__DEEP_PWR_DOWN_EN" value="0"/>
 		<user_parameter name="CONFIG.PSU__DDRC__PLL_BYPASS" value="0"/>
@@ -762,7 +762,6 @@
 		<user_parameter name="CONFIG.PSU__DDRC__VENDOR_PART" value="OTHERS"/>
 		<user_parameter name="CONFIG.PSU__DDRC__SB_TARGET" value="15-15-15"/>
 		<user_parameter name="CONFIG.PSU__DDRC__LP_ASR" value="manual normal"/>
-		<user_parameter name="CONFIG.PSU__DDRC__DDR4_ADDR_MAPPING" value="1"/>
 		<user_parameter name="CONFIG.PSU__DDRC__SELF_REF_ABORT" value="0"/>
 		<user_parameter name="CONFIG.PSU__DDRC__ADDR_MIRROR" value="0"/>
 		<user_parameter name="CONFIG.PSU__DDRC__EN_2ND_CLK" value="0"/>

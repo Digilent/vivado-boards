@@ -1,2 +1,2 @@
-1.0. Added the base board file for Genesys ZU-ZU5EV. At this stage the paramaters from the preset.xml starting
-from line 118 to line 182 are not tested.  
+1.1 Fixed PSU__DDRC__DDR4_ADDR_MAPPING appearing twice and with conflicting values that was causing a silent FSBL failure in the boot process.
+1.0. Genesys ZU-ZU5EV initial board support for rev C. 
