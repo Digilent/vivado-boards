@@ -636,15 +636,11 @@ SOFTWARE.
   <component name="reset" display_name="Reset (BTN0)" type="chip" sub_type="reset" major_group="Reset">
     <description>Configure BTN0 as System Reset button, active high</description>
   </component>
-  
   <component name="sys_clock" display_name="System Clock" type="chip" sub_type="system_clock" major_group="Clocks">
-      <description>3.3V Single-Ended 100MHz oscillator used as system clock on the board</description>
+    <description>3.3V Single-Ended 100MHz oscillator used as system clock on the board</description>
   </component>
   <component name="usb_uart" display_name="USB UART" type="chip" sub_type="uart" major_group="UART">
-      <description>USB-to-UART Bridge, which allows a connection to a host computer with a USB port</description>
-    <preferred_ips>
-      <preferred_ip vendor="xilinx.com" library="ip" name="axi_uartlite" order="0"/>
-    </preferred_ips>
+    <description>USB-to-UART Bridge, which allows a connection to a host computer with a USB port</description>
   </component>
   <component name="ja" display_name="PMOD A" type="chip" sub_type="chip" major_group="Pmod">
     <description>Pmod Connector PMOD A</description>
