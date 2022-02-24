@@ -275,7 +275,7 @@ SOFTWARE.
       <interface mode="slave" name="sys_clock" type="xilinx.com:signal:clock_rtl:1.0" of_component="sys_clock" preset_proc="sys_diff_clock_preset">
         <description>3.3V Single-Ended 100MHz oscillator used as system clock on the board</description>
 		<port_maps>
-          <port_map logical_port="clk" physical_port="clk" dir="in">
+          <port_map logical_port="CLK" physical_port="clk" dir="in">
             <pin_maps>
               <pin_map port_index="0" component_pin="clk"/> 
             </pin_maps>
