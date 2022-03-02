@@ -235,71 +235,6 @@ SOFTWARE.
           </port_map>
         </port_maps>
       </interface>
-      <interface mode="master" name="dspi" type="xilinx.com:interface:spi_rtl:1.0" of_component="dspi" preset_proc="dspi_preset">
-        <description>System Dual-SPI</description>
-		<port_maps>
-          <port_map logical_port="IO0_I" physical_port="miso_i" dir="in">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="miso_i"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="IO0_O" physical_port="miso_o" dir="out">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="miso_i"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="IO0_T" physical_port="miso_t" dir="out">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="miso_i"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="IO1_I" physical_port="mosi_i" dir="in">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="mosi_i"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="IO1_O" physical_port="mosi_o" dir="out">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="mosi_i"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="IO1_T" physical_port="mosi_t" dir="out">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="mosi_i"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="SCK_I" physical_port="sclk_i" dir="in">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="sclk_i"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="SCK_O" physical_port="sclk_o" dir="out">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="sclk_i"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="SCK_T" physical_port="sclk_t" dir="out">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="sclk_i"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="SS_I" physical_port="ss_i" dir="in">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="ss_i"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="SS_O" physical_port="ss_o" dir="out">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="ss_i"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="SS_T" physical_port="ss_t" dir="out">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="ss_i"/> 
-            </pin_maps>
-          </port_map>
-        </port_maps>
-      </interface>
       <interface mode="master" name="eth_mdio_mdc" type="xilinx.com:interface:mdio_rtl:1.0" of_component="phy_onboard">
         <description>Secondary interface to communicate with ethernet phy. </description>
 		<port_maps>
@@ -1453,9 +1388,6 @@ SOFTWARE.
   </component>
   <component name="hdmi_out_hpd_led" display_name="HDMI out HPD" type="chip" sub_type="led" major_group="HDMI">
 	<description>HDMI out HPD</description>
-  </component>
-  <component name="dspi" display_name="DSPI" type="chip" sub_type="memory_flash_qspi" major_group="External Memory">
-	<description>Dual SPI</description>
   </component>
   <component name="phy_onboard" display_name="Ethernet PHY" type="chip" sub_type="ethernet" major_group="Ethernet">
 	<description>PHY Ethernet on the board</description>
