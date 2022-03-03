@@ -26,7 +26,7 @@ SOFTWARE.
 <compatible_board_revisions>
   <revision id="0">D.0</revision>
 </compatible_board_revisions>
-<file_version>1.1</file_version>
+<file_version>1.2</file_version>
 <description>Nexys A7-100T</description>
 <components>
   <component name="part0" display_name="Nexys A7-100T" type="fpga" part_name="xc7a100tcsg324-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://reference.digilentinc.com/reference/programmable-logic/nexys-a7/start">
@@ -149,63 +149,6 @@ SOFTWARE.
               <pin_map port_index="5" component_pin="dual_seven_seg_led_disp_tri_o_5"/> 
               <pin_map port_index="6" component_pin="dual_seven_seg_led_disp_tri_o_6"/> 
               <pin_map port_index="7" component_pin="dual_seven_seg_led_disp_tri_o_7"/> 
-            </pin_maps>
-          </port_map>
-        </port_maps>
-      </interface>
-      <interface mode="master" name="eth_mdio_mdc" type="xilinx.com:interface:mdio_rtl:1.0" of_component="eth_mdio_mdc">
-        <description>Secondary interface to communicate with ethernet phy. </description>
-		<port_maps>
-          <port_map logical_port="MDIO_I" physical_port="eth_mdio_i" dir="in">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="eth_mdio_i"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="MDIO_O" physical_port="eth_mdio_o" dir="out">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="eth_mdio_i"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="MDIO_T" physical_port="eth_mdio_t" dir="out">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="eth_mdio_i"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="MDC" physical_port="eth_mdc" dir="out">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="eth_mdc"/> 
-            </pin_maps>
-          </port_map>
-        </port_maps>
-      </interface>
-      <interface mode="master" name="eth_rmii" type="xilinx.com:interface:rmii_rtl:1.0" of_component="eth_rmii">
-        <description>Primary interface to communicate with ethernet phy in RMII mode. </description>
-		<port_maps>
-          <port_map logical_port="TXD" physical_port="eth_rmii_txd" dir="out" left="1" right="0"> 
-            <pin_maps>
-              <pin_map port_index="0" component_pin="eth_rmii_txd_0"/> 
-              <pin_map port_index="1" component_pin="eth_rmii_txd_1"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="RXD" physical_port="eth_rmii_rxd" dir="in" left="1" right="0"> 
-            <pin_maps>
-              <pin_map port_index="0" component_pin="eth_rmii_rxd_0"/> 
-              <pin_map port_index="1" component_pin="eth_rmii_rxd_1"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="TX_EN" physical_port="eth_rmii_tx_en" dir="out">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="eth_rmii_tx_en"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="RX_ER" physical_port="eth_rmii_rx_er" dir="in">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="eth_rmii_rx_er"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="CRS_DV" physical_port="eth_rmii_crs_dv" dir="in">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="eth_rmii_crs_dv"/> 
             </pin_maps>
           </port_map>
         </port_maps>
@@ -340,7 +283,7 @@ SOFTWARE.
       </interface>
       <interface mode="slave" name="reset" type="xilinx.com:signal:reset_rtl:1.0" of_component="reset">
         <port_maps>
-          <port_map logical_port="RESET" physical_port="reset" dir="in">
+          <port_map logical_port="RST" physical_port="reset" dir="in">
             <pin_maps>
               <pin_map port_index="0" component_pin="reset"/> 
             </pin_maps>
@@ -1227,12 +1170,6 @@ SOFTWARE.
   <component name="dual_seven_seg_led_disp" display_name="7 Segments" type="chip" sub_type="led" major_group="7 Segment Display">
 	<description>7 Segment Display Segment Control</description>
   </component>
-  <component name="eth_rmii" display_name="Ethernet RMII" type="chip" sub_type="ethernet" major_group="Ethernet">
-	<description>Ethernet RMII Signals</description> 
-  </component>
-  <component name="eth_mdio_mdc" display_name="Ethernet MDIO MDC" type="chip" sub_type="ethernet" major_group="Ethernet">
-  <description>Ethernet MDIO/MDC Signals</description> 
-  </component>
   <component name="led_16bits" display_name="16 LEDs" type="chip" sub_type="led" major_group="GPIO">
 	<description>16 LEDs</description>
   </component>
@@ -1311,12 +1248,6 @@ SOFTWARE.
   </connection>
   <connection name="part0_dual_seven_seg_led_disp" component1="part0" component2="dual_seven_seg_led_disp">
     <connection_map name="part0_dual_seven_seg_led_disp_1" c1_st_index="21" c1_end_index="28" c2_st_index="0" c2_end_index="7"/>
-  </connection>
-  <connection name="part0_eth_mdio_mdc" component1="part0" component2="eth_mdio_mdc">
-    <connection_map name="part0_eth_mdio_mdc_1" c1_st_index="29" c1_end_index="30" c2_st_index="0" c2_end_index="1"/>
-  </connection>
-  <connection name="part0_eth_rmii" component1="part0" component2="eth_rmii">
-    <connection_map name="part0_eth_rmii_1" c1_st_index="31" c1_end_index="37" c2_st_index="0" c2_end_index="6"/>
   </connection>
   <connection name="part0_led_16bits" component1="part0" component2="led_16bits">
     <connection_map name="part0_led_16bits_1" c1_st_index="38" c1_end_index="53" c2_st_index="0" c2_end_index="15"/>

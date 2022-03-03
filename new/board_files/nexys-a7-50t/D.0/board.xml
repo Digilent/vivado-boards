@@ -26,17 +26,17 @@ SOFTWARE.
 <compatible_board_revisions>
   <revision id="0">D.0</revision>
 </compatible_board_revisions>
-<file_version>1.0</file_version>
+<file_version>1.1</file_version>
 <description>Nexys A7-50T</description>
 <components>
   <component name="part0" display_name="Nexys A7-50T" type="fpga" part_name="xc7a50ticsg324-1L" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://reference.digilentinc.com/reference/programmable-logic/nexys-a7/start">
     <interfaces>
       <interface mode="master" name="acl_spi" type="xilinx.com:interface:spi_rtl:1.0" of_component="acl_spi" preset_proc="spi_preset">
         <description>Accelerometer control through SPI</description>
-		<preferred_ips>
-			<preferred_ip vendor="xilinx.com" library="ip" name="axi_quad_spi" order="0"/>
-		</preferred_ips>
-		<port_maps>
+        <preferred_ips>
+          <preferred_ip vendor="xilinx.com" library="ip" name="axi_quad_spi" order="0"/>
+        </preferred_ips>
+		    <port_maps>
           <port_map logical_port="IO0_I" physical_port="acl_miso_i" dir="in">
             <pin_maps>
               <pin_map port_index="0" component_pin="acl_miso_i"/> 
@@ -100,17 +100,17 @@ SOFTWARE.
         </port_maps>
       </interface>
       <interface mode="master" name="ddr2_sdram" type="xilinx.com:interface:ddrx_rtl:1.0" of_component="ddr2_sdram" preset_proc="ddr2_sdram_preset"> 
-      <description>DDR2 board interface, it can use MIG IP for connection.</description>
-	  <preferred_ips>
-			<preferred_ip vendor="xilinx.com" library="ip" name="mig_7series" order="0"/>
-	  </preferred_ips>
-	  </interface>
+        <description>DDR2 board interface, it can use MIG IP for connection.</description>
+        <preferred_ips>
+          <preferred_ip vendor="xilinx.com" library="ip" name="mig_7series" order="0"/>
+        </preferred_ips>
+	    </interface>
       <interface mode="master" name="dip_switches_16bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="dip_switches_16bits" preset_proc="dip_switches_16bits_preset">
         <description>16 DIP Switches</description>
-		<preferred_ips>
-			<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
-		</preferred_ips>
-		<port_maps>
+        <preferred_ips>
+          <preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+        </preferred_ips>
+		    <port_maps>
           <port_map logical_port="TRI_I" physical_port="dip_switches_16bits_tri_i" dir="in" left="15" right="0"> 
             <pin_maps>
               <pin_map port_index="0" component_pin="dip_switches_16bits_tri_i_0"/> 
@@ -135,10 +135,10 @@ SOFTWARE.
       </interface>
       <interface mode="master" name="dual_seven_seg_led_disp" type="xilinx.com:interface:gpio_rtl:1.0" of_component="dual_seven_seg_led_disp" preset_proc="output_8bits_preset">
         <description>Dual 7 Seg LED Segments</description>
-		<preferred_ips>
-			<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
-		</preferred_ips>
-		<port_maps>
+          <preferred_ips>
+            <preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+          </preferred_ips>
+          <port_maps>
           <port_map logical_port="TRI_O" physical_port="dual_seven_seg_led_disp_tri_o" dir="out" left="7" right="0"> 
             <pin_maps>
               <pin_map port_index="0" component_pin="dual_seven_seg_led_disp_tri_o_0"/> 
@@ -153,69 +153,12 @@ SOFTWARE.
           </port_map>
         </port_maps>
       </interface>
-      <interface mode="master" name="eth_mdio_mdc" type="xilinx.com:interface:mdio_rtl:1.0" of_component="eth_mdio_mdc">
-        <description>Secondary interface to communicate with ethernet phy. </description>
-		<port_maps>
-          <port_map logical_port="MDIO_I" physical_port="eth_mdio_i" dir="in">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="eth_mdio_i"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="MDIO_O" physical_port="eth_mdio_o" dir="out">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="eth_mdio_i"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="MDIO_T" physical_port="eth_mdio_t" dir="out">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="eth_mdio_i"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="MDC" physical_port="eth_mdc" dir="out">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="eth_mdc"/> 
-            </pin_maps>
-          </port_map>
-        </port_maps>
-      </interface>
-      <interface mode="master" name="eth_rmii" type="xilinx.com:interface:rmii_rtl:1.0" of_component="eth_rmii">
-        <description>Primary interface to communicate with ethernet phy in RMII mode. </description>
-		<port_maps>
-          <port_map logical_port="TXD" physical_port="eth_rmii_txd" dir="out" left="1" right="0"> 
-            <pin_maps>
-              <pin_map port_index="0" component_pin="eth_rmii_txd_0"/> 
-              <pin_map port_index="1" component_pin="eth_rmii_txd_1"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="RXD" physical_port="eth_rmii_rxd" dir="in" left="1" right="0"> 
-            <pin_maps>
-              <pin_map port_index="0" component_pin="eth_rmii_rxd_0"/> 
-              <pin_map port_index="1" component_pin="eth_rmii_rxd_1"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="TX_EN" physical_port="eth_rmii_tx_en" dir="out">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="eth_rmii_tx_en"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="RX_ER" physical_port="eth_rmii_rx_er" dir="in">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="eth_rmii_rx_er"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="CRS_DV" physical_port="eth_rmii_crs_dv" dir="in">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="eth_rmii_crs_dv"/> 
-            </pin_maps>
-          </port_map>
-        </port_maps>
-      </interface>
       <interface mode="master" name="led_16bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="led_16bits" preset_proc="output_16bits_preset">
         <description>16 LEDs</description>
-		<preferred_ips>
-			<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
-		</preferred_ips>
-		<port_maps>
+        <preferred_ips>
+          <preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+        </preferred_ips>
+        <port_maps>
           <port_map logical_port="TRI_O" physical_port="led_16bits_tri_o" dir="out" left="15" right="0"> 
             <pin_maps>
               <pin_map port_index="0" component_pin="led_16bits_tri_o_0"/> 
@@ -240,10 +183,10 @@ SOFTWARE.
       </interface>
       <interface mode="master" name="push_buttons_5bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="push_buttons_5bits" preset_proc="push_buttons_5bits_preset">
         <description>5 Push Buttons</description>
-		<preferred_ips>
-			<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
-		</preferred_ips>
-		<port_maps>
+        <preferred_ips>
+          <preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+        </preferred_ips>
+        <port_maps>
           <port_map logical_port="TRI_I" physical_port="push_buttons_5bits_tri_i" dir="in" left="4" right="0"> 
             <pin_maps>
               <pin_map port_index="0" component_pin="push_buttons_5bits_tri_i_0"/> 
@@ -257,10 +200,10 @@ SOFTWARE.
       </interface>
       <interface mode="master" name="qspi_flash" type="xilinx.com:interface:spi_rtl:1.0" of_component="qspi_flash" preset_proc="qspi_preset">
         <description>Quad SPI Flash</description>
-		<preferred_ips>
-			<preferred_ip vendor="xilinx.com" library="ip" name="axi_quad_spi" order="0"/>
-		</preferred_ips>
-		<port_maps>
+        <preferred_ips>
+          <preferred_ip vendor="xilinx.com" library="ip" name="axi_quad_spi" order="0"/>
+        </preferred_ips>
+        <port_maps>
           <port_map logical_port="IO0_I" physical_port="qspi_db0_i" dir="in">
             <pin_maps>
               <pin_map port_index="0" component_pin="qspi_db0_i"/> 
@@ -340,7 +283,7 @@ SOFTWARE.
       </interface>
       <interface mode="slave" name="reset" type="xilinx.com:signal:reset_rtl:1.0" of_component="reset">
         <port_maps>
-          <port_map logical_port="RESET" physical_port="reset" dir="in">
+          <port_map logical_port="RST" physical_port="reset" dir="in">
             <pin_maps>
               <pin_map port_index="0" component_pin="reset"/> 
             </pin_maps>
@@ -352,10 +295,10 @@ SOFTWARE.
       </interface>
       <interface mode="master" name="rgb_led" type="xilinx.com:interface:gpio_rtl:1.0" of_component="rgb_led" preset_proc="output_6bits_preset">
         <description>2 RGB LEDs</description>
-		<preferred_ips>
-			<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
-		</preferred_ips>
-		<port_maps>
+        <preferred_ips>
+          <preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+        </preferred_ips>
+        <port_maps>
           <port_map logical_port="TRI_O" physical_port="rgb_led_tri_o" dir="out" left="5" right="0"> 
             <pin_maps>
               <pin_map port_index="0" component_pin="rgb_led_tri_o_0"/> 
@@ -370,10 +313,10 @@ SOFTWARE.
       </interface>
       <interface mode="master" name="seven_seg_led_an" type="xilinx.com:interface:gpio_rtl:1.0" of_component="seven_seg_led_an" preset_proc="output_8bits_preset">
         <description>7 Segment Display Anodes</description>
-		<preferred_ips>
-			<preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
-		</preferred_ips>
-		<port_maps>
+        <preferred_ips>
+          <preferred_ip vendor="xilinx.com" library="ip" name="axi_gpio" order="0"/>
+        </preferred_ips>
+        <port_maps>
           <port_map logical_port="TRI_O" physical_port="seven_seg_led_an_tri_o" dir="out" left="7" right="0"> 
             <pin_maps>
               <pin_map port_index="0" component_pin="seven_seg_led_an_tri_o_0"/> 
@@ -402,7 +345,7 @@ SOFTWARE.
       </interface>
       <interface mode="master" name="temp_sensor" type="xilinx.com:interface:iic_rtl:1.0" of_component="temp_sensor">
         <description>Temperature Sensor connected to I2C</description>
-		<port_maps>
+		    <port_maps>
           <port_map logical_port="SDA_I" physical_port="temp_sda_i" dir="in">
             <pin_maps>
               <pin_map port_index="0" component_pin="temp_sda_i"/> 
@@ -437,7 +380,7 @@ SOFTWARE.
       </interface>
       <interface mode="master" name="usb_uart" type="xilinx.com:interface:uart_rtl:1.0" of_component="usb_uart" preset_proc="uart_preset">
         <description>USB-to-UART Bridge, which allows a connection to a host computer with a USB port</description>
-		<port_maps>
+		    <port_maps>
           <port_map logical_port="TxD" physical_port="usb_uart_txd" dir="out">
             <pin_maps>
               <pin_map port_index="0" component_pin="usb_uart_txd"/> 
@@ -448,12 +391,12 @@ SOFTWARE.
               <pin_map port_index="0" component_pin="usb_uart_rxd"/> 
             </pin_maps>
           </port_map>
-		  <port_map logical_port="RTSn" physical_port="usb_uart_rts" dir="out">
+		      <port_map logical_port="RTSn" physical_port="usb_uart_rts" dir="out">
             <pin_maps>
               <pin_map port_index="0" component_pin="usb_uart_rts"/> 
             </pin_maps>
           </port_map>
-		  <port_map logical_port="CTSn" physical_port="usb_uart_cts" dir="in">
+		      <port_map logical_port="CTSn" physical_port="usb_uart_cts" dir="in">
             <pin_maps>
               <pin_map port_index="0" component_pin="usb_uart_cts"/> 
             </pin_maps>
@@ -1227,12 +1170,6 @@ SOFTWARE.
   <component name="dual_seven_seg_led_disp" display_name="7 Segments" type="chip" sub_type="led" major_group="7 Segment Display">
 	<description>7 Segment Display Segment Control</description>
   </component>
-  <component name="eth_rmii" display_name="Ethernet RMII" type="chip" sub_type="ethernet" major_group="Ethernet">
-	<description>Ethernet RMII Signals</description> 
-  </component>
-  <component name="eth_mdio_mdc" display_name="Ethernet MDIO MDC" type="chip" sub_type="ethernet" major_group="Ethernet">
-  <description>Ethernet MDIO/MDC Signals</description> 
-  </component>
   <component name="led_16bits" display_name="16 LEDs" type="chip" sub_type="led" major_group="GPIO">
 	<description>16 LEDs</description>
   </component>
@@ -1311,12 +1248,6 @@ SOFTWARE.
   </connection>
   <connection name="part0_dual_seven_seg_led_disp" component1="part0" component2="dual_seven_seg_led_disp">
     <connection_map name="part0_dual_seven_seg_led_disp_1" c1_st_index="21" c1_end_index="28" c2_st_index="0" c2_end_index="7"/>
-  </connection>
-  <connection name="part0_eth_mdio_mdc" component1="part0" component2="eth_mdio_mdc">
-    <connection_map name="part0_eth_mdio_mdc_1" c1_st_index="29" c1_end_index="30" c2_st_index="0" c2_end_index="1"/>
-  </connection>
-  <connection name="part0_eth_rmii" component1="part0" component2="eth_rmii">
-    <connection_map name="part0_eth_rmii_1" c1_st_index="31" c1_end_index="37" c2_st_index="0" c2_end_index="6"/>
   </connection>
   <connection name="part0_led_16bits" component1="part0" component2="led_16bits">
     <connection_map name="part0_led_16bits_1" c1_st_index="38" c1_end_index="53" c2_st_index="0" c2_end_index="15"/>

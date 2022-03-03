@@ -53,15 +53,6 @@ SOFTWARE.
   <pin index="26" name ="dual_seven_seg_led_disp_tri_o_5" iostandard="LVCMOS33" loc="T11"/>
   <pin index="27" name ="dual_seven_seg_led_disp_tri_o_6" iostandard="LVCMOS33" loc="L18"/>
   <pin index="28" name ="dual_seven_seg_led_disp_tri_o_7" iostandard="LVCMOS33" loc="H15"/>
-  <pin index="29" name ="eth_mdc" iostandard="LVCMOS33" loc="C9"/>
-  <pin index="30" name ="eth_mdio_i" iostandard="LVCMOS33" loc="A9"/>
-  <pin index="31" name ="eth_rmii_crs_dv" iostandard="LVCMOS33" loc="D9"/>
-  <pin index="32" name ="eth_rmii_rxd_0" iostandard="LVCMOS33" loc="C11"/>
-  <pin index="33" name ="eth_rmii_rxd_1" iostandard="LVCMOS33" loc="D10"/>
-  <pin index="34" name ="eth_rmii_rx_er" iostandard="LVCMOS33" loc="C10"/>
-  <pin index="35" name ="eth_rmii_txd_0" iostandard="LVCMOS33" loc="A10"/>
-  <pin index="36" name ="eth_rmii_txd_1" iostandard="LVCMOS33" loc="A8"/>
-  <pin index="37" name ="eth_rmii_tx_en" iostandard="LVCMOS33" loc="B9"/>
   <pin index="38" name ="led_16bits_tri_o_0" iostandard="LVCMOS33" loc="H17"/>
   <pin index="39" name ="led_16bits_tri_o_1" iostandard="LVCMOS33" loc="K15"/>
   <pin index="40" name ="led_16bits_tri_o_2" iostandard="LVCMOS33" loc="J13"/>
