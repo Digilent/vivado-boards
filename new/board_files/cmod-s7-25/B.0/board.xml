@@ -22,14 +22,14 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 -->
-<board schema_version="2.0" vendor="digilentinc.com" name="cmod-s7-25" display_name="Cmod S7-25" url="https://reference.digilentinc.com/reference/programmable-logic/cmod-s7/start" preset_file="preset.xml">
+<board schema_version="2.0" vendor="digilentinc.com" name="cmod-s7-25" display_name="Cmod S7-25" url="https://digilent.com/reference/programmable-logic/cmod-s7/start" preset_file="preset.xml">
     <compatible_board_revisions>
       <revision id="0">B.0</revision>
     </compatible_board_revisions>
     <file_version>1.0</file_version>
     <description>Cmod S7-25</description>
     <components>
-        <component name="part0" display_name="Cmod S7-25" type="fpga" part_name="xc7s25csga225-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://reference.digilentinc.com/reference/programmable-logic/cmod-s7/start">
+        <component name="part0" display_name="Cmod S7-25" type="fpga" part_name="xc7s25csga225-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://digilent.com/reference/programmable-logic/cmod-s7/start">
             <interfaces>
                 <interface mode="slave"  name="sys_clock"          type="xilinx.com:signal:clock_rtl:1.0"        of_component="sys_clock"          preset_proc="sys_clock_preset">
                     <description>12 MHz Single-Ended System Clock</description>

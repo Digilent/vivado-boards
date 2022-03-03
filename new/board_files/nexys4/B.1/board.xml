@@ -22,7 +22,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 -->
-<board schema_version="2.0" vendor="digilentinc.com" name="nexys4" display_name="Nexys4" url="https://reference.digilentinc.com/reference/programmable-logic/nexys-4/start"  preset_file="preset.xml" >
+<board schema_version="2.0" vendor="digilentinc.com" name="nexys4" display_name="Nexys4" url="https://digilent.com/reference/programmable-logic/nexys-4/start"  preset_file="preset.xml" >
 <compatible_board_revisions>
   <revision id="0">B.1</revision>
 </compatible_board_revisions>

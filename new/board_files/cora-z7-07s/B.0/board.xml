@@ -22,14 +22,14 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 -->
-<board schema_version="2.0" vendor="digilentinc.com" name="cora-z7-07s" display_name="Cora Z7-07S" url="https://reference.digilentinc.com/reference/programmable-logic/cora-z7/start" preset_file="preset.xml" >
+<board schema_version="2.0" vendor="digilentinc.com" name="cora-z7-07s" display_name="Cora Z7-07S" url="https://digilent.com/reference/programmable-logic/cora-z7/start" preset_file="preset.xml" >
 	<compatible_board_revisions>
 		<revision id="0">B.0</revision>
 	</compatible_board_revisions>
 	<file_version>1.0</file_version>
 	<description>Cora Z7-07S</description>
 	<components>
-		<component name="part0" display_name="Cora Z7-07S" type="fpga" part_name="xc7z007sclg400-1" pin_map_file="part0_pins.xml" vendor="xilinx.com" spec_url="https://reference.digilentinc.com/reference/programmable-logic/cora-z7/start">
+		<component name="part0" display_name="Cora Z7-07S" type="fpga" part_name="xc7z007sclg400-1" pin_map_file="part0_pins.xml" vendor="xilinx.com" spec_url="https://digilent.com/reference/programmable-logic/cora-z7/start">
 			<interfaces>
 				<interface mode="master" name="ps7_fixedio" type="xilinx.com:display_processing_system7:fixedio_rtl:1.0" of_component="ps7_fixedio" preset_proc="ps7_preset"> 
 				</interface>

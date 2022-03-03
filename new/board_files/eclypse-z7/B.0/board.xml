@@ -22,7 +22,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 -->
-<board schema_version="2.0" vendor="digilentinc.com" name="eclypse-z7" display_name="Eclypse Z7" url="https://www.digilentinc.com" preset_file="preset.xml">
+<board schema_version="2.0" vendor="digilentinc.com" name="eclypse-z7" display_name="Eclypse Z7" url="https://digilent.com/reference/programmable-logic/eclypse-z7/start" preset_file="preset.xml">
 <compatible_board_revisions>
 	<revision id="0">B.0</revision>
 </compatible_board_revisions>
@@ -31,7 +31,7 @@ SOFTWARE.
 
 <components>
 	<!-- Defines BD interfaces that can be used to connect the FPGA to a particular <component> -->
-	<component name="part0" display_name="Eclypse Z7" type="fpga" part_name="xc7z020clg484-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="www.digilentinc.com">
+	<component name="part0" display_name="Eclypse Z7" type="fpga" part_name="xc7z020clg484-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://digilent.com/reference/programmable-logic/eclypse-z7/start">
 		<interfaces> 
 			<interface mode="slave" name="sys_clock" type="xilinx.com:signal:clock_rtl:1.0" of_component="sys_clock" preset_proc="sys_clock_preset">
 				<port_maps>

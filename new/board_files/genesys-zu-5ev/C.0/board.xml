@@ -22,7 +22,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 -->
-<board schema_version="2.1" vendor="digilentinc.com" name="gzu_5ev" display_name="Genesys ZU-5EV" url="https://www.digilentinc.com" preset_file="preset.xml">
+<board schema_version="2.1" vendor="digilentinc.com" name="gzu_5ev" display_name="Genesys ZU-5EV" url="https://digilent.com/reference/programmable-logic/genesys-zu/start" preset_file="preset.xml">
 <compatible_board_revisions>
 	<revision id="0">C.0</revision>
 </compatible_board_revisions>
@@ -31,7 +31,7 @@ SOFTWARE.
 
 <components>
 	<!-- Defines BD interfaces that can be used to connect the FPGA to a particular <component> -->
-	<component name="part0" display_name="Genesys ZU-5EV" type="fpga" part_name="xczu5ev-sfvc784-1-e" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="www.digilentinc.com">
+	<component name="part0" display_name="Genesys ZU-5EV" type="fpga" part_name="xczu5ev-sfvc784-1-e" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://digilent.com/reference/programmable-logic/genesys-zu/start">
 		<interfaces>
 			<interface mode="master" name="ps8_fixedio" type="xilinx.com:zynq_ultra_ps_e:fixedio_rtl:1.0" of_component="ps8_fixedio" preset_proc="zynq_ultra_ps_e_preset"> 
 				<preferred_ips>
