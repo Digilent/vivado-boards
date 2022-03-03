@@ -123,13 +123,13 @@ SOFTWARE.
           </port_map>
         </port_maps>
       </interface>
-	  <interface mode="master" name="phy_reset_out" type="xilinx.com:signal:reset_rtl:1.0" of_component="phy_onboard">
-          <description>Onboard Reset Button</description>
-		  <preferred_ips>
+	    <interface mode="master" name="phy_reset_out" type="xilinx.com:signal:reset_rtl:1.0" of_component="phy_onboard">
+        <description>Ethernet PHY Reset</description>
+		      <preferred_ips>
             <preferred_ip vendor="xilinx.com" library="ip" name="axi_ethernet" order="0"/>
           </preferred_ips>
           <port_maps>
-            <port_map logical_port="RESET" physical_port="phy_reset_n" dir="out">
+            <port_map logical_port="RST" physical_port="phy_reset_n" dir="out">
               <pin_maps>
                 <pin_map port_index="0" component_pin="phy_reset_n"/>
               </pin_maps>
@@ -262,7 +262,7 @@ SOFTWARE.
             <preferred_ip vendor="xilinx.com" library="ip" name="proc_sys_reset" order="0"/>
           </preferred_ips>
 		<port_maps>
-          <port_map logical_port="RESET" physical_port="reset" dir="in">
+          <port_map logical_port="RST" physical_port="reset" dir="in">
             <pin_maps>
               <pin_map port_index="0" component_pin="reset"/> 
             </pin_maps>
