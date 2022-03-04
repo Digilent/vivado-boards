@@ -26,7 +26,7 @@ SOFTWARE.
 <compatible_board_revisions>
   <revision id="0">B.0</revision>
 </compatible_board_revisions>
-<file_version>1.1</file_version>
+<file_version>1.2</file_version>
 <description>Cmod A7-35t</description>
 <components>
   <component name="part0" display_name="Cmod A7-35t" type="fpga" part_name="xc7a35tcpg236-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://digilent.com/reference/programmable-logic/cmod-a7/start">

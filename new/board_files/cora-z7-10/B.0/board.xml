@@ -26,7 +26,7 @@ SOFTWARE.
 	<compatible_board_revisions>
 		<revision id="0">B.0</revision>
 	</compatible_board_revisions>
-	<file_version>1.0</file_version>
+	<file_version>1.1</file_version>
 	<description>Cora Z7-10</description>
 	<components>
 		<component name="part0" display_name="Cora Z7-10" type="fpga" part_name="xc7z010clg400-1" pin_map_file="part0_pins.xml" vendor="xilinx.com" spec_url="https://digilent.com/reference/programmable-logic/cora-z7/start">
