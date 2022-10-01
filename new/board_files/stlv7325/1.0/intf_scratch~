@@ -1,0 +1,12 @@
+      <component_modes>
+        <component_mode name="spi_flash_n" display_name="Spi flash">
+          <interfaces>
+            <interface name="spi_flash" order="0"/>
+          </interfaces>
+        </component_mode>
+        <component_mode name="spi_flash_start" display_name="SPI Flash with STARTUP Primitive">
+          <interfaces>
+            <interface name="spi_flash_startup" order="0"/>
+          </interfaces>
+        </component_mode>	
+      </component_modes>
