@@ -26,7 +26,7 @@ SOFTWARE.
 <compatible_board_revisions>
   <revision id="0">D.0</revision>
 </compatible_board_revisions>
-<file_version>1.2</file_version>
+<file_version>1.3</file_version>
 <description>Nexys A7-100T</description>
 <components>
   <component name="part0" display_name="Nexys A7-100T" type="fpga" part_name="xc7a100tcsg324-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://digilent.com/reference/programmable-logic/nexys-a7/start">
@@ -37,34 +37,34 @@ SOFTWARE.
 			<preferred_ip vendor="xilinx.com" library="ip" name="axi_quad_spi" order="0"/>
 		</preferred_ips>
 		<port_maps>
-          <port_map logical_port="IO0_I" physical_port="acl_miso_i" dir="in">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="acl_miso_i"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="IO0_O" physical_port="acl_miso_o" dir="out">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="acl_miso_i"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="IO0_T" physical_port="acl_miso_t" dir="out">
-            <pin_maps>
-              <pin_map port_index="0" component_pin="acl_miso_i"/> 
-            </pin_maps>
-          </port_map>
-          <port_map logical_port="IO1_I" physical_port="acl_mosi_i" dir="in">
+          <port_map logical_port="IO0_I" physical_port="acl_mosi_i" dir="in">
             <pin_maps>
               <pin_map port_index="0" component_pin="acl_mosi_i"/> 
             </pin_maps>
           </port_map>
-          <port_map logical_port="IO1_O" physical_port="acl_mosi_o" dir="out">
+          <port_map logical_port="IO0_O" physical_port="acl_mosi_o" dir="out">
             <pin_maps>
               <pin_map port_index="0" component_pin="acl_mosi_i"/> 
             </pin_maps>
           </port_map>
-          <port_map logical_port="IO1_T" physical_port="acl_mosi_t" dir="out">
+          <port_map logical_port="IO0_T" physical_port="acl_mosi_t" dir="out">
             <pin_maps>
               <pin_map port_index="0" component_pin="acl_mosi_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO1_I" physical_port="acl_miso_i" dir="in">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="acl_miso_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO1_O" physical_port="acl_miso_o" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="acl_miso_i"/> 
+            </pin_maps>
+          </port_map>
+          <port_map logical_port="IO1_T" physical_port="acl_miso_t" dir="out">
+            <pin_maps>
+              <pin_map port_index="0" component_pin="acl_miso_i"/> 
             </pin_maps>
           </port_map>
           <port_map logical_port="SCK_I" physical_port="acl_sclk_i" dir="in">
