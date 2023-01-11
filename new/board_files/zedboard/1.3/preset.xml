@@ -188,7 +188,7 @@ SOFTWARE.
     <ip vendor="xilinx.com" library="ip" name="processing_system7" version="*">
       <user_parameters>
         <user_parameter name="CONFIG.PCW_APU_PERIPHERAL_FREQMHZ" value="650"/> 
-        <user_parameter name="CONFIG.PCW_CRYSTAL_PERIPHERAL_FREQMHZ" value="50.000000"/> 
+        <user_parameter name="CONFIG.PCW_CRYSTAL_PERIPHERAL_FREQMHZ" value="33.333333"/> 
         <user_parameter name="CONFIG.PCW_ENET0_ENET0_IO" value="MIO 16 .. 27"/> 
         <user_parameter name="CONFIG.PCW_ENET0_GRP_MDIO_ENABLE" value="1"/> 
         <user_parameter name="CONFIG.PCW_ENET0_PERIPHERAL_ENABLE" value="1"/> 
