@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sun Sep 11 19:29:25 2022
+# Process ID: 25928
+# Current directory: /home/aestay/Pictures/kintex7_2020_dev_board/board_file/stlv7325
+# Command line: vivado /home/aestay/Pictures/kintex7_2020_dev_board/board_file/stlv7325/preset.xml
+# Log file: /home/aestay/Pictures/kintex7_2020_dev_board/board_file/stlv7325/vivado.log
+# Journal file: /home/aestay/Pictures/kintex7_2020_dev_board/board_file/stlv7325/vivado.jou
+# Running On: casav-casaestay, OS: Linux, CPU Frequency: 5700.000 MHz, CPU Physical cores: 6, Host memory: 33649 MB
+#-----------------------------------------------------------
+start_gui
