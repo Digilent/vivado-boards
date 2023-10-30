@@ -30,7 +30,12 @@ SOFTWARE.
         <user_parameter name="CONFIG.PCW_CRYSTAL_PERIPHERAL_FREQMHZ" value="50.000000"/> 
         <user_parameter name="CONFIG.PCW_ENET0_ENET0_IO" value="MIO 16 .. 27"/> 
         <user_parameter name="CONFIG.PCW_ENET0_GRP_MDIO_ENABLE" value="1"/> 
-        <user_parameter name="CONFIG.PCW_ENET0_PERIPHERAL_ENABLE" value="1"/> 
+        <user_parameter name="CONFIG.PCW_ENET0_GRP_MDIO_IO" value="MIO 52 .. 53"/>
+        <user_parameter name="CONFIG.PCW_ENET0_PERIPHERAL_CLKSRC" value="IO PLL"/>
+        <user_parameter name="CONFIG.PCW_ENET0_PERIPHERAL_DIVISOR0" value="8"/>
+        <user_parameter name="CONFIG.PCW_ENET0_PERIPHERAL_DIVISOR1" value="1"/>
+        <user_parameter name="CONFIG.PCW_ENET0_PERIPHERAL_ENABLE" value="1"/>
+        <user_parameter name="CONFIG.PCW_ENET0_PERIPHERAL_FREQMHZ" value="1000 Mbps"/>
         <user_parameter name="CONFIG.PCW_ENET0_RESET_ENABLE" value="0"/> 
         <user_parameter name="CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ" value="100"/> 
         <user_parameter name="CONFIG.PCW_GPIO_MIO_GPIO_ENABLE" value="1"/> 
