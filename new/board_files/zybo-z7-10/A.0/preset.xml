@@ -28,9 +28,9 @@ SOFTWARE.
       <user_parameters>
 		<user_parameter name="CONFIG.PCW_DDR_RAM_HIGHADDR" value="0x3FFFFFFF"/> 
 		<user_parameter name="CONFIG.PCW_APU_CLK_RATIO_ENABLE" value="6:2:1"/>
-		<user_parameter name="CONFIG.PCW_APU_PERIPHERAL_FREQMHZ" value="667"/>
-		<user_parameter name="CONFIG.PCW_ARMPLL_CTRL_FBDIV" value="39"/>
-		<user_parameter name="CONFIG.PCW_CPU_CPU_PLL_FREQMHZ" value="1300.000"/>
+		<user_parameter name="CONFIG.PCW_APU_PERIPHERAL_FREQMHZ" value="666.666666"/>
+		<user_parameter name="CONFIG.PCW_ARMPLL_CTRL_FBDIV" value="40"/>
+		<user_parameter name="CONFIG.PCW_CPU_CPU_PLL_FREQMHZ" value="1333.333"/>
 		<user_parameter name="CONFIG.PCW_CPU_PERIPHERAL_CLKSRC" value="ARM PLL"/>
 		<user_parameter name="CONFIG.PCW_CPU_PERIPHERAL_DIVISOR0" value="2"/>
 		<user_parameter name="CONFIG.PCW_CRYSTAL_PERIPHERAL_FREQMHZ" value="33.333333"/>

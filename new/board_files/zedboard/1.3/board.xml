@@ -31,7 +31,7 @@ SOFTWARE.
   <compatible_board_revisions>
     <revision id="0">D.3</revision>
   </compatible_board_revisions>
-  <file_version>1.0</file_version>
+  <file_version>1.1</file_version>
   <description>ZedBoard Zynq Evaluation and Development Kit</description>
   <components>
     <component name="part0" display_name="ZedBoard" type="fpga" part_name="xc7z020clg484-1" pin_map_file="part0_pins.xml" vendor="xilinx" spec_url="https://reference.digilentinc.com/reference/programmable-logic/zedboard/start">
