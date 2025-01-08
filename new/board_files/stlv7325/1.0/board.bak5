@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE board SYSTEM "/opt/Xilinx/Vivado/2022.1/data/boards/board_schemas/current/board.dtd">
 <board schema_version="2.1" vendor="906606596" name="STLV325" display_name="STLV325" url="906606596@qq.com" preset_file="preset.xml">
     <images>
     <image name="board.jpg" display_name="STLV325 BOARD" sub_type="board">

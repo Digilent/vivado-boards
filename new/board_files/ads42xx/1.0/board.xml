@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE board SYSTEM "/opt/Xilinx/Vivado/2022.1/data/boards/board_schemas/current/board.dtd">
 <board schema_version="2.0" vendor="ti.com" name="ads42xx" display_name="ADS42XX Evaluation Module" url="https://www.ti.com/tool/ADS4225EVM">
   <compatible_board_revisions>
     <revision id="0">A.0</revision>
