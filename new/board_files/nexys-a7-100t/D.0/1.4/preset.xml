@@ -416,10 +416,10 @@ SOFTWARE.
   <ip_preset preset_proc_name="vga_output_preset">
     <ip vendor="digilentinc.com" library="ip" name="vga_output" ip_interface="vga_out">
         <user_parameters>
-          <user_parameter name="CONFIG.kBlueDepth"  value="4"/>
-          <user_parameter name="CONFIG.kGreenDepth" value="4"/>
-	  <user_parameter name="CONFIG.kGreenDepth" value="4"/>
+          <user_parameter name="CONFIG.KBLUEDEPTH"  value="4"/>
+          <user_parameter name="CONFIG.KREDDEPTH" value="4"/>
+	  <user_parameter name="CONFIG.KGREENDEPTH" value="4"/>
         </user_parameters>
     </ip>
-  </ip_preset>
+  </ip_preset> 
 </ip_presets>

@@ -395,4 +395,28 @@ SOFTWARE.
         </user_parameters>
     </ip>
   </ip_preset>
+    <ip_preset preset_proc_name="sys_clock_preset">
+    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="clk_in1">
+        <user_parameters>
+          <user_parameter name="CONFIG.PRIM_IN_FREQ" value="100"/>
+          <user_parameter name="CONFIG.PRIM_SOURCE" value="Single_ended_clock_capable_pin"/>
+          <user_parameter name="CONFIG.RESET_TYPE" value="ACTIVE_LOW"/>
+	  <user_parameter name="CONFIG.RESET_PORT" value="resetn"/>
+        </user_parameters>
+    </ip>
+    <ip vendor="xilinx.com" library="ip" name="util_ds_buf" ip_interface="BUFG_I">
+        <user_parameters>
+          <user_parameter name="CONFIG.C_BUF_TYPE" value="BUFG"/>
+        </user_parameters>
+    </ip>
+  </ip_preset>
+  <ip_preset preset_proc_name="vga_output_preset">
+    <ip vendor="digilentinc.com" library="ip" name="vga_output" ip_interface="vga_out">
+        <user_parameters>
+          <user_parameter name="CONFIG.KBLUEDEPTH"  value="4"/>
+          <user_parameter name="CONFIG.KREDDEPTH" value="4"/>
+	  <user_parameter name="CONFIG.KGREENDEPTH" value="4"/>
+        </user_parameters>
+    </ip>
+  </ip_preset>  
 </ip_presets>

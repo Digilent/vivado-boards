@@ -1328,6 +1328,9 @@ SOFTWARE.
   <component name="led_16bits" display_name="16 LEDs" type="chip" sub_type="led" major_group="GPIO">
 	<description>16 LEDs</description>
   </component>
+  <component name="vga_output" display_name="VGA Output" type="chip" sub_type="mux" major_group="Peripherals">
+      <description>PC VGA Output</description>
+   </component>
   <component name="push_buttons_5bits" display_name="5 Push Buttons" type="chip" sub_type="push_button" major_group="GPIO">
 	<description>Push Buttons 5 to 0 {Down Right Left Up Center} </description>
   </component>
