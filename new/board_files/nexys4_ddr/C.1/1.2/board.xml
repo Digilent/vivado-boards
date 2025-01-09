@@ -1382,6 +1382,9 @@ SOFTWARE.
   <component name="dual_seven_seg_led_disp" display_name="7 Segments" type="chip" sub_type="led" major_group="7 Segment Display">
 	<description>7 Segment Display Segment Control</description>
   </component>
+    <component name="vga_output" display_name="VGA Output" type="chip" sub_type="mux" major_group="Peripherals">
+      <description>PC VGA Output</description>
+    </component>
   <component name="eth_rmii" display_name="Ethernet RMII" type="chip" sub_type="ethernet" major_group="Ethernet">
 	<description>Ethernet RMII Signals</description> 
   </component>
