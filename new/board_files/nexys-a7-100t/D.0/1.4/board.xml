@@ -294,7 +294,7 @@ SOFTWARE.
           </port_map>
         </port_maps>
       </interface>
-       <interface mode="master" name="vga_output" type="xilinx.com:interface:vga_rtl:1.0" of_component="vga_output" preset_proc="vga_output_preset">
+       <interface mode="master" name="vga_output" type="user:user:vga_rtl_custom_rtl:1.0" of_component="vga_output" preset_proc="vga_output_preset">
           <description>PC VGA output</description>
           <preferred_ips>
             <preferred_ip vendor="digilentinc.com" library="ip" name="rgb2vga" order="0"/>

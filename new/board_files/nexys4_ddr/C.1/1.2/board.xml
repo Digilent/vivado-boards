@@ -351,6 +351,48 @@ SOFTWARE.
           </port_map>
         </port_maps>
       </interface>
+       <interface mode="master" name="vga_output" type="user:user:vga_rtl_custom_rtl:1.0" of_component="vga_output" preset_proc="vga_output_preset">
+          <description>PC VGA output</description>
+          <preferred_ips>
+            <preferred_ip vendor="digilentinc.com" library="ip" name="rgb2vga" order="0"/>
+          </preferred_ips>
+          <port_maps>
+            <port_map logical_port="RED" physical_port="VGA_R" dir="out" left="3" right="0">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="VGA_R_0"/>
+                <pin_map port_index="1" component_pin="VGA_R_1"/>
+                <pin_map port_index="2" component_pin="VGA_R_2"/>
+                <pin_map port_index="3" component_pin="VGA_R_3"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="GREEN" physical_port="VGA_G" dir="out" left="3" right="0">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="VGA_G_0"/>
+                <pin_map port_index="1" component_pin="VGA_G_1"/>
+                <pin_map port_index="2" component_pin="VGA_G_2"/>
+                <pin_map port_index="3" component_pin="VGA_G_3"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="BLUE" physical_port="VGA_B" dir="out" left="3" right="0">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="VGA_B_0"/>
+                <pin_map port_index="1" component_pin="VGA_B_1"/>
+                <pin_map port_index="2" component_pin="VGA_B_2"/>
+                <pin_map port_index="3" component_pin="VGA_B_3"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="HSYNC" physical_port="VGA_HS" dir="out">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="VGA_HS"/>
+              </pin_maps>
+            </port_map>
+            <port_map logical_port="VSYNC" physical_port="VGA_VS" dir="out">
+              <pin_maps>
+                <pin_map port_index="0" component_pin="VGA_VS"/>
+              </pin_maps>
+            </port_map>
+          </port_maps>
+        </interface>      
       <interface mode="master" name="push_buttons_5bits" type="xilinx.com:interface:gpio_rtl:1.0" of_component="push_buttons_5bits" preset_proc="push_buttons_5bits_preset">
         <description>5 Push Buttons</description>
 		<preferred_ips>
