@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<part_info part_name="xc7k325tffg676-1">
+  <pins>
+    <!-- System reset button and clock -->
+    <pin index="0" name="reset" iostandard="LVCMOS18" loc="AA8"/>
+    <pin index="1" name="system_clk_p" iostandard="LVDS" loc="AA3"/>
+    <pin index="2" name="system_clk_n" iostandard="LVDS" loc="AA2"/>
+    <!-- LEDs -->
+    <pin index="3" name="led_0" iostandard="LVCMOS33" loc="E17"/>
+    <pin index="4" name="led_1" iostandard="LVCMOS18" loc="AF14"/>
+    <pin index="5" name="led_2" iostandard="LVCMOS33" loc="F17"/>
+    <pin index="6" name="led_3" iostandard="LVCMOS18" loc="W19"/>
+    <!-- Buttons -->
+    <pin index="7" name="btn_0" iostandard="LVCMOS15" loc="W6"/>
+    <pin index="8" name="btn_1" iostandard="LVCMOS33" loc="E18"/>
+    <pin index="9" name="btn_2" iostandard="LVCMOS15" loc="AC6"/>
+    <pin index="10" name="btn_3" iostandard="LVCMOS15" loc="AB6"/>
+    <!-- PMOD USB-UART -->
+    <pin index="11" name="pmod_usb_uart_if_rx" iostandard="LVCMOS33" loc="H18"/>
+    <pin index="12" name="pmod_usb_uart_if_tx" iostandard="LVCMOS33" loc="E15"/>
+    <!-- MDIO -->
+    <pin index="13" name="mdc" iostandard="LVCMOS18" loc="V13"/>
+    <pin index="14" name="mdio" iostandard="LVCMOS18" loc="W13"/>
+    <!-- PHY 1 -->
+    <pin index="15" name="rgmii_rxd_1_0" iostandard="LVCMOS18" loc="B11"/>
+    <pin index="16" name="rgmii_rxd_1_1" iostandard="LVCMOS18" loc="A10"/>
+    <pin index="17" name="rgmii_rxd_1_2" iostandard="LVCMOS18" loc="B10"/>
+    <pin index="18" name="rgmii_rxd_1_3" iostandard="LVCMOS18" loc="A9"/>
+    <pin index="19" name="rgmii_txd_1_0" iostandard="LVCMOS18" loc="A8"/>
+    <pin index="20" name="rgmii_txd_1_1" iostandard="LVCMOS18" loc="D8"/>
+    <pin index="21" name="rgmii_txd_1_2" iostandard="LVCMOS18" loc="G9"/>
+    <pin index="22" name="rgmii_txd_1_3" iostandard="LVCMOS18" loc="H9"/>
+    <pin index="23" name="rgmii_rx_ctl_1" iostandard="LVCMOS18" loc="B12"/>
+    <pin index="24" name="rgmii_rxc_1" iostandard="LVCMOS18" loc="E10"/>
+    <pin index="25" name="rgmii_tx_ctl_1" iostandard="LVCMOS18" loc="H8"/>
+    <pin index="26" name="rgmii_txc_1" iostandard="LVCMOS18" loc="B9"/>
+    <!-- PHY 2 -->
+    <pin index="27" name="rgmii_rxd_2_0" iostandard="LVCMOS18" loc="A13"/>
+    <pin index="28" name="rgmii_rxd_2_1" iostandard="LVCMOS18" loc="C9"/>
+    <pin index="29" name="rgmii_rxd_2_2" iostandard="LVCMOS18" loc="D11"/>
+    <pin index="30" name="rgmii_rxd_2_3" iostandard="LVCMOS18" loc="C11"/>
+    <pin index="31" name="rgmii_txd_2_0" iostandard="LVCMOS18" loc="D10"/>
+    <pin index="32" name="rgmii_txd_2_1" iostandard="LVCMOS18" loc="G10"/>
+    <pin index="33" name="rgmii_txd_2_2" iostandard="LVCMOS18" loc="D9"/>
+    <pin index="34" name="rgmii_txd_2_3" iostandard="LVCMOS18" loc="F9"/>
+    <pin index="35" name="rgmii_rx_ctl_2" iostandard="LVCMOS18" loc="A12"/>
+    <pin index="36" name="rgmii_rxc_2" iostandard="LVCMOS18" loc="C12"/>
+    <pin index="37" name="rgmii_tx_ctl_2" iostandard="LVCMOS18" loc="F8"/>
+    <pin index="38" name="rgmii_txc_2" iostandard="LVCMOS18" loc="J10"/>
+    <!-- PHY 3 -->
+    <pin index="39" name="rgmii_rxd_3_0" iostandard="LVCMOS18" loc="A14"/>
+    <pin index="40" name="rgmii_rxd_3_1" iostandard="LVCMOS18" loc="B14"/>
+    <pin index="41" name="rgmii_rxd_3_2" iostandard="LVCMOS18" loc="E12"/>
+    <pin index="42" name="rgmii_rxd_3_3" iostandard="LVCMOS18" loc="D13"/>
+    <pin index="43" name="rgmii_txd_3_0" iostandard="LVCMOS18" loc="G12"/>
+    <pin index="44" name="rgmii_txd_3_1" iostandard="LVCMOS18" loc="F13"/>
+    <pin index="45" name="rgmii_txd_3_2" iostandard="LVCMOS18" loc="F12"/>
+    <pin index="46" name="rgmii_txd_3_3" iostandard="LVCMOS18" loc="H11"/>
+    <pin index="47" name="rgmii_rx_ctl_3" iostandard="LVCMOS18" loc="C13"/>
+    <pin index="48" name="rgmii_rxc_3" iostandard="LVCMOS18" loc="E11"/>
+    <pin index="49" name="rgmii_tx_ctl_3" iostandard="LVCMOS18" loc="F10"/>
+    <pin index="50" name="rgmii_txc_3" iostandard="LVCMOS18" loc="E13"/>
+    <!-- PHY 4 -->
+    <pin index="51" name="rgmii_rxd_4_0" iostandard="LVCMOS18" loc="B15"/>
+    <pin index="52" name="rgmii_rxd_4_1" iostandard="LVCMOS18" loc="F14"/>
+    <pin index="53" name="rgmii_rxd_4_2" iostandard="LVCMOS18" loc="C14"/>
+    <pin index="54" name="rgmii_rxd_4_3" iostandard="LVCMOS18" loc="H12"/>
+    <pin index="55" name="rgmii_txd_4_0" iostandard="LVCMOS18" loc="J13"/>
+    <pin index="56" name="rgmii_txd_4_1" iostandard="LVCMOS18" loc="G14"/>
+    <pin index="57" name="rgmii_txd_4_2" iostandard="LVCMOS18" loc="H14"/>
+    <pin index="58" name="rgmii_txd_4_3" iostandard="LVCMOS18" loc="H13"/>
+    <pin index="59" name="rgmii_rx_ctl_4" iostandard="LVCMOS18" loc="A15"/>
+    <pin index="60" name="rgmii_rxc_4" iostandard="LVCMOS18" loc="G11"/>
+    <pin index="61" name="rgmii_tx_ctl_4" iostandard="LVCMOS18" loc="J11"/>
+    <pin index="62" name="rgmii_txc_4" iostandard="LVCMOS18" loc="D14"/>
+  </pins>
+</part_info>

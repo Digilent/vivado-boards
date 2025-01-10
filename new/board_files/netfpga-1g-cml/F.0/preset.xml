@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<ip_presets schema="1.0">
+  <ip_preset preset_proc_name="sys_diff_clock_preset">
+    <ip vendor="xilinx.com" library="ip" name="clk_wiz" ip_interface="CLK_IN1_D">
+      <user_parameters>
+        <user_parameter name="CONFIG.PRIM_IN_FREQ" value="200000000"/>
+        <user_parameter name="CONFIG.PRIM_SOURCE" value="Differential_clock_capable_pin"/>
+      </user_parameters>
+    </ip>
+  </ip_preset>
+  <ip_preset preset_proc_name="led_4bits_preset">
+    <ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO">
+      <user_parameters>
+        <user_parameter name="CONFIG.C_GPIO_WIDTH" value="4"/>
+        <user_parameter name="CONFIG.C_ALL_OUTPUTS" value="1"/>
+      </user_parameters>
+    </ip>
+  </ip_preset>
+  <ip_preset preset_proc_name="push_button_4bits_preset">
+    <ip vendor="xilinx.com" library="ip" name="axi_gpio" ip_interface="GPIO">
+      <user_parameters>
+        <user_parameter name="CONFIG.C_GPIO_WIDTH" value="4"/>
+        <user_parameter name="CONFIG.C_ALL_INPUTS" value="1"/>
+      </user_parameters>
+    </ip>
+  </ip_preset>
+  <ip_preset preset_proc_name="ddr3_sdram_preset">
+    <ip vendor="xilinx.com" library="ip" name="mig_7series">
+      <user_parameters>
+        <user_parameter name="CONFIG.XML_INPUT_FILE" value="mig.prj" value_type="file"/>
+      </user_parameters>
+    </ip>
+  </ip_preset>
+</ip_presets>
