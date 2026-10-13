@@ -251,11 +251,11 @@ SOFTWARE.
 		<user_parameter name="CONFIG.PCW_MIO_4_SLEW" value="slow"/>
 		<user_parameter name="CONFIG.PCW_MIO_50_DIRECTION" value="inout"/>
 		<user_parameter name="CONFIG.PCW_MIO_50_IOTYPE" value="LVCMOS 1.8V"/>
-		<user_parameter name="CONFIG.PCW_MIO_50_PULLUP" value="enabled"/>
+		<user_parameter name="CONFIG.PCW_MIO_50_PULLUP" value="disabled"/>
 		<user_parameter name="CONFIG.PCW_MIO_50_SLEW" value="slow"/>
 		<user_parameter name="CONFIG.PCW_MIO_51_DIRECTION" value="inout"/>
 		<user_parameter name="CONFIG.PCW_MIO_51_IOTYPE" value="LVCMOS 1.8V"/>
-		<user_parameter name="CONFIG.PCW_MIO_51_PULLUP" value="enabled"/>
+		<user_parameter name="CONFIG.PCW_MIO_51_PULLUP" value="disabled"/>
 		<user_parameter name="CONFIG.PCW_MIO_51_SLEW" value="slow"/>
 		<user_parameter name="CONFIG.PCW_MIO_52_DIRECTION" value="out"/>
 		<user_parameter name="CONFIG.PCW_MIO_52_IOTYPE" value="LVCMOS 1.8V"/>
