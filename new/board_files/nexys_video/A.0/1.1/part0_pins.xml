@@ -48,14 +48,14 @@ SOFTWARE.
   <pin index="21" name ="eth_txd_3" iostandard="LVCMOS25" loc="Y11"/>
   <pin index="22" name ="eth_tx_clk" iostandard="LVCMOS25" loc="AA14"/>
   <pin index="23" name ="eth_tx_ctl" iostandard="LVCMOS25" loc="V10"/>
-  <pin index="24" name ="led_8bits_tri_o_0" iostandard="LVCMOS33" loc="T14"/>
-  <pin index="25" name ="led_8bits_tri_o_1" iostandard="LVCMOS33" loc="T15"/>
-  <pin index="26" name ="led_8bits_tri_o_2" iostandard="LVCMOS33" loc="T16"/>
-  <pin index="27" name ="led_8bits_tri_o_3" iostandard="LVCMOS33" loc="U16"/>
-  <pin index="28" name ="led_8bits_tri_o_4" iostandard="LVCMOS33" loc="V15"/>
-  <pin index="29" name ="led_8bits_tri_o_5" iostandard="LVCMOS33" loc="W16"/>
-  <pin index="30" name ="led_8bits_tri_o_6" iostandard="LVCMOS33" loc="W15"/>
-  <pin index="31" name ="led_8bits_tri_o_7" iostandard="LVCMOS33" loc="Y13"/>
+  <pin index="24" name ="led_8bits_tri_o_0" iostandard="LVCMOS25" loc="T14"/>
+  <pin index="25" name ="led_8bits_tri_o_1" iostandard="LVCMOS25" loc="T15"/>
+  <pin index="26" name ="led_8bits_tri_o_2" iostandard="LVCMOS25" loc="T16"/>
+  <pin index="27" name ="led_8bits_tri_o_3" iostandard="LVCMOS25" loc="U16"/>
+  <pin index="28" name ="led_8bits_tri_o_4" iostandard="LVCMOS25" loc="V15"/>
+  <pin index="29" name ="led_8bits_tri_o_5" iostandard="LVCMOS25" loc="W16"/>
+  <pin index="30" name ="led_8bits_tri_o_6" iostandard="LVCMOS25" loc="W15"/>
+  <pin index="31" name ="led_8bits_tri_o_7" iostandard="LVCMOS25" loc="Y13"/>
   <pin index="32" name ="push_buttons_5bits_tri_i_0" iostandard="LVCMOS33" loc="B22"/>
   <pin index="33" name ="push_buttons_5bits_tri_i_1" iostandard="LVCMOS33" loc="F15"/>
   <pin index="34" name ="push_buttons_5bits_tri_i_2" iostandard="LVCMOS33" loc="C22"/>
